@@ -26,7 +26,17 @@
     "description*": {
         "de": "z. B. ein Meeting oder eine Konferenz"
     },
+    "required": [
+        "@type"
+    ],
     "properties": {
+        "@type": {
+            "type": "string",
+            "default": "schema:Event",
+            "options": {
+                "hidden": true
+            }
+        },
         "start_date": {
             "type": "string",
             "title": "Start",
