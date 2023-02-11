@@ -15,7 +15,7 @@
             "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
         }
     ],
-    "title": "Article",
+    "title": "Recipe",
     "required": [
         "@type"
     ],

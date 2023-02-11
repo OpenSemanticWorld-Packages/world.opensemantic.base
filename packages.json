@@ -12,7 +12,7 @@
             "label": "OSW Base",
             "description": "Provides base items like Article, Event, Recipe",
             "version": "0.1.0",
-            "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/OSW Base",
+            "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
                     "name": "OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26",
