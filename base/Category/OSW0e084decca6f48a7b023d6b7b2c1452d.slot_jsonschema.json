@@ -9,7 +9,8 @@
             "end_date": "schema:endDate",
             "end_date*": "Property:HasEndDateAndTime",
             "end_date_min*": "Property:HasEndDateAndTime",
-            "end_date_max*": "Property:HasEndDateAndTime"
+            "end_date_max*": "Property:HasEndDateAndTime",
+            "location_name": "schema:location"
         }
     ],
     "type": "object",
@@ -126,6 +127,13 @@
             ],
             "options": {
                 "flatpickr": {}
+            }
+        },
+        "location_name": {
+            "type": "string",
+            "title": "Location (name)",
+            "title*": {
+                "de": "Ort (Bezeichnung)"
             }
         }
     }
