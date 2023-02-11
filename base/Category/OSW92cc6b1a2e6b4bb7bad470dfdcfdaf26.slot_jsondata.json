@@ -1,0 +1,13 @@
+{
+    "subclass_of": [
+        "Category:Item"
+    ],
+    "uuid": "92cc6b1a-2e6b-4bb7-bad4-70dfdcfdaf26",
+    "label": [
+        {
+            "text": "Article",
+            "lang": "en"
+        }
+    ],
+    "name": "Article"
+}

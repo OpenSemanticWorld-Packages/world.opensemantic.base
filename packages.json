@@ -1,0 +1,80 @@
+{
+    "publisher": "OpenSemanticWorld",
+    "publisherURL": "https://github.com/OpenSemanticWorld-Packages/world.opensemantic.base",
+    "author": [
+        "Simon Stier"
+    ],
+    "language": "en",
+    "licenseName": "CC BY-NC 4.0",
+    "packages": {
+        "OSW Base": {
+            "globalID": "world.opensemantic.base",
+            "label": "OSW Base",
+            "description": "Provides base items like Article, Event, Recipe",
+            "version": "0.1.0",
+            "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/OSW Base",
+            "pages": [
+                {
+                    "name": "OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26",
+                    "label": "Article",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW0e084decca6f48a7b023d6b7b2c1452d",
+                    "label": "Event",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW81e9e22e7d934382a6a56df7d3736957",
+                    "label": "Recipe",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW81e9e22e7d934382a6a56df7d3736957.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW81e9e22e7d934382a6a56df7d3736957.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW81e9e22e7d934382a6a56df7d3736957.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW81e9e22e7d934382a6a56df7d3736957.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW81e9e22e7d934382a6a56df7d3736957.slot_jsonschema.json"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

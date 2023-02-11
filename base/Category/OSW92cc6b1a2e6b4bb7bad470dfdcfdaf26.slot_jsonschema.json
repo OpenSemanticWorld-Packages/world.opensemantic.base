@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "/wiki/Category:Item?action=raw&slot=jsonschema",
+        {
+            "File_": {
+                "@id": "wiki:File-3A",
+                "@prefix": true
+            },
+            "headline": "schema:headline",
+            "author": "schema:author"
+        }
+    ],
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+        }
+    ],
+    "title": "Article",
+    "required": [
+        "@type"
+    ],
+    "properties": {
+        "@type": {
+            "type": "string",
+            "default": "schema:Article",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

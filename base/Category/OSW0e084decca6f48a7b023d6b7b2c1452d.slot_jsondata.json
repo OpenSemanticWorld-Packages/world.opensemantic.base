@@ -1,0 +1,27 @@
+{
+    "subclass_of": [
+        "Category:Item"
+    ],
+    "uuid": "0e084dec-ca6f-48a7-b023-d6b7b2c1452d",
+    "name": "Event",
+    "label": [
+        {
+            "text": "Event",
+            "lang": "en"
+        },
+        {
+            "text": "Ereignis",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "e. g. a meeting or a conference",
+            "lang": "en"
+        },
+        {
+            "text": "z. B. ein Meeting oder eine Konferenz",
+            "lang": "de"
+        }
+    ]
+}

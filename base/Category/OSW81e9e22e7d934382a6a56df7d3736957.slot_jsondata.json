@@ -1,0 +1,13 @@
+{
+    "subclass_of": [
+        "Category:Item"
+    ],
+    "uuid": "81e9e22e-7d93-4382-a6a5-6df7d3736957",
+    "label": [
+        {
+            "text": "Recipe",
+            "lang": "en"
+        }
+    ],
+    "name": "Recipe"
+}

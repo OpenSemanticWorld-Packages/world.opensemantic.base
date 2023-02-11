@@ -1,0 +1,122 @@
+{
+    "@context": [
+        "/wiki/Category:Item?action=raw&slot=jsonschema",
+        {
+            "start_date": "schema:startDate",
+            "start_date*": "Property:HasStartDateAndTime",
+            "start_date_min": "Property:HasStartDateAndTime",
+            "start_date_max": "Property:HasStartDateAndTime",
+            "end_date": "schema:endDate",
+            "end_date*": "Property:HasEndDateAndTime",
+            "end_date_min*": "Property:HasEndDateAndTime",
+            "end_date_max*": "Property:HasEndDateAndTime"
+        }
+    ],
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+        }
+    ],
+    "title": "Event",
+    "title*": {
+        "de": "Ereignis"
+    },
+    "description": "e. g. a meeting or a conference",
+    "description*": {
+        "de": "z. B. ein Meeting oder eine Konferenz"
+    },
+    "properties": {
+        "start_date": {
+            "type": "string",
+            "title": "Start",
+            "title*": {
+                "de": "Beginn"
+            },
+            "oneOf": [
+                {
+                    "format": "date",
+                    "title": "Date",
+                    "title*": {
+                        "de": "Datum"
+                    }
+                },
+                {
+                    "format": "datetime-local",
+                    "title": "Date and time",
+                    "title*": {
+                        "de": "Datum und Uhrzeit"
+                    }
+                }
+            ],
+            "options": {
+                "flatpickr": {}
+            }
+        },
+        "start_date_min": {
+            "type": "string",
+            "title": "Starts after",
+            "title*": {
+                "de": "Beginnt nach"
+            },
+            "format": "datetime-local",
+            "options": {
+                "flatpickr": {},
+                "conditional_visible": {
+                    "modes": "query"
+                },
+                "role": {
+                    "query": {
+                        "filter": "min"
+                    }
+                }
+            }
+        },
+        "start_date_max": {
+            "type": "string",
+            "title": "Starts before",
+            "title*": {
+                "de": "Beginnt vor"
+            },
+            "format": "datetime-local",
+            "options": {
+                "flatpickr": {},
+                "conditional_visible": {
+                    "modes": "query"
+                },
+                "role": {
+                    "query": {
+                        "filter": "max"
+                    }
+                }
+            }
+        },
+        "end_date": {
+            "type": "string",
+            "format": "datetime",
+            "title": "End",
+            "title*": {
+                "de": "Ende"
+            },
+            "oneOf": [
+                {
+                    "format": "date",
+                    "title": "Date",
+                    "title*": {
+                        "de": "Datum"
+                    }
+                },
+                {
+                    "format": "datetime-local",
+                    "title": "Date and time",
+                    "title*": {
+                        "de": "Datum und Uhrzeit"
+                    }
+                }
+            ],
+            "options": {
+                "flatpickr": {}
+            }
+        }
+    }
+}
