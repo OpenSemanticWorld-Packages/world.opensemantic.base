@@ -20,5 +20,12 @@
         }
     ],
     "title": "Article",
+    "title*": {
+        "de": "Article"
+    },
+    "description": "A generic entry that can contain both text and media content",
+    "description*": {
+        "de": "Ein allgemeiner Eintrag der sowohl Text als auch Medieninhalte enthalten kann"
+    },
     "properties": {}
 }
