@@ -2,11 +2,15 @@
     "@context": [
         "/wiki/Category:Item?action=raw&slot=jsonschema",
         {
-            "File_": {
-                "@id": "wiki:File-3A",
-                "@prefix": true
-            },
-            "author": "schema:author"
+            "author": "schema:author",
+            "preparation_duration": "schema:prepTime",
+            "processing_duration": "schema:cookTime",
+            "total_duration": "schema:totalTime",
+            "output_count": "schema:recipeYield",
+            "input": "schema:recipeIngredient",
+            "steps": "schema:recipeInstructions",
+            "step_name": "schema:name",
+            "step_description": "schema:text"
         }
     ],
     "type": "object",
@@ -19,5 +23,82 @@
         }
     ],
     "title": "Recipe",
-    "properties": {}
+    "properties": {
+        "output_count": {
+            "type": "integer",
+            "title": "Yield",
+            "title*": {
+                "de": "Portionen"
+            }
+        },
+        "preparation_duration": {
+            "type": "string",
+            "title": "Preparation time",
+            "title*": {
+                "de": "Vorbereitungszeit"
+            }
+        },
+        "processing_duration": {
+            "type": "string",
+            "title": "Processing time",
+            "title*": {
+                "de": "Verarbeitungszeit"
+            }
+        },
+        "total_duration": {
+            "type": "string",
+            "title": "Total duration",
+            "title*": {
+                "de": "Gesamtdauer"
+            }
+        },
+        "input": {
+            "type": "array",
+            "title": "Ingredients",
+            "title*": {
+                "de": "Zutaten"
+            },
+            "items": {
+                "type": "string",
+                "title": "Ingredient",
+                "title*": {
+                    "de": "Zutat"
+                }
+            }
+        },
+        "steps": {
+            "type": "array",
+            "title": "Steps",
+            "title*": {
+                "de": "Zubereitungsschritte"
+            },
+            "items": {
+                "type": "object",
+                "title": "Step",
+                "title*": {
+                    "de": "Schritt"
+                },
+                "eval_template": {
+                    "type": "wikitext",
+                    "value": "{{{step_name}}}:<br>{{{step_description}}}"
+                },
+                "properties": {
+                    "step_name": {
+                        "type": "string",
+                        "title": "Name",
+                        "title*": {
+                            "de": "Name"
+                        }
+                    },
+                    "step_description": {
+                        "type": "string",
+                        "title": "Description",
+                        "title*": {
+                            "de": "Beschreibung"
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
