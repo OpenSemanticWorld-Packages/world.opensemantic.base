@@ -10,22 +10,14 @@
         }
     ],
     "type": "object",
+    "schema_type": [
+        "schema:Recipe"
+    ],
     "allOf": [
         {
             "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
         }
     ],
     "title": "Recipe",
-    "required": [
-        "@type"
-    ],
-    "properties": {
-        "@type": {
-            "type": "string",
-            "default": "schema:Recipe",
-            "options": {
-                "hidden": true
-            }
-        }
-    }
+    "properties": {}
 }
