@@ -1,0 +1,27 @@
+{
+    "subclass_of": [
+        "Category:OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26"
+    ],
+    "uuid": "494f660e-6a71-4a1a-9681-c517bbb975da",
+    "label": [
+        {
+            "text": "Tutorial",
+            "lang": "en"
+        },
+        {
+            "text": "Tutorium",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Instruction in written or cinematic form",
+            "lang": "en"
+        },
+        {
+            "text": "Schriftliche oder filmische Gebrauchsanleitung",
+            "lang": "de"
+        }
+    ],
+    "name": "Tutorial"
+}

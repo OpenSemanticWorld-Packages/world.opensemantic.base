@@ -11,7 +11,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Event, Recipe",
-            "version": "0.1.5",
+            "version": "0.2.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -31,6 +31,29 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW494f660e6a714a1a9681c517bbb975da",
+                    "label": "Tutorial",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW494f660e6a714a1a9681c517bbb975da.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW494f660e6a714a1a9681c517bbb975da.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSW494f660e6a714a1a9681c517bbb975da.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW494f660e6a714a1a9681c517bbb975da.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW494f660e6a714a1a9681c517bbb975da.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW494f660e6a714a1a9681c517bbb975da.slot_jsonschema.json"
                         }
                     }
                 },

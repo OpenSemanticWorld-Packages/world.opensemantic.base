@@ -1,0 +1,95 @@
+{
+    "@context": [
+        "/wiki/Category:OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26?action=raw&slot=jsonschema",
+        {
+            "required_predecessor": {
+                "@id": "Property:HasRequiredPredecessor",
+                "@type": "@id"
+            },
+            "optional_predecessor": {
+                "@id": "Property:HasOptionalPredecessor",
+                "@type": "@id"
+            },
+            "recommended_successor": {
+                "@id": "Property:HasRecommendedSuccessor",
+                "@type": "@id"
+            }
+        }
+    ],
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26?action=raw&slot=jsonschema"
+        }
+    ],
+    "title": "Tutorial",
+    "title*": {
+        "de": "Tutorium"
+    },
+    "description*": {
+        "de": "Schriftliche oder filmische Gebrauchsanleitung"
+    },
+    "description": "Instruction in written or cinematic form",
+    "properties": {
+        "required_predecessor": {
+            "type": "array",
+            "title": "Prerequisites (required)",
+            "title*": {
+                "de": "Voraussetzungen (notwendig)"
+            },
+            "items": {
+                "type": "string",
+                "title": "Prerequisite",
+                "title*": {
+                    "de": "Voraussetzung"
+                },
+                "format": "autocomplete",
+                "options": {
+                    "autocomplete": {
+                        "category": "Category:OSW494f660e6a714a1a9681c517bbb975da"
+                    }
+                }
+            }
+        },
+        "optional_predecessor": {
+            "type": "array",
+            "title": "Prerequisites (optional)",
+            "title*": {
+                "de": "Voraussetzungen (optional)"
+            },
+            "items": {
+                "type": "string",
+                "title": "Prerequisite",
+                "title*": {
+                    "de": "Voraussetzung"
+                },
+                "format": "autocomplete",
+                "options": {
+                    "autocomplete": {
+                        "category": "Category:OSW494f660e6a714a1a9681c517bbb975da"
+                    }
+                }
+            }
+        },
+        "recommended_successor": {
+            "type": "array",
+            "title": "Follow-up (recommended)",
+            "title*": {
+                "de": "Nachfolge-Lerneinheit (empfohlen)"
+            },
+            "items": {
+                "type": "string",
+                "title": "Follow-up",
+                "title*": {
+                    "de": "Nachfolge-Lerneinheit"
+                },
+                "format": "autocomplete",
+                "options": {
+                    "autocomplete": {
+                        "category": "Category:OSW494f660e6a714a1a9681c517bbb975da"
+                    }
+                }
+            }
+        }
+    }
+}
