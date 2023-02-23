@@ -24,10 +24,12 @@
     ],
     "title": "Tutorial",
     "title*": {
-        "de": "Tutorium"
+        "de": "Tutorium",
+        "en": "Tutorial"
     },
     "description*": {
-        "de": "Schriftliche oder filmische Gebrauchsanleitung"
+        "de": "Schriftliche oder filmische Gebrauchsanleitung",
+        "en": "Instruction in written or cinematic form"
     },
     "description": "Instruction in written or cinematic form",
     "properties": {
@@ -91,5 +93,6 @@
                 }
             }
         }
-    }
+    },
+    "uuid": "494f660e-6a71-4a1a-9681-c517bbb975da"
 }

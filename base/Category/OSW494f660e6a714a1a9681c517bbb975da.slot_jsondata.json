@@ -1,8 +1,15 @@
 {
+    "type": [
+        "Category:Category"
+    ],
     "subclass_of": [
         "Category:OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26"
     ],
+    "utf8_icon": [
+        "\ud83c\udf93"
+    ],
     "uuid": "494f660e-6a71-4a1a-9681-c517bbb975da",
+    "name": "Tutorial",
     "label": [
         {
             "text": "Tutorial",
@@ -22,6 +29,5 @@
             "text": "Schriftliche oder filmische Gebrauchsanleitung",
             "lang": "de"
         }
-    ],
-    "name": "Tutorial"
+    ]
 }
