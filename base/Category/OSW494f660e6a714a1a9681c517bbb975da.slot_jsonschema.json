@@ -39,6 +39,11 @@
             "title*": {
                 "de": "Voraussetzungen (notwendig)"
             },
+            "eval_template": {
+                "type": "mustache",
+                "mode": "render",
+                "value": "{{#required_predecessor}}[[{{{.}}}]]<br>{{/required_predecessor}}"
+            },
             "items": {
                 "type": "string",
                 "title": "Prerequisite",
@@ -59,6 +64,11 @@
             "title*": {
                 "de": "Voraussetzungen (optional)"
             },
+            "eval_template": {
+                "type": "mustache",
+                "mode": "render",
+                "value": "{{#optional_predecessor}}[[{{{.}}}]]<br>{{/optional_predecessor}}"
+            },
             "items": {
                 "type": "string",
                 "title": "Prerequisite",
@@ -78,6 +88,11 @@
             "title": "Follow-up (recommended)",
             "title*": {
                 "de": "Nachfolge-Lerneinheit (empfohlen)"
+            },
+            "eval_template": {
+                "type": "mustache",
+                "mode": "render",
+                "value": "{{#recommended_successor}}[[{{{.}}}]]<br>{{/recommended_successor}}"
             },
             "items": {
                 "type": "string",

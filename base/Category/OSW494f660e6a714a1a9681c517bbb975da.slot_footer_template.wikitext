@@ -1,6 +1,6 @@
 
 == Tutorial Graph ==
-{{Template:ELN/Editor/Graph
+{{Template:Editor/Graph
 | file_name = graph-01
 | page_name = {{FULLPAGENAME}}
 | root = {{FULLPAGENAME}}
