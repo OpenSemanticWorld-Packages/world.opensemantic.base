@@ -1,0 +1,33 @@
+{
+    "type": [
+        "Category:Category"
+    ],
+    "subclass_of": [
+        "Category:Item"
+    ],
+    "utf8_icon": [
+        "\ud83d\udcd1"
+    ],
+    "uuid": "a5812d3b-5119-416c-8da1-606cbe7054eb",
+    "name": "Term",
+    "label": [
+        {
+            "text": "Term",
+            "lang": "en"
+        },
+        {
+            "text": "Begriff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Definition of a noun or compound word describing a specific concept",
+            "lang": "en"
+        },
+        {
+            "text": "Definition eines Ausdruckes der ein spezifisches Konzept repr\u00e4sentiert",
+            "lang": "de"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "@context": [
+        "/wiki/Category:Item?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "a5812d3b-5119-416c-8da1-606cbe7054eb",
+    "title": "Term",
+    "title*": {
+        "en": "Term",
+        "de": "Begriff"
+    },
+    "description": "Definition of a noun or compound word describing a specific concept",
+    "description*": {
+        "en": "Definition of a noun or compound word describing a specific concept",
+        "de": "Definition eines Ausdruckes der ein spezifisches Konzept repr\u00e4sentiert"
+    }
+}
