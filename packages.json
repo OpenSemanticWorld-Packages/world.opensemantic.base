@@ -11,7 +11,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Event, Recipe",
-            "version": "0.2.3",
+            "version": "0.3.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -117,6 +117,66 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWa5812d3b5119416c8da1606cbe7054eb.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW2ac4493f8635481eaf1db961b63c8325",
+                    "label": "Data",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW2ac4493f8635481eaf1db961b63c8325.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW2ac4493f8635481eaf1db961b63c8325.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW2ac4493f8635481eaf1db961b63c8325.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW2ac4493f8635481eaf1db961b63c8325.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW2ac4493f8635481eaf1db961b63c8325.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWfe72974590fd4e8ba94cd4e8366375e8",
+                    "label": "Dataset",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWfe72974590fd4e8ba94cd4e8366375e8.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWfe72974590fd4e8ba94cd4e8366375e8.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWfe72974590fd4e8ba94cd4e8366375e8.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWfe72974590fd4e8ba94cd4e8366375e8.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWfe72974590fd4e8ba94cd4e8366375e8.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWff333fd349af4f65a69100405a9e60c7",
+                    "label": "File",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWff333fd349af4f65a69100405a9e60c7.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWff333fd349af4f65a69100405a9e60c7.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWff333fd349af4f65a69100405a9e60c7.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWff333fd349af4f65a69100405a9e60c7.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWff333fd349af4f65a69100405a9e60c7.slot_jsonschema.json"
                         }
                     }
                 }
