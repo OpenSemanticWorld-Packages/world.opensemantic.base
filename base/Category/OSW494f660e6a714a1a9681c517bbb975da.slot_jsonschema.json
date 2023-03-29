@@ -107,7 +107,15 @@
                     }
                 }
             }
+        },
+        "type": {
+            "default": [
+                "Category:OSW494f660e6a714a1a9681c517bbb975da"
+            ]
         }
     },
-    "uuid": "494f660e-6a71-4a1a-9681-c517bbb975da"
+    "uuid": "494f660e-6a71-4a1a-9681-c517bbb975da",
+    "required": [
+        "type"
+    ]
 }

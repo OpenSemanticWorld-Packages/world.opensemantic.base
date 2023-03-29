@@ -2,7 +2,8 @@
     "publisher": "OpenSemanticWorld",
     "publisherURL": "https://github.com/OpenSemanticWorld-Packages/world.opensemantic.base",
     "author": [
-        "Simon Stier"
+        "Simon Stier",
+        "Lukas Gold"
     ],
     "language": "en",
     "licenseName": "CC BY-NC 4.0",
@@ -11,7 +12,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Event, Recipe",
-            "version": "0.4.0",
+            "version": "0.5.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -197,6 +198,59 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWff333fd349af4f65a69100405a9e60c7.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW3d238d05316e45a4ac95a11d7b24e36b",
+                    "label": "Location",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW3d238d05316e45a4ac95a11d7b24e36b.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW3d238d05316e45a4ac95a11d7b24e36b.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW3d238d05316e45a4ac95a11d7b24e36b.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW3d238d05316e45a4ac95a11d7b24e36b.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW3d238d05316e45a4ac95a11d7b24e36b.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW3d238d05316e45a4ac95a11d7b24e36b.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "Category-OSW3d238d05316e45a4ac95a11d7b24e36b-location-class-diagram.drawio.svg",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/Category-OSW3d238d05316e45a4ac95a11d7b24e36b-location-class-diagram.drawio.svg.slot_main.wikitext",
+                    "fileURLPath": "File/Category-OSW3d238d05316e45a4ac95a11d7b24e36b-location-class-diagram.drawio.svg",
+                    "slots": {}
+                },
+                {
+                    "name": "OSW473d7a1ed48544d1be83b258b5810948",
+                    "label": "Site",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_jsonschema.json"
                         }
                     }
                 }

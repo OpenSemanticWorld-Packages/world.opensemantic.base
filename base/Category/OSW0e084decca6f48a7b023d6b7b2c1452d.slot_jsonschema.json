@@ -128,6 +128,14 @@
             "title*": {
                 "de": "Ort (Bezeichnung)"
             }
+        },
+        "type": {
+            "default": [
+                "Category:OSW0e084decca6f48a7b023d6b7b2c1452d"
+            ]
         }
-    }
+    },
+    "required": [
+        "type"
+    ]
 }

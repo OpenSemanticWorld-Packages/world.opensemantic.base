@@ -15,5 +15,15 @@
         "de": "Datei"
     },
     "description": "",
-    "description*": {}
+    "description*": {},
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWff333fd349af4f65a69100405a9e60c7"
+            ]
+        }
+    }
 }

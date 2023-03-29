@@ -46,6 +46,11 @@
             "default": [
                 ""
             ]
+        },
+        "type": {
+            "default": [
+                "Category:OSWfe72974590fd4e8ba94cd4e8366375e8"
+            ]
         }
     },
     "title": "Dataset",
@@ -55,5 +60,8 @@
             "type": "object",
             "$ref": "/wiki/Category:OSW2ac4493f8635481eaf1db961b63c8325?action=raw&slot=jsonschema"
         }
+    ],
+    "required": [
+        "type"
     ]
 }
