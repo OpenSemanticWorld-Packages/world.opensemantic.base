@@ -1,0 +1,13 @@
+{
+    "uuid": "b2d7e6a2-eff9-4c82-b7f1-f2699d5b0ee3",
+    "label": [
+        {
+            "text": "Project",
+            "lang": "en"
+        }
+    ],
+    "subclass_of": [
+        "Category:Item"
+    ],
+    "name": "Project"
+}

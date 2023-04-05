@@ -27,5 +27,14 @@
     "description*": {
         "de": "Ein allgemeiner Eintrag der sowohl Text als auch Medieninhalte enthalten kann"
     },
-    "properties": {}
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26"
+            ]
+        }
+    },
+    "required": [
+        "type"
+    ]
 }

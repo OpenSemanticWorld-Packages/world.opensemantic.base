@@ -21,10 +21,6 @@
     "type": "object",
     "allOf": [
         {
-            "type": "object",
-            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
-        },
-        {
             "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
         }
     ],

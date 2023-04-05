@@ -1,0 +1,482 @@
+{
+    "@context": [
+        "/wiki/Category:Item?action=raw&slot=jsonschema",
+        {
+            "abbreviation": "Property:HasAbbreviation",
+            "competence": "Property:HasCompetence",
+            "deputy_manager": "Property:HasDeputyManager",
+            "mailing_list": "Property:HasMailingList",
+            "manager": "Property:HasManager",
+            "secretary": "Property:HasSecretary",
+            "superordinate_ou": "Property:HasSuperordinateOu",
+            "topic": "Property:HasTopic",
+            "website": "Property:HasWebsite",
+            "phone_number": "Property:HasPhoneNumber",
+            "fax_number": "Property:HasFaxNumber",
+            "email": "Property:HasEmail",
+            "image": "Property:HasLogo",
+            "member_of": "Property:IsMemberOf",
+            "site": "Property:IsLocatedIn",
+            "city": "Property:HasCity",
+            "country": "Property:HasCountry",
+            "house_no": "Property:HasHouseNo",
+            "postal_address": "Property:HasPostalAddress",
+            "postal_code": "Property:HasPostalCode",
+            "post_office_box_no": "Property:HasPoBoxNo",
+            "region": "Property:HasRegion",
+            "state": "Property:HasState",
+            "street_name": "Property:HasStreet"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+        }
+    ],
+    "title": "OrganizationalUnit",
+    "title*": {
+        "de": "Organisationseinheit"
+    },
+    "uuid": "3cb8cef2-225e-4030-92f0-98f99bc4c472",
+    "id": "OSW3cb8cef2225e403092f098f99bc4c472",
+    "type": "object",
+    "description": "Building block of the organizational structure of an organization",
+    "description*": {
+        "en": "Building block of the organizational structure of an organization",
+        "de": "Baustein der Aufbauorganisation einer Organisation"
+    },
+    "defaultProperties": [
+        "uuid",
+        "label",
+        "abbreviation",
+        "deputy_manager",
+        "mailing_list",
+        "manager",
+        "secretary",
+        "superordinate_ou",
+        "topic",
+        "website",
+        "phone_number",
+        "fax_number",
+        "email",
+        "image",
+        "member_of",
+        "postal_address"
+    ],
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "abbreviation": {
+            "title": "Acronym",
+            "title*": {
+                "de": "Akronym"
+            },
+            "description": "Acronym of the organizational unit.",
+            "description*": {
+                "de": "Akronym der Organisationseinheit."
+            },
+            "type": "string"
+        },
+        "competence": {
+            "title": "Competence(s)",
+            "title*": {
+                "de": "Kompetenz(en)"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[Category:OSW5eb9c52b804544dc870dfd54ff434428]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "uniqueItems": true,
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "deputy_manager": {
+            "title": "Deputy manager",
+            "title*": {
+                "en": "Deputy manager",
+                "de": "Stellvertretende:r Manager:in"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[Category:OSW44deaa5b806d41a2a88594f562b110e9]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "image": {
+            "title": "Logo",
+            "title*": {
+                "de": "Logo"
+            }
+        },
+        "mailing_list": {
+            "title": "Mailing list",
+            "title*": {
+                "en": "Mailing list",
+                "de": "E-Mail-Verteiler"
+            },
+            "description": "Mailing list of the organizational unit.",
+            "description*": {
+                "en": "Mailing list of the organizational unit.",
+                "de": "Mailingliste der Organisationseinheit."
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "email"
+            }
+        },
+        "manager": {
+            "title": "Manager",
+            "title*": {
+                "en": "Manager",
+                "de": "Manager:in"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[Category:OSW44deaa5b806d41a2a88594f562b110e9]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "member_of": {
+            "title": "Member of",
+            "title*": {
+                "en": "Member of",
+                "de": "Mitglied in"
+            },
+            "description": "The organization this organization is a member of.",
+            "description*": {
+                "en": "The organization this organization is a member of.",
+                "de": "Die Organisation, der diese Organisation angeh\u00f6rt."
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[Category:OSW1969007d5acf40539642877659a02c23]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "secretary": {
+            "title": "Secretary",
+            "title*": {
+                "en": "Secretary",
+                "de": "Sekret\u00e4r:in"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[Category:OSW44deaa5b806d41a2a88594f562b110e9]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "postal_address": {
+            "eval_template": {
+                "type": "wikitext",
+                "mode": "render",
+                "value": "{{{street_name|}}} {{{house_no|}}}, {{{postal_code|}}} {{{city|}}}, {{{country|}}}"
+            },
+            "required": [
+                "uuid"
+            ],
+            "defaultProperties": [
+                "uuid",
+                "street_name",
+                "house_no",
+                "postal_code",
+                "city",
+                "country"
+            ],
+            "properties": {
+                "uuid": {
+                    "type": "string",
+                    "format": "uuid",
+                    "options": {
+                        "hidden": true
+                    }
+                },
+                "country": {
+                    "title": "Country",
+                    "title*": {
+                        "en": "Country",
+                        "de": "Land"
+                    },
+                    "type": "string"
+                },
+                "state": {
+                    "title": "State",
+                    "title*": {
+                        "en": "State",
+                        "de": "Bundesland"
+                    },
+                    "type": "string"
+                },
+                "region": {
+                    "title": "Region",
+                    "title*": {
+                        "en": "Region",
+                        "de": "Region"
+                    },
+                    "type": "string"
+                },
+                "post_office_box_no": {
+                    "title": "PO box number",
+                    "title*": {
+                        "en": "PO box number",
+                        "de": "Postfach nummer"
+                    },
+                    "type": "number"
+                },
+                "postal_code": {
+                    "title": "Postal code",
+                    "title*": {
+                        "en": "Postal code",
+                        "de": "Postleitzahl"
+                    },
+                    "type": "string"
+                },
+                "city": {
+                    "title": "City",
+                    "title*": {
+                        "en": "City",
+                        "de": "Stadt"
+                    },
+                    "type": "string"
+                },
+                "street_name": {
+                    "title": "Street",
+                    "title*": {
+                        "en": "Street",
+                        "de": "Stra\u00dfe"
+                    },
+                    "type": "string"
+                },
+                "house_no": {
+                    "title": "House number",
+                    "title*": {
+                        "en": "House number",
+                        "de": "Hausnummer"
+                    },
+                    "type": "string"
+                }
+            },
+            "title": "Postal address",
+            "title*": {
+                "en": "Postal address",
+                "de": "Postalische Adresse"
+            },
+            "type": "object",
+            "description": ""
+        },
+        "site": {
+            "title": "Site",
+            "title*": {
+                "en": "Site",
+                "de": "Standort"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "type": "string",
+                "oneOf": [
+                    {
+                        "title": "Entry with autocomplete",
+                        "title*": {
+                            "de": "Eintrag mit Autocomplete"
+                        },
+                        "format": "autocomplete",
+                        "query": "[[Category:OSW473d7a1ed48544d1be83b258b5810948]] |?Display_title_of=label",
+                        "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
+                        "labelTemplate": "{{result.printouts.label.[0]}}"
+                    },
+                    {
+                        "title": "Free text entry",
+                        "title*": {
+                            "de": "Freitext-Eintrag"
+                        },
+                        "format": "string"
+                    }
+                ]
+            },
+            "uniqueItems": true,
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "superordinate_ou": {
+            "title": "Superordinate OU",
+            "title*": {
+                "en": "Superordinate OU",
+                "de": "\u00dcbergeordnete OE"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[Category:OSW3cb8cef2225e403092f098f99bc4c472]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "topic": {
+            "title": "Topic(s)",
+            "title*": {
+                "de": "Thema/en"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[Category:OSW5a13eeda5ed5405ea7ef62ea6feeceec]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "uniqueItems": true,
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "website": {
+            "title": "Website",
+            "title*": {
+                "de": "Webseite"
+            },
+            "eval_template": {
+                "type": "mustache-wikitext",
+                "mode": "render",
+                "value": "{{#website}}{{{.}}} <br>{{/website}}"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "uri"
+            },
+            "uniqueItems": true
+        },
+        "email": {
+            "title": "Email address",
+            "title*": {
+                "de": "E-Mail"
+            },
+            "eval_template": {
+                "type": "mustache-wikitext",
+                "mode": "render",
+                "value": "{{#email}}[mailto:{{.}} {{.}}] <br>{{/email}}"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "email"
+            },
+            "uniqueItems": true
+        },
+        "phone_number": {
+            "title": "Phone number",
+            "title*": {
+                "de": "Telefonnummer"
+            },
+            "description": "Phone number formatted with country code and hyphens, e.g.. +49-931-4100-172. According to https://www.wikidata.org/wiki/Property:P1329",
+            "description*": {
+                "de": "Telefonnummer mit Landesvorwahl und Bindestrichen formatiert, z.B.. +49-931-4100-172. Entsprechend https://www.wikidata.org/wiki/Property:P1329"
+            },
+            "eval_template": {
+                "type": "mustache-wikitext",
+                "mode": "render",
+                "value": "{{#phone_number}}[tel:{{.}} {{.}}] <br>{{/phone_number}}"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "pattern": "(?:(?:(?:\\+|00|011)[\\.\\/\\-\\ \\t]*([17]|2(?:[07]|[1-689]\\d)|3(?:[0-4679]|[578]\\d)|4(?:[013-9]|2\\d)|5(?:[1-8]|[09]\\d)|6(?:[0-6]|[789]\\d)|8(?:[1246]|[035789]\\d)|9(?:[0-58]|[679]\\d))[\\.\\/\\-\\ \\t]*|([17])[\\.\\/\\-\\ ])?(?:\\((\\d{1,6})\\)[\\.\\/\\-\\ \\t]*)?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(\\d{0,10}?)(\\d{1,})(?:[\\.\\/\\-;\\ \\t]*e?xt?[\\.\\/\\-=\\ \\t]*(\\d{1,14}))?)?"
+            },
+            "uniqueItems": true
+        },
+        "fax_number": {
+            "title": "Fax number",
+            "title*": {
+                "de": "Faxnummer"
+            },
+            "description": "Fax number formatted with country code and hyphens, e.g.. +49-931-4100-172. According to https://www.wikidata.org/wiki/Property:P1329",
+            "description*": {
+                "de": "Faxnummer mit Landesvorwahl und Bindestrichen formatiert, z.B.. +49-931-4100-172. Entsprechend https://www.wikidata.org/wiki/Property:P1329"
+            },
+            "eval_template": {
+                "type": "mustache-wikitext",
+                "mode": "render",
+                "value": "{{#fax_number}}[tel:{{.}} {{.}}] <br>{{/fax_number}}"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "pattern": "(?:(?:(?:\\+|00|011)[\\.\\/\\-\\ \\t]*([17]|2(?:[07]|[1-689]\\d)|3(?:[0-4679]|[578]\\d)|4(?:[013-9]|2\\d)|5(?:[1-8]|[09]\\d)|6(?:[0-6]|[789]\\d)|8(?:[1246]|[035789]\\d)|9(?:[0-58]|[679]\\d))[\\.\\/\\-\\ \\t]*|([17])[\\.\\/\\-\\ ])?(?:\\((\\d{1,6})\\)[\\.\\/\\-\\ \\t]*)?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(\\d{0,10}?)(\\d{1,})(?:[\\.\\/\\-;\\ \\t]*e?xt?[\\.\\/\\-=\\ \\t]*(\\d{1,14}))?)?"
+            },
+            "uniqueItems": true
+        },
+        "type": {
+            "default": [
+                "Category:OSW3cb8cef2225e403092f098f99bc4c472"
+            ]
+        }
+    }
+}
