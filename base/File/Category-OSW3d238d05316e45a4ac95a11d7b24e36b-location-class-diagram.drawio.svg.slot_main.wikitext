@@ -1,0 +1,4 @@
+{{OslTemplate:LIMS/File/Instance
+|creation_page=Category:OSW3d238d05316e45a4ac95a11d7b24e36b
+|creator=User:Lukas Gold
+}}

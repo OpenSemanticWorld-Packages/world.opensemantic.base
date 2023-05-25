@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+        }
+    ],
+    "title": "RoomUsageType",
+    "required": [
+        "type"
+    ],
+    "@context": [
+        {
+            "pitfm_label": "Property:HasPitfmLabel"
+        }
+    ],
+    "properties": {
+        "pitfm_label": {
+            "title": "pitFM label",
+            "title*": {
+                "de": "pitFM-Label"
+            },
+            "desciption": "Label of the title in pitFM",
+            "description*": {
+                "de": "Label des Titels im pitFM"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string"
+            }
+        },
+        "type": {
+            "default": [
+                "Category:OSWae92be81cdb34d22844d4791ef790d93"
+            ]
+        }
+    }
+}
