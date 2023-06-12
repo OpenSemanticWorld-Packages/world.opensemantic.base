@@ -10,8 +10,7 @@
             "end_date*": "Property:HasEndDateAndTime",
             "end_date_min*": "Property:HasEndDateAndTime",
             "end_date_max*": "Property:HasEndDateAndTime",
-            "location_name": "schema:location",
-            "url": "schema:url"
+            "location_name": "schema:location"
         }
     ],
     "type": "object",
@@ -129,15 +128,6 @@
             "title*": {
                 "de": "Ort (Bezeichnung)"
             }
-        },
-        "url": {
-            "title": "URL",
-            "description": "Link to the event homepage",
-            "description*": {
-                "de": "Link zur Event Homepage"
-            },
-            "type": "string",
-            "format": "url"
         },
         "type": {
             "default": [
