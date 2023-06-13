@@ -13,7 +13,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Event, Recipe",
-            "version": "0.6.0",
+            "version": "0.7.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -119,26 +119,6 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWa5812d3b5119416c8da1606cbe7054eb.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "OSW57beed5e1294434ba77bb6516e461456",
-                    "label": "OntologyTerm",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_jsonschema.json"
                         }
                     }
                 },
