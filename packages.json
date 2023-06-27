@@ -13,7 +13,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.7.1",
+            "version": "0.8.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -153,6 +153,29 @@
                     "slots": {}
                 },
                 {
+                    "name": "OSW77e749fc598341ac8b6d2fff21574058",
+                    "label": "Software",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW77e749fc598341ac8b6d2fff21574058.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW77e749fc598341ac8b6d2fff21574058.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW77e749fc598341ac8b6d2fff21574058.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW77e749fc598341ac8b6d2fff21574058.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW77e749fc598341ac8b6d2fff21574058.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW77e749fc598341ac8b6d2fff21574058.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
                     "name": "OSW473d7a1ed48544d1be83b258b5810948",
                     "label": "Site",
                     "namespace": "NS_CATEGORY",
@@ -267,6 +290,26 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWd22af0aa3b00462a9da9b509538e8926",
+                    "label": "FundingCall",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_jsonschema.json"
                         }
                     }
                 }
