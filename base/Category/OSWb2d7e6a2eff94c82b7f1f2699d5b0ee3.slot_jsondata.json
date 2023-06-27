@@ -1,13 +1,19 @@
 {
+    "type": [
+        "Category:Category"
+    ],
+    "subclass_of": [
+        "Category:Item"
+    ],
     "uuid": "b2d7e6a2-eff9-4c82-b7f1-f2699d5b0ee3",
+    "name": "Project",
     "label": [
         {
             "text": "Project",
             "lang": "en"
         }
     ],
-    "subclass_of": [
-        "Category:Item"
-    ],
-    "name": "Project"
+    "utf8_icon": [
+        "\ud83d\udcb0"
+    ]
 }

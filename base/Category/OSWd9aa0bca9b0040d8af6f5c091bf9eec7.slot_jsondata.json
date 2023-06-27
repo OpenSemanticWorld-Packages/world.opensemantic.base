@@ -33,5 +33,8 @@
             "lang": "en"
         }
     ],
-    "name": "User"
+    "name": "User",
+    "type": [
+        "Category:Category"
+    ]
 }

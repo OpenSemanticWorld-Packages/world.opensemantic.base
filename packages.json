@@ -12,8 +12,8 @@
         "OSW Base": {
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
-            "description": "Provides base items like Article, Event, Recipe",
-            "version": "0.7.0",
+            "description": "Provides base items like Article, Person, Project",
+            "version": "0.7.1",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
