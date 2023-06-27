@@ -4,6 +4,8 @@
             "subjects": "Property:HasTopic",
             "project_type": "Property:HasType",
             "grantor": "Property:HasGrantor",
+            "funding_call": "Property:HasFundingCall",
+            "grant_id": "Property:HasGrantId",
             "start_date": "Property:HasStartDate",
             "end_date": "Property:HasEndDate",
             "total_budget": "Property:HasBudget",
@@ -22,7 +24,8 @@
             "project_manager": "Property:HasManager",
             "member": "Property:HasMember",
             "ou": "Property:HasBusinessUnit"
-        }
+        },
+        "/wiki/Category:Item?action=raw&slot=jsonschema"
     ],
     "properties": {
         "subjects": {
@@ -70,12 +73,31 @@
                 }
             }
         },
+        "funding_call": {
+            "title": "Funding call",
+            "title*": {
+                "de": "F\u00f6rderaufruf"
+            },
+            "type": "string",
+            "options": {
+                "autocomplete": {
+                    "category": "Category:OSWd22af0aa3b00462a9da9b509538e8926"
+                }
+            }
+        },
         "grantor": {
             "title": "Grantor",
             "type": "string",
             "title*": {
                 "de": "F\u00f6rder- bzw. Auftragsgeber"
             }
+        },
+        "grant_id": {
+            "title": "Grant ID",
+            "title*": {
+                "de": "F\u00f6rderkennzeichen"
+            },
+            "type": "string"
         },
         "ou": {
             "title": "OU",
@@ -375,5 +397,11 @@
     "title": "Project",
     "required": [
         "type"
-    ]
+    ],
+    "uuid": "b2d7e6a2-eff9-4c82-b7f1-f2699d5b0ee3",
+    "title*": {
+        "en": "Project"
+    },
+    "description": "",
+    "description*": {}
 }
