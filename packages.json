@@ -13,7 +13,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.8.0",
+            "version": "0.9.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -310,6 +310,57 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWf474ec34b7df451ea8356134241aef8a",
+                    "label": "Done",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWf474ec34b7df451ea8356134241aef8a.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWf474ec34b7df451ea8356134241aef8a.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWf474ec34b7df451ea8356134241aef8a.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWf474ec34b7df451ea8356134241aef8a.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWa2b4567ad4874ea1b9adfed19a3d06d1",
+                    "label": "InWork",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWa2b4567ad4874ea1b9adfed19a3d06d1.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWa2b4567ad4874ea1b9adfed19a3d06d1.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWa2b4567ad4874ea1b9adfed19a3d06d1.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWa2b4567ad4874ea1b9adfed19a3d06d1.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWaa8d29404288446a9f3ec7afa4e2a512",
+                    "label": "ToDo",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWaa8d29404288446a9f3ec7afa4e2a512.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWaa8d29404288446a9f3ec7afa4e2a512.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWaa8d29404288446a9f3ec7afa4e2a512.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWaa8d29404288446a9f3ec7afa4e2a512.slot_jsondata.json"
                         }
                     }
                 }
