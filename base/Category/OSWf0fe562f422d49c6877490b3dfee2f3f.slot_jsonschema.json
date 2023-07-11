@@ -1,0 +1,27 @@
+{
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWf0fe562f422d49c6877490b3dfee2f3f"
+            ]
+        }
+    },
+    "title": "Device",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWe427aafafbac4262955b9f690a83405d?action=raw&slot=jsonschema"
+        }
+    ],
+    "uuid": "f0fe562f-422d-49c6-8774-90b3dfee2f3f",
+    "title*": {
+        "en": "Device"
+    },
+    "description": "A Tool that is a (phyiscal) piece of Hardware.",
+    "description*": {
+        "en": "A Tool that is a (phyiscal) piece of Hardware."
+    },
+    "required": [
+        "type"
+    ]
+}

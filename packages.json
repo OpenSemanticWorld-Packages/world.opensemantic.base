@@ -13,7 +13,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.9.0",
+            "version": "0.10.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -153,6 +153,49 @@
                     "slots": {}
                 },
                 {
+                    "name": "OSWf0fe562f422d49c6877490b3dfee2f3f",
+                    "label": "Device",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW02590972aeba46d7864ed492c0c11384",
+                    "label": "Host",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW02590972aeba46d7864ed492c0c11384.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW02590972aeba46d7864ed492c0c11384.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW02590972aeba46d7864ed492c0c11384.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW02590972aeba46d7864ed492c0c11384.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW02590972aeba46d7864ed492c0c11384.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW02590972aeba46d7864ed492c0c11384.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
                     "name": "OSW77e749fc598341ac8b6d2fff21574058",
                     "label": "Software",
                     "namespace": "NS_CATEGORY",
@@ -172,6 +215,29 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW77e749fc598341ac8b6d2fff21574058.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW8c56fd1e858f499da801691c5f2b7309",
+                    "label": "WebService",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_jsonschema.json"
                         }
                     }
                 },
