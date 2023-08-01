@@ -1,0 +1,31 @@
+
+==[[:Category:OSW20691106529a419d829f3d057b99f3e1|Categories]] (Process / Idea Level)==
+<!--{{OslTemplate:LIMS/Common/Link |Create|Device|Category}} -->
+<div class="pagebot-button" data-config='{  "params": {"categories": ["Category:OSW20691106529a419d829f3d057b99f3e1"]},    "label": "➕ Create Device Category" }'></div>
+<br>
+{{#ask: [[Category:OSW20691106529a419d829f3d057b99f3e1]]
+|?HasTypicalProcess = Typical Process
+|format=datatable
+}}
+==[[:Category:OSWbeec89bdcbc64d8f90a459ba19c46dcc|Types]] (Manufacturer Level) ==
+<!--{{OslTemplate:LIMS/Common/Link |Create|Device|Type}} -->
+<div class="pagebot-button" data-config='{    "params": {"categories": ["Category:OSWbeec89bdcbc64d8f90a459ba19c46dcc"]},    "label": "➕ Create Device Type" }'></div>
+<br>
+{{#ask: [[Category:OSWbeec89bdcbc64d8f90a459ba19c46dcc]]
+|?HasDeviceCategory=Device Category
+|format=datatable
+}}
+
+
+==[[:Category:OSW0dfdf90326584d0485b5fa8324f0de1a|Instances]] (Actual devices)==  
+<!--{{OslTemplate:LIMS/Common/Link |Create|Device|Instance}} -->
+<div class="pagebot-button" data-config='{    "params": {"categories": ["Category:OSW0dfdf90326584d0485b5fa8324f0de1a"]},    "label": "➕ Create Device Instance" }'></div>
+<br>
+{{#ask: [[Category:OSW0dfdf90326584d0485b5fa8324f0de1a]]
+|?HasDeviceType=Device Type
+|format=datatable
+}}
+
+
+=== Device Graph ===
+<div style="width: 100%;" class="InteractiveSemanticGraph">{ "root":"Category:OSW20691106529a419d829f3d057b99f3e1", "properties":["-HasSchema","-HasDeviceCategory","-HasDeviceType"], "permalink":true, "depth":5, "edit": true}</div>

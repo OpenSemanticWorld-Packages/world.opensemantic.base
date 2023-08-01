@@ -1,0 +1,33 @@
+{
+    "uuid": "d9b53356-9a92-51ab-a475-1f19f78c9c9a",
+    "name": "PersonClassDiagram",
+    "label": [
+        {
+            "text": "Person class diagram",
+            "lang": "en"
+        }
+    ],
+    "short_name": null,
+    "query_label": null,
+    "description": null,
+    "image": null,
+    "based_on": null,
+    "statements": null,
+    "attachments": null,
+    "type": [
+        "Category:OSW11a53cdfbdc24524bf8ac435cbf65d9d"
+    ],
+    "entry_access": null,
+    "creator": [
+        "Lukas Gold"
+    ],
+    "editor": [
+        "Lukas Gold"
+    ],
+    "creation_context": [
+        "Category:OSW44deaa5b806d41a2a88594f562b110e9"
+    ],
+    "editing_context": [
+        "Category:OSW44deaa5b806d41a2a88594f562b110e9"
+    ]
+}

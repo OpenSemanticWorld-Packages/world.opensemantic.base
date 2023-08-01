@@ -3,7 +3,6 @@
         {
             "username": "Property:HasUsername",
             "room": "Property:HasRoom",
-            "abbreviation": "Property:HasAbbreviation",
             "superior": "Property:HasSuperior"
         }
     ],
@@ -18,20 +17,9 @@
             "title*": {
                 "de": "Nutzername"
             },
-            "desciption": "Fraunhofer user ID",
+            "description": "Organization user ID",
             "description*": {
-                "de": "Fraunhofer-User-ID"
-            },
-            "type": "string"
-        },
-        "abbreviation": {
-            "title": "Abbreviation",
-            "title*": {
-                "de": "K\u00fcrzel"
-            },
-            "desciption": "Fraunhofer abbreviation",
-            "description*": {
-                "de": "Fraunhofer-K\u00fcrzel"
+                "de": "Organization-User-ID"
             },
             "type": "string"
         },
@@ -40,7 +28,7 @@
             "title*": {
                 "de": "Raum"
             },
-            "desciption": "Office",
+            "description": "Office",
             "description*": {
                 "de": "B\u00fcro"
             },

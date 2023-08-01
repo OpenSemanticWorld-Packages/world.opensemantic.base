@@ -1,14 +1,22 @@
 {
     "@context": [
+        "/wiki/Category:Item?action=raw&slot=jsonschema",
         {
             "first_name": "Property:HasFirstName",
-            "middle_name": "Property:HasMiddleName",
-            "surname": "Property:HasSurname",
-            "organization": "Property:HasOrganization",
+            "first_name*": "schema:givenName",
+            "middle_name": "schema:additionalName",
+            "middle_name*": "Property:HasMiddleName",
+            "surname": "schema:familyName",
+            "surname*": "Property:HasSurname",
+            "organization": "schema:Organization",
+            "organization*": "Property:HasOrganization",
             "organizational_unit": "Property:HasOU",
-            "email": "Property:HasEmail",
-            "phone_number": "Property:HasPhoneNumber",
-            "fax_number": "Property:HasFaxNumber",
+            "email": "schema:email",
+            "email*": "Property:HasEmail",
+            "phone_number": "schema:telephone",
+            "phone_number*": "Property:HasPhoneNumber",
+            "fax_number": "schema:faxNumber",
+            "fax_number*": "Property:HasFaxNumber",
             "located_in": "Property:IsLocatedIn",
             "role": "Property:HasRole",
             "competence": "Property:HasCompetence",
@@ -346,6 +354,17 @@
             "default": [
                 ""
             ]
+        },
+        "rdf_type": {
+            "title": "RDF type",
+            "title*": {
+                "de": "RDF-Typ"
+            },
+            "type": "string",
+            "default": "schema:Person",
+            "options": {
+                "hidden": true
+            }
         },
         "type": {
             "default": [
