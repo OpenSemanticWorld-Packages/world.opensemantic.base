@@ -14,4 +14,4 @@
 {{Template:Viewer/Github/Code|url={{{readme|}}} }}<!-- display the Readme -->|
 {{#ifeq: {{#explode: {{#explode: {{#explode:{{{repository|}}}| |0}} |//|1}} |/|0}}|github.com|
 = Readme =
-{{Template:Viewer/Github/Code|url={{#explode:{{{repository|}}}| |0}}/blob/main/README.md| |0}} }}<!-- display the Readme of the first repo if it's a github repo -->|}} }}
+{{Template:Viewer/Github/Code|url={{#explode:{{{repository|}}}| |0}}/blob/main/README.md }}<!-- display the Readme of the first repo if it's a github repo -->|}} }}
