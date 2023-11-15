@@ -1,6 +1,12 @@
 {
+    "type": [
+        "Category:Category"
+    ],
     "subclass_of": [
         "Category:Item"
+    ],
+    "utf8_icon": [
+        "\ud83d\udcc6"
     ],
     "uuid": "0e084dec-ca6f-48a7-b023-d6b7b2c1452d",
     "name": "Event",
@@ -16,18 +22,12 @@
     ],
     "description": [
         {
-            "text": "e. g. a meeting or a conference",
+            "text": "An event, either local, remote or hybrid. E.g., a meeting or a conference. This element is intended to be used to document events. It is dedicated especially to notes, resolutions and tasks. For recurring events (series), the tasks should be managed there.",
             "lang": "en"
         },
         {
-            "text": "z. B. ein Meeting oder eine Konferenz",
+            "text": "Ein Ereignis, entweder lokal, remote oder hybrid. Z.B. eine Besprechung oder eine Konferenz. Dieses Element ist f\u00fcr die Dokumentation von Ereignissen gedacht. Es ist insbesondere f\u00fcr Notizen, Beschl\u00fcsse und Aufgaben vorgesehen. Bei wiederkehrenden Ereignissen (Serien) sollten die Aufgaben dort verwaltet werden.",
             "lang": "de"
         }
-    ],
-    "utf8_icon": [
-        "\ud83d\udcc6"
-    ],
-    "type": [
-        "Category:Category"
     ]
 }

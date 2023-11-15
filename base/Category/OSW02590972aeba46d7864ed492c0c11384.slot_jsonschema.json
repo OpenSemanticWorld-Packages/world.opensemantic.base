@@ -1,7 +1,7 @@
 {
     "@context": [
         {
-            "ip4_address": "Property:HasIp4Adress",
+            "ip4_address": "Property:HasIp4Address",
             "network_domain": "Property:HasNetworkDomain"
         }
     ],
@@ -9,7 +9,6 @@
     "type": "object",
     "allOf": [
         {
-            "type": "object",
             "$ref": "/wiki/Category:OSWf0fe562f422d49c6877490b3dfee2f3f?action=raw&slot=jsonschema"
         }
     ],

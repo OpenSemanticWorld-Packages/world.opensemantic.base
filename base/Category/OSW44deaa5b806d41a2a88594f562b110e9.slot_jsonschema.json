@@ -10,7 +10,7 @@
             "surname*": "Property:HasSurname",
             "organization": "schema:Organization",
             "organization*": "Property:HasOrganization",
-            "organizational_unit": "Property:HasOU",
+            "organizational_unit": "Property:HasOu",
             "email": "schema:email",
             "email*": "Property:HasEmail",
             "phone_number": "schema:telephone",
@@ -379,7 +379,6 @@
     "type": "object",
     "allOf": [
         {
-            "type": "object",
             "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
         }
     ]

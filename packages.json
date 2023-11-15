@@ -13,7 +13,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.13.1",
+            "version": "0.14.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -73,6 +73,9 @@
                         },
                         "header": {
                             "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_header_template.wikitext"
                         },
                         "jsondata": {
                             "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_jsondata.json"
@@ -200,6 +203,24 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWd33c9f1b89bf4b51b6fd9c3bcae0bc6b.drawio.svg",
+                    "label": "OnDeviceInstancesTypesClassesAndMetaclasses",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSWd33c9f1b89bf4b51b6fd9c3bcae0bc6b.drawio.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSWd33c9f1b89bf4b51b6fd9c3bcae0bc6b.drawio.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSWd33c9f1b89bf4b51b6fd9c3bcae0bc6b.drawio.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSWd33c9f1b89bf4b51b6fd9c3bcae0bc6b.drawio.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSWd33c9f1b89bf4b51b6fd9c3bcae0bc6b.drawio.svg.slot_jsondata.json"
                         }
                     }
                 },

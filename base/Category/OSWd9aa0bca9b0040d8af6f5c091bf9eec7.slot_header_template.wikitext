@@ -47,7 +47,7 @@
     =={{#switch:{{USERLANGUAGECODE}}|en=Personnel responsibility|de=Personal-Verantwortung}}==
     
     {{#ask: [[Category:OSW44deaa5b806d41a2a88594f562b110e9]][[HasSuperior::{{FULLPAGENAME}}]] |
-        ?HasDepartment={{#switch:{{USERLANGUAGECODE}}|en=Department|de=Abteilung|#default=Department}} |
+        ?HasOU={{#switch:{{USERLANGUAGECODE}}|en=Department|de=Abteilung|#default=Department}} |
         mainlabel={{#switch:{{USERLANGUAGECODE}}|en=Name|de=Name|#default=Name}} |
         format=table
         }}

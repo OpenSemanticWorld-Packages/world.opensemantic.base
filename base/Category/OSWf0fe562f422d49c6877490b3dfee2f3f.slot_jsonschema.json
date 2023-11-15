@@ -15,11 +15,13 @@
     ],
     "uuid": "f0fe562f-422d-49c6-8774-90b3dfee2f3f",
     "title*": {
-        "en": "Device"
+        "en": "Device",
+        "de": "Ger\u00e4t"
     },
     "description": "A Tool that is a (phyiscal) piece of Hardware.",
     "description*": {
-        "en": "A Tool that is a (phyiscal) piece of Hardware."
+        "en": "A Tool that is a (phyiscal) piece of Hardware.",
+        "de": "Ein Werkzeug, das ein (physisches) St\u00fcck Ausr\u00fcstung ist."
     },
     "required": [
         "type"

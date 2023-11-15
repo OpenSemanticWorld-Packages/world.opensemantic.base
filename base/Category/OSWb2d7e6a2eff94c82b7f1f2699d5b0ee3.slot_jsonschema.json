@@ -400,7 +400,8 @@
     ],
     "uuid": "b2d7e6a2-eff9-4c82-b7f1-f2699d5b0ee3",
     "title*": {
-        "en": "Project"
+        "en": "Project",
+        "de": "Projekt"
     },
     "description": "",
     "description*": {}

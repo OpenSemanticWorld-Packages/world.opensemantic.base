@@ -1,5 +1,6 @@
 {
     "@context": [
+        "/wiki/Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7?action=raw&slot=jsonschema",
         {
             "username": "Property:HasUsername",
             "room": "Property:HasRoom",

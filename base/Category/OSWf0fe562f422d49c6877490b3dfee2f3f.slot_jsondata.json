@@ -11,12 +11,20 @@
         {
             "text": "Device",
             "lang": "en"
+        },
+        {
+            "text": "Ger\u00e4t",
+            "lang": "de"
         }
     ],
     "description": [
         {
             "text": "A Tool that is a (phyiscal) piece of Hardware.",
             "lang": "en"
+        },
+        {
+            "text": "Ein Werkzeug, das ein (physisches) St\u00fcck Ausr\u00fcstung ist.",
+            "lang": "de"
         }
     ],
     "utf8_icon": [

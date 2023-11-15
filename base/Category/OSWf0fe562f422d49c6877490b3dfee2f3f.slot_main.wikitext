@@ -27,5 +27,12 @@
 }}
 
 
+{{Template:Editor/DrawIO
+| file_name = On device instances, types, classes and metaclasses
+| page_name = Category:OSWf0fe562f422d49c6877490b3dfee2f3f
+| uuid = d33c9f1b-89bf-4b51-b6fd-9c3bcae0bc6b
+| full_width = 0
+}}
+
 === Device Graph ===
 <div style="width: 100%;" class="InteractiveSemanticGraph">{ "root":"Category:OSW20691106529a419d829f3d057b99f3e1", "properties":["-HasSchema","-HasDeviceCategory","-HasDeviceType"], "permalink":true, "depth":5, "edit": true}</div>
