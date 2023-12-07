@@ -13,7 +13,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.15.0",
+            "version": "0.16.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -221,6 +221,66 @@
                         },
                         "jsondata": {
                             "urlPath": "File/OSWd33c9f1b89bf4b51b6fd9c3bcae0bc6b.drawio.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWfa0d5710bc0f45819b61b65fc4fd9656",
+                    "label": "StrictParticipantsProcess",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWfa0d5710bc0f45819b61b65fc4fd9656.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWfa0d5710bc0f45819b61b65fc4fd9656.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWfa0d5710bc0f45819b61b65fc4fd9656.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWfa0d5710bc0f45819b61b65fc4fd9656.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWfa0d5710bc0f45819b61b65fc4fd9656.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW1a271f289649413488e2841580e43a45",
+                    "label": "AdministrativeProcess",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW1a271f289649413488e2841580e43a45.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW1a271f289649413488e2841580e43a45.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW1a271f289649413488e2841580e43a45.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW1a271f289649413488e2841580e43a45.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW1a271f289649413488e2841580e43a45.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW3886740859ae459588fee73d3bb3c83e",
+                    "label": "RiskAssessmentProcess",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_jsonschema.json"
                         }
                     }
                 },
