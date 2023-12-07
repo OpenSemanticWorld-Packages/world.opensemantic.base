@@ -13,7 +13,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.14.0",
+            "version": "0.15.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -829,6 +829,66 @@
                             "urlPath": "Category/OSW07a0faef5be94b788514a2dd5dca20bf.slot_jsonschema.json"
                         }
                     }
+                },
+                {
+                    "name": "OSW973a5cd08ea14524a57089f0b3c9c6ff",
+                    "label": "Requirement",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW973a5cd08ea14524a57089f0b3c9c6ff.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW973a5cd08ea14524a57089f0b3c9c6ff.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW973a5cd08ea14524a57089f0b3c9c6ff.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW973a5cd08ea14524a57089f0b3c9c6ff.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW973a5cd08ea14524a57089f0b3c9c6ff.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWab093fd8af104a49882704cea3bbaf7b",
+                    "label": "FunctionalRequirement",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWab093fd8af104a49882704cea3bbaf7b.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWab093fd8af104a49882704cea3bbaf7b.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWab093fd8af104a49882704cea3bbaf7b.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWab093fd8af104a49882704cea3bbaf7b.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWbb07a72940554b1b978c44e5db4bd314",
+                    "label": "NonFunctionalRequirement",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWbb07a72940554b1b978c44e5db4bd314.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWbb07a72940554b1b978c44e5db4bd314.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWbb07a72940554b1b978c44e5db4bd314.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWbb07a72940554b1b978c44e5db4bd314.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "Editor/Requirements",
+                    "namespace": "NS_TEMPLATE",
+                    "urlPath": "Template/Editor/Requirements.slot_main.wikitext",
+                    "slots": {}
                 }
             ]
         }
