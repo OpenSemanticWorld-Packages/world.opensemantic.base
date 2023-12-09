@@ -4,6 +4,7 @@
     "author": [
         "Simon Stier",
         "Lukas Gold",
+        "Matthias Albert Popp",
         "Alexander Triol"
     ],
     "language": "en",
@@ -13,7 +14,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.16.0",
+            "version": "0.17.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -183,6 +184,29 @@
                         },
                         "jsondata": {
                             "urlPath": "File/OSW446c76f3ccf05ee6aabeff72c6699f31.drawio.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWd845b96813a344458f140e48c4d063fd",
+                    "label": "MetaDeviceCategory",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_jsonschema.json"
                         }
                     }
                 },
@@ -949,6 +973,278 @@
                     "namespace": "NS_TEMPLATE",
                     "urlPath": "Template/Editor/Requirements.slot_main.wikitext",
                     "slots": {}
+                },
+                {
+                    "name": "HasApprover",
+                    "label": "HasApprover",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasApprover.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasApprover.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasApprover.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasApprover.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasOrderer",
+                    "label": "HasOrderer",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasOrderer.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasOrderer.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasOrderer.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasOrderer.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasContact",
+                    "label": "HasContact",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasContact.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasContact.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasContact.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasContact.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasUrl",
+                    "label": "HasUrl",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasUrl.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasUrl.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasUrl.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasUrl.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasVersion",
+                    "label": "HasVersion",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasVersion.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasVersion.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasVersion.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasVersion.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasManufacturer",
+                    "label": "HasManufacturer",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasManufacturer.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasManufacturer.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasManufacturer.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasManufacturer.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasManual",
+                    "label": "HasManual",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasManual.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasManual.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasManual.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasManual.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasResponsiblePerson",
+                    "label": "HasResponsiblePerson",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasResponsiblePerson.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasResponsiblePerson.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasResponsiblePerson.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasResponsiblePerson.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "IsLocatedIn",
+                    "label": "IsLocatedIn",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/IsLocatedIn.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/IsLocatedIn.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/IsLocatedIn.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/IsLocatedIn.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasDepartment",
+                    "label": "HasDepartment",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasDepartment.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasDepartment.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasDepartment.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasDepartment.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasInventoryNumber",
+                    "label": "HasInventoryNumber",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasInventoryNumber.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasInventoryNumber.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasInventoryNumber.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasInventoryNumber.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasRiskAssessment",
+                    "label": "HasRiskAssessment",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasRiskAssessment.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasRiskAssessment.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasRiskAssessment.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasRiskAssessment.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasOwner",
+                    "label": "HasOwner",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasOwner.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasOwner.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasOwner.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasOwner.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasSerialNumber",
+                    "label": "HasSerialNumber",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasSerialNumber.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasSerialNumber.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasSerialNumber.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasSerialNumber.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasNetworkDomain",
+                    "label": "HasNetworkDomain",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasNetworkDomain.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasNetworkDomain.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasNetworkDomain.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasNetworkDomain.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasIp4Address",
+                    "label": "HasIp4Address",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasIp4Address.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasIp4Address.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasIp4Address.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasIp4Address.slot_jsondata.json"
+                        }
+                    }
                 }
             ]
         }
