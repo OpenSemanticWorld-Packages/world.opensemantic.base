@@ -2,27 +2,102 @@
     "@context": [
         "/wiki/Category:Item?action=raw&slot=jsonschema",
         {
-            "first_name": "Property:HasFirstName",
-            "first_name*": "schema:givenName",
-            "middle_name": "schema:additionalName",
-            "middle_name*": "Property:HasMiddleName",
-            "surname": "schema:familyName",
-            "surname*": "Property:HasSurname",
-            "organization": "schema:Organization",
-            "organization*": "Property:HasOrganization",
-            "organizational_unit": "Property:HasOu",
-            "email": "schema:email",
-            "email*": "Property:HasEmail",
-            "phone_number": "schema:telephone",
-            "phone_number*": "Property:HasPhoneNumber",
-            "fax_number": "schema:faxNumber",
-            "fax_number*": "Property:HasFaxNumber",
-            "located_in": "Property:IsLocatedIn",
-            "role": "Property:HasRole",
-            "competence": "Property:HasCompetence",
-            "topic": "Property:HasTopic",
-            "orcid": "Property:HasOrcidId",
-            "website": "Property:HasWebsite"
+            "competence": {
+                "@id": "schema:knowsAbout",
+                "@type": "@id"
+            },
+            "competence*": {
+                "@id": "Property:HasCompetence",
+                "@type": "@id"
+            },
+            "email": {
+                "@id": "schema:email"
+            },
+            "email*": {
+                "@id": "Property:HasEmail"
+            },
+            "fax_number": {
+                "@id": "schema:faxNumber"
+            },
+            "fax_number*": {
+                "@id": "Property:HasFaxNumber"
+            },
+            "first_name": {
+                "@id": "schema:givenName"
+            },
+            "first_name*": {
+                "@id": "Property:HasFirstName"
+            },
+            "located_in": {
+                "@id": "schema:workLocation",
+                "@type": "@id"
+            },
+            "located_in*": {
+                "@id": "Property:IsLocatedIn",
+                "@type": "@id"
+            },
+            "middle_name": {
+                "@id": "schema:additionalName"
+            },
+            "middle_name*": {
+                "@id": "Property:HasMiddleName"
+            },
+            "orcid": {
+                "@id": "schema:identifier"
+            },
+            "orcid*": {
+                "@id": "Property:HasOrcidId"
+            },
+            "organization": {
+                "@id": "schema:worksFor",
+                "@type": "@id"
+            },
+            "organization*": {
+                "@id": "Property:HasOrganization",
+                "@type": "@id"
+            },
+            "organizational_unit": {
+                "@id": "schema:memberOf",
+                "@type": "@id"
+            },
+            "organizational_unit*": {
+                "@id": "Property:HasOU",
+                "@type": "@id"
+            },
+            "phone_number": {
+                "@id": "schema:telephone"
+            },
+            "phone_number*": {
+                "@id": "Property:HasPhoneNumber"
+            },
+            "role": {
+                "@id": "schema:jobTitle",
+                "@type": "@id"
+            },
+            "role*": {
+                "@id": "Property:HasRole",
+                "@type": "@id"
+            },
+            "surname": {
+                "@id": "schema:familyName"
+            },
+            "surname*": {
+                "@id": "Property:HasSurname"
+            },
+            "topic": {
+                "@id": "schema:knowsAbout",
+                "@type": "@id"
+            },
+            "topic*": {
+                "@id": "Property:HasTopic",
+                "@type": "@id"
+            },
+            "website": {
+                "@id": "schema:subjectOf"
+            },
+            "website*": {
+                "@id": "Property:HasWebsite"
+            }
         }
     ],
     "defaultProperties": [
@@ -46,7 +121,8 @@
     "required": [
         "first_name",
         "surname",
-        "type"
+        "type",
+        "rdf_type"
     ],
     "data_source_maps": [
         {
@@ -99,29 +175,20 @@
             "title*": {
                 "de": "Organisation"
             },
+            "description": "Organization(s) the person is affiliated with. E.g., university, research institute, company, etc.",
+            "description*": {
+                "de": "Organisation(en), derer die Person Mitglied ist. Z.B. Universit\u00e4t, Forschungsinstitut, Unternehmen, etc."
+            },
             "type": "array",
             "format": "table",
             "items": {
                 "type": "string",
-                "oneOf": [
-                    {
-                        "title": "Free text entry",
-                        "title*": {
-                            "de": "Freitext-Eintrag"
-                        },
-                        "format": "string"
-                    },
-                    {
-                        "title": "Entry with autocomplete",
-                        "title*": {
-                            "de": "Eintrag mit Autocomplete"
-                        },
-                        "format": "autocomplete",
-                        "query": "[[HasType::Category:OSW1969007d5acf40539642877659a02c23]] OR [[HasType::Category:OSW5427361692374c8eaa6bd3733b92d343]] |?Display_title_of=label",
-                        "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                        "labelTemplate": "{{result.printouts.label.[0]}}"
-                    }
-                ]
+                "title": "Organization",
+                "title*": {
+                    "de": "Organisation"
+                },
+                "format": "autocomplete",
+                "query": "[[Category:OSW1969007d5acf40539642877659a02c23]] OR [[Category:OSW5427361692374c8eaa6bd3733b92d343]] |?Display_title_of=label"
             },
             "uniqueItems": true,
             "minItems": 1,
@@ -130,33 +197,24 @@
             ]
         },
         "organizational_unit": {
-            "title": "Organizational unit",
+            "title": "Organizational (sub)unit",
             "title*": {
-                "de": "Organisationseinheit"
+                "de": "Organisations(unter)einheit"
+            },
+            "description": "Organizational (sub)unit(s) the person is member of. E.g., faculty, institute, department or research group, etc.",
+            "description*": {
+                "de": "Organisations(unter)einheit(en), derer die Person Mitglied ist. Z.B. Fakult\u00e4t, Institut, Abteilung oder Forschungsgruppe, etc."
             },
             "type": "array",
             "format": "table",
             "items": {
                 "type": "string",
-                "oneOf": [
-                    {
-                        "title": "Free text entry",
-                        "title*": {
-                            "de": "Freitext-Eintrag"
-                        },
-                        "format": "string"
-                    },
-                    {
-                        "title": "Entry with autocomplete",
-                        "title*": {
-                            "de": "Eintrag mit Autocomplete"
-                        },
-                        "format": "autocomplete",
-                        "query": "[[HasType::Category:OSWfe3e842b804445c7bb0dd8ee61da2d70]] |?Display_title_of=label",
-                        "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                        "labelTemplate": "{{result.printouts.label.[0]}}"
-                    }
-                ]
+                "title": "Organizational unit",
+                "title*": {
+                    "de": "Organisationseinheit"
+                },
+                "format": "autocomplete",
+                "category": "Category:OSWfe3e842b804445c7bb0dd8ee61da2d70"
             },
             "uniqueItems": true,
             "minItems": 1,
@@ -269,28 +327,14 @@
             "format": "table",
             "items": {
                 "type": "string",
-                "oneOf": [
-                    {
-                        "title": "Entry with autocomplete",
-                        "title*": {
-                            "de": "Eintrag mit Autocomplete"
-                        },
-                        "format": "autocomplete",
-                        "query": "[[HasType::Category:OSW473d7a1ed48544d1be83b258b5810948]] |?Display_title_of=label",
-                        "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                        "labelTemplate": "{{result.printouts.label.[0]}}"
-                    },
-                    {
-                        "title": "Free text entry",
-                        "title*": {
-                            "de": "Freitext-Eintrag"
-                        },
-                        "format": "string"
-                    }
-                ]
+                "title": "Location",
+                "title*": {
+                    "de": "Standort"
+                },
+                "format": "autocomplete",
+                "category": "Category:OSW473d7a1ed48544d1be83b258b5810948"
             },
             "uniqueItems": true,
-            "minItems": 1,
             "default": [
                 ""
             ]
@@ -306,9 +350,7 @@
                 "title": "",
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[HasType::Category:OSW5efde23b1d8c4e1c864ef039cb0616ed]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "category": "Category:OSW5efde23b1d8c4e1c864ef039cb0616ed"
             },
             "uniqueItems": true,
             "default": [
@@ -326,9 +368,7 @@
                 "title": "",
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[HasType::Category:OSW5eb9c52b804544dc870dfd54ff434428]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "category": "Category:OSW5eb9c52b804544dc870dfd54ff434428"
             },
             "uniqueItems": true,
             "default": [
@@ -346,25 +386,12 @@
                 "title": "",
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[HasType::Category:OSW5a13eeda5ed5405ea7ef62ea6feeceec]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "category": "Category:OSW5a13eeda5ed5405ea7ef62ea6feeceec"
             },
             "uniqueItems": true,
             "default": [
                 ""
             ]
-        },
-        "rdf_type": {
-            "title": "RDF type",
-            "title*": {
-                "de": "RDF-Typ"
-            },
-            "type": "string",
-            "default": "schema:Person",
-            "options": {
-                "hidden": true
-            }
         },
         "type": {
             "default": [
@@ -374,12 +401,19 @@
     },
     "title": "Person",
     "title*": {
-        "de": "Person"
+        "de": "Person",
+        "en": "Person"
     },
     "type": "object",
     "allOf": [
         {
             "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
         }
-    ]
+    ],
+    "uuid": "44deaa5b-806d-41a2-a885-94f562b110e9",
+    "description": "Category for a person in general. Subcategories are e.g. 'User', i.e. persons who have a user ID.",
+    "description*": {
+        "en": "Category for a person in general. Subcategories are e.g. 'User', i.e. persons who have a user ID.",
+        "de": "Kategorie f\u00fcr eine Person im Allgemeinen. Unterkategorien sind bsp. 'User', also Personen die \u00fcber eine Nutzerkennung verf\u00fcgen."
+    }
 }

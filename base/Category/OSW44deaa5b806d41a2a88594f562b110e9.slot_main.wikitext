@@ -1,6 +1,0 @@
-{{Template:ELN/Editor/DrawIO
-|file_name=Person class diagram
-|page_name=Category:OSW44deaa5b806d41a2a88594f562b110e9
-|full_width=0
-|uuid=d9b53356-9a92-51ab-a475-1f19f78c9c9a
-}}

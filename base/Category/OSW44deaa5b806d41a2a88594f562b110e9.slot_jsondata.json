@@ -2,18 +2,11 @@
     "subclass_of": [
         "Category:Item"
     ],
+    "type": [
+        "Category:Category"
+    ],
     "uuid": "44deaa5b-806d-41a2-a885-94f562b110e9",
     "label": [
-        {
-            "text": "Person",
-            "lang": "en"
-        },
-        {
-            "text": "Person",
-            "lang": "de"
-        }
-    ],
-    "short_name": [
         {
             "text": "Person",
             "lang": "en"
@@ -33,8 +26,15 @@
             "lang": "de"
         }
     ],
-    "name": "Person",
-    "type": [
-        "Category:Category"
-    ]
+    "short_name": [
+        {
+            "text": "Person",
+            "lang": "en"
+        },
+        {
+            "text": "Person",
+            "lang": "de"
+        }
+    ],
+    "name": "Person"
 }
