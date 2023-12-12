@@ -17,12 +17,22 @@
         },
         "/wiki/Category:Item?action=raw&slot=jsonschema"
     ],
-    "title": "Location",
-    "type": "object",
     "allOf": [
         {
             "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
         }
+    ],
+    "type": "object",
+    "title": "Location",
+    "uuid": "3d238d05-316e-45a4-ac95-a11d7b24e36b",
+    "title*": {
+        "en": "Location",
+        "de": "Oertlichkeit"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type"
     ],
     "defaultProperties": [
         "uuid",
@@ -32,6 +42,13 @@
     ],
     "properties": {
         "postal_address": {
+            "title": "Postal address",
+            "title*": {
+                "en": "Postal address",
+                "de": "Postalische Adresse"
+            },
+            "type": "object",
+            "description": "",
             "eval_template": {
                 "type": "wikitext",
                 "mode": "render",
@@ -120,16 +137,15 @@
                     },
                     "type": "string"
                 }
-            },
-            "title": "Postal address",
-            "title*": {
-                "en": "Postal address",
-                "de": "Postalische Adresse"
-            },
-            "type": "object",
-            "description": ""
+            }
         },
         "gps_coordinates": {
+            "title": "GPS coordinates",
+            "title*": {
+                "en": "GPS coordinates",
+                "de": "GPS Koordinaten"
+            },
+            "type": "object",
             "eval_template": {
                 "type": "wikitext",
                 "value": "{{{latitude|}}}, {{{longitude|}}}"
@@ -180,28 +196,12 @@
                     "minimum": -180,
                     "maximum": 180
                 }
-            },
-            "title": "GPS coordinates",
-            "title*": {
-                "en": "GPS coordinates",
-                "de": "GPS Koordinaten"
-            },
-            "type": "object"
+            }
         },
         "type": {
             "default": [
                 "Category:OSW3d238d05316e45a4ac95a11d7b24e36b"
             ]
         }
-    },
-    "required": [
-        "type"
-    ],
-    "uuid": "3d238d05-316e-45a4-ac95-a11d7b24e36b",
-    "title*": {
-        "en": "Location",
-        "de": "Oertlichkeit"
-    },
-    "description": "",
-    "description*": {}
+    }
 }
