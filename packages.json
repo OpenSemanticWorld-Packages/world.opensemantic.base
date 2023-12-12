@@ -14,7 +14,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.17.3",
+            "version": "0.17.4",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -976,6 +976,23 @@
                     "namespace": "NS_TEMPLATE",
                     "urlPath": "Template/Editor/Requirements.slot_main.wikitext",
                     "slots": {}
+                },
+                {
+                    "name": "HasPhoneNumber",
+                    "label": "HasPhoneNumber",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasPhoneNumber.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasPhoneNumber.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasPhoneNumber.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasPhoneNumber.slot_jsondata.json"
+                        }
+                    }
                 },
                 {
                     "name": "HasApprover",
