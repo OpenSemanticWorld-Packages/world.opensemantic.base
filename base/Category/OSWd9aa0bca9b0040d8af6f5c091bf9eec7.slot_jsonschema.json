@@ -2,16 +2,26 @@
     "@context": [
         "/wiki/Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7?action=raw&slot=jsonschema",
         {
-            "username": "Property:HasUsername",
-            "room": "Property:HasRoom",
-            "superior": "Property:HasSuperior"
+            "room": {
+                "@id": "Property:HasRoom",
+                "@type": "@id"
+            },
+            "superior": {
+                "@id": "Property:HasSuperior",
+                "@type": "@id"
+            },
+            "username": {
+                "@id": "Property:HasUsername"
+            }
         }
     ],
     "required": [
         "username",
         "type"
     ],
-    "defaultProperties": [],
+    "defaultProperties": [
+        "username"
+    ],
     "properties": {
         "username": {
             "title": "Username",
@@ -25,7 +35,7 @@
             "type": "string"
         },
         "room": {
-            "title": "Room",
+            "title": "Room(s)",
             "title*": {
                 "de": "Raum"
             },
@@ -36,33 +46,38 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Room",
+                "title*": {
+                    "de": "Raum"
+                },
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[HasType::Category:OSWc5ed0ed1e33c4b31887c67af25a610c1]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "range": "Category:OSWc5ed0ed1e33c4b31887c67af25a610c1"
             },
             "uniqueItems": true,
-            "minItems": 1,
             "default": [
                 ""
             ]
         },
         "superior": {
-            "title": "Superior",
+            "title": "Superior(s)",
             "title*": {
-                "de": "F\u00fchrungsperson"
+                "de": "F\u00fchrungsperson(en)"
+            },
+            "description": "Direct superior(s)",
+            "description*": {
+                "de": "Direkte F\u00fchrungsperson(en)"
             },
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Supervisor",
+                "title*": {
+                    "de": "F\u00fchrungsperson"
+                },
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[HasType::Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "range": "Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7"
             },
             "uniqueItems": true,
             "default": [
