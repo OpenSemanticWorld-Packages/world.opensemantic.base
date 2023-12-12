@@ -16,34 +16,34 @@
 
 -->
 
-==[[:Category:OSWf0fe562f422d49c6877490b3dfee2f3f|Instances]]==  
+==[[:Category:OSWf0fe562f422d49c6877490b3dfee2f3f|{{#switch:{{USERLANGUAGECODE}}|en=Instances|de=Instanzen/Exemplare|#default=Instances}}]]==  
 
 {{#ask: [[Category:OSWf0fe562f422d49c6877490b3dfee2f3f]]
-|?IsLocatedIn
-|?HasDepartment
-|?HasResponsiblePerson
+|?IsLocatedIn={{#switch:{{USERLANGUAGECODE}}|en=Location|de=Standort|#default=Location}}
+|?HasDepartment={{#switch:{{USERLANGUAGECODE}}|en=Department|de=Abteilung|#default=Department}}
+|?HasResponsiblePerson={{#switch:{{USERLANGUAGECODE}}|en=Responsible Person|de=Verantwortlich|#default=Responsible Person}}
 |format=datatable
 }}
 
-==Device Types (Manufacturer Related Categories) ==
+=={{#switch:{{USERLANGUAGECODE}}|en=Device Types (Manufacturer Related Categories)|de=Gerätetypen (Kategorien mit Herstellerbezug)|#default=Device Types (Manufacturer Related Categories)}}==
 {{#ask:
  [[SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]][[HasManufacturer::+]] OR
  [[SubClassOf.SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]][[HasManufacturer::+]] OR
  [[SubClassOf.SubClassOf.SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]][[HasManufacturer::+]] OR
  [[SubClassOf.SubClassOf.SubClassOf.SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]][[HasManufacturer::+]] OR
  [[SubClassOf.SubClassOf.SubClassOf.SubClassOf.SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]][[HasManufacturer::+]] 
- |?HasManufacturer
+ |?HasManufacturer={{#switch:{{USERLANGUAGECODE}}|en=Manufacturer|de=Hersteller|#default=Manufacturer}}
  |format=datatable
 }}
-==All Device Categories ==
+=={{#switch:{{USERLANGUAGECODE}}|en=All Device Categories|de=Alle Gerätekategorien|#default=All Device Categories}} ==
 {{#ask:
  [[SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]] OR
  [[SubClassOf.SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]] OR
  [[SubClassOf.SubClassOf.SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]] OR
  [[SubClassOf.SubClassOf.SubClassOf.SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]]OR
  [[SubClassOf.SubClassOf.SubClassOf.SubClassOf.SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]]
- |?HasManufacturer
- |?HasTypicalProcess
+ |?HasManufacturer={{#switch:{{USERLANGUAGECODE}}|en=Manufacturer|de=Hersteller|#default=Manufacturer}}
+ |?HasTypicalProcess={{#switch:{{USERLANGUAGECODE}}|en=Typical Process|de=Typischer Prozess|#default=Typical Process}}
  |format=datatable
 }}
 
