@@ -1,6 +1,0 @@
-{{OslTemplate:LIMS/File/Instance
-|creation_page=Category:OSW3cb8cef2225e403092f098f99bc4c472
-|creator=User:Lukas Gold
-|edit_page=Category:OSW3cb8cef2225e403092f098f99bc4c472
-|editor=User:Lukas Gold
-}}

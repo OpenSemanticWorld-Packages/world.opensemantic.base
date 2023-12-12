@@ -2,30 +2,241 @@
     "@context": [
         "/wiki/Category:Item?action=raw&slot=jsonschema",
         {
-            "abbreviation": "Property:HasAbbreviation",
-            "competence": "Property:HasCompetence",
-            "deputy_manager": "Property:HasDeputyManager",
-            "mailing_list": "Property:HasMailingList",
-            "manager": "Property:HasManager",
-            "secretary": "Property:HasSecretary",
-            "superordinate_ou": "Property:HasSuperordinateOu",
-            "topic": "Property:HasTopic",
-            "website": "Property:HasWebsite",
-            "phone_number": "Property:HasPhoneNumber",
-            "fax_number": "Property:HasFaxNumber",
-            "email": "Property:HasEmail",
-            "image": "Property:HasLogo",
-            "member_of": "Property:IsMemberOf",
-            "site": "Property:IsLocatedIn",
-            "city": "Property:HasCity",
-            "country": "Property:HasCountry",
-            "house_no": "Property:HasHouseNo",
-            "postal_address": "Property:HasPostalAddress",
-            "postal_code": "Property:HasPostalCode",
-            "post_office_box_no": "Property:HasPoBoxNo",
-            "region": "Property:HasRegion",
-            "state": "Property:HasState",
-            "street_name": "Property:HasStreet"
+            "abbreviation": {
+                "@id": "Property:HasAbbreviation",
+                "@type": "@id"
+            },
+            "city": {
+                "@id": "Property:HasCity",
+                "@type": "@id"
+            },
+            "competence": {
+                "@id": "schema:knowsAbout",
+                "@type": "@id"
+            },
+            "competence*": {
+                "@id": "Property:HasCompetence",
+                "@type": "@id"
+            },
+            "country": {
+                "@id": "Property:HasCountry",
+                "@type": "@id"
+            },
+            "deputy_manager": {
+                "@id": "Property:HasDeputyManager",
+                "@type": "@id"
+            },
+            "email": {
+                "@id": "schema:email",
+                "@type": "@id"
+            },
+            "email*": {
+                "@id": "Property:HasEmail",
+                "@type": "@id"
+            },
+            "fax_number": {
+                "@id": "schema:faxNumber",
+                "@type": "@id"
+            },
+            "fax_number*": {
+                "@id": "Property:HasFaxNumber",
+                "@type": "@id"
+            },
+            "founder": {
+                "@id": "schema:founder",
+                "@type": "@id"
+            },
+            "founder*": {
+                "@id": "Property:HasFounder",
+                "@type": "@id"
+            },
+            "founding_date": {
+                "@id": "schema:foundingDate",
+                "@type": "@id"
+            },
+            "founding_date*": {
+                "@id": "Property:HasFoundingDate",
+                "@type": "@id"
+            },
+            "founding_location": {
+                "@id": "schema:foundingLocation",
+                "@type": "@id"
+            },
+            "founding_location*": {
+                "@id": "Property:HasFoundingLocation",
+                "@type": "@id"
+            },
+            "funder": {
+                "@id": "schema:funder",
+                "@type": "@id"
+            },
+            "funder*": {
+                "@id": "Property:HasFunder",
+                "@type": "@id"
+            },
+            "house_no": {
+                "@id": "Property:HasHouseNo",
+                "@type": "@id"
+            },
+            "image": {
+                "@id": "schema:logo",
+                "@type": "@id"
+            },
+            "image*": {
+                "@id": "Property:HasLogo",
+                "@type": "@id"
+            },
+            "legal_name": {
+                "@id": "schema:legalName",
+                "@type": "@id"
+            },
+            "legal_name*": {
+                "@id": "Property:HasLegalName",
+                "@type": "@id"
+            },
+            "mailing_list": {
+                "@id": "Property:HasMailingList",
+                "@type": "@id"
+            },
+            "manager": {
+                "@id": "Property:HasManager",
+                "@type": "@id"
+            },
+            "member_ous": {
+                "@id": "schema:member",
+                "@type": "@id"
+            },
+            "member_ous*": {
+                "@id": "Property:HasMember",
+                "@type": "@id"
+            },
+            "member_persons": {
+                "@id": "schema:member",
+                "@type": "@id"
+            },
+            "member_persons*": {
+                "@id": "Property:HasMember",
+                "@type": "@id"
+            },
+            "member_of": {
+                "@id": "schema:memberOf",
+                "@type": "@id"
+            },
+            "member_of*": {
+                "@id": "Property:IsMemberOf",
+                "@type": "@id"
+            },
+            "phone_number": {
+                "@id": "schema:telephone",
+                "@type": "@id"
+            },
+            "phone_number*": {
+                "@id": "Property:HasPhoneNumber",
+                "@type": "@id"
+            },
+            "postal_address": {
+                "@id": "schema:address",
+                "@type": "@id"
+            },
+            "postal_address*": {
+                "@id": "Property:HasPostalAddress",
+                "@type": "@id"
+            },
+            "postal_code": {
+                "@id": "schema:postalCode",
+                "@type": "@id"
+            },
+            "postal_code*": {
+                "@id": "Property:HasPostalCode",
+                "@type": "@id"
+            },
+            "post_office_box_no": {
+                "@id": "schema:postOfficeBoxNumber",
+                "@type": "@id"
+            },
+            "post_office_box_no*": {
+                "@id": "Property:HasPoBoxNo",
+                "@type": "@id"
+            },
+            "region": {
+                "@id": "schema:addressLocality",
+                "@type": "@id"
+            },
+            "region*": {
+                "@id": "Property:HasRegion",
+                "@type": "@id"
+            },
+            "secretary": {
+                "@id": "Property:HasSecretary",
+                "@type": "@id"
+            },
+            "site": {
+                "@id": "schema:location",
+                "@type": "@id"
+            },
+            "site*": {
+                "@id": "Property:IsLocatedIn",
+                "@type": "@id"
+            },
+            "state": {
+                "@id": "schema:addressRegion",
+                "@type": "@id"
+            },
+            "state*": {
+                "@id": "Property:HasState",
+                "@type": "@id"
+            },
+            "street_name": {
+                "@id": "schema:streetAddress",
+                "@type": "@id"
+            },
+            "street_name*": {
+                "@id": "Property:HasStreet",
+                "@type": "@id"
+            },
+            "superordinate_ou": {
+                "@id": "schema:parentOrganization",
+                "@type": "@id"
+            },
+            "superordinate_ou*": {
+                "@id": "Property:HasSuperordinateOu",
+                "@type": "@id"
+            },
+            "tax_id": {
+                "@id": "schema:taxID",
+                "@type": "@id"
+            },
+            "tax_id*": {
+                "@id": "Property:HasTaxId",
+                "@type": "@id"
+            },
+            "topic": {
+                "@id": "schema:knowsAbout",
+                "@type": "@id"
+            },
+            "topic*": {
+                "@id": "Property:HasTopic",
+                "@type": "@id"
+            },
+            "vat_id": {
+                "@id": "schema:vatID",
+                "@type": "@id"
+            },
+            "vat_id*": {
+                "@id": "Property:HasVatId",
+                "@type": "@id"
+            },
+            "website": {
+                "@id": "schema:subjectOf",
+                "@type": "@id"
+            },
+            "website*": {
+                "@id": "Property:HasWebsite",
+                "@type": "@id"
+            },
+            "associated_acl_roles*": {
+                "@id": "Property:HasAssociatedAclRole"
+            }
         }
     ],
     "allOf": [
@@ -40,10 +251,9 @@
     "uuid": "3cb8cef2-225e-4030-92f0-98f99bc4c472",
     "id": "OSW3cb8cef2225e403092f098f99bc4c472",
     "type": "object",
-    "description": "Building block of the organizational structure of an organization",
+    "description": "The most general kind of organizational unit - an organization but also parts of an organization",
     "description*": {
-        "en": "Building block of the organizational structure of an organization",
-        "de": "Baustein der Aufbauorganisation einer Organisation"
+        "de": "Die allgemeinste Art von Organisationseinheit - eine Organisation, aber auch Teile einer Organisation"
     },
     "defaultProperties": [
         "uuid",
@@ -67,6 +277,11 @@
         "type"
     ],
     "properties": {
+        "type": {
+            "default": [
+                "Category:OSW3cb8cef2225e403092f098f99bc4c472"
+            ]
+        },
         "abbreviation": {
             "title": "Acronym",
             "title*": {
@@ -89,9 +304,7 @@
                 "title": "",
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[Category:OSW5eb9c52b804544dc870dfd54ff434428]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "range": "Category:OSW5eb9c52b804544dc870dfd54ff434428"
             },
             "uniqueItems": true,
             "minItems": 1,
@@ -102,7 +315,6 @@
         "deputy_manager": {
             "title": "Deputy manager",
             "title*": {
-                "en": "Deputy manager",
                 "de": "Stellvertretende:r Manager:in"
             },
             "type": "array",
@@ -111,14 +323,68 @@
                 "title": "",
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[Category:OSW44deaa5b806d41a2a88594f562b110e9]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             },
             "minItems": 1,
             "default": [
                 ""
             ]
+        },
+        "founder": {
+            "title": "Founder",
+            "title*": {
+                "en": "Founder",
+                "de": "Gr\u00fcnder:in"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
+            },
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "founding_date": {
+            "title": "Founding date",
+            "title*": {
+                "en": "Founding date",
+                "de": "Gr\u00fcndungsdatum"
+            },
+            "type": "string",
+            "format": "date",
+            "default": ""
+        },
+        "founding_location": {
+            "title": "Founding location",
+            "title*": {
+                "en": "Founding location",
+                "de": "Gr\u00fcndungsort"
+            },
+            "type": "string",
+            "format": "text",
+            "default": ""
+        },
+        "funder": {
+            "title": "Funder",
+            "title*": {
+                "de": "F\u00f6rderer*in"
+            },
+            "description": "The Funder of a Consortium is the Organization that provides the funding for the Consortium.",
+            "description*": {
+                "de": "Der/die Geldgeber*in eines Konsortiums ist die Organisation, die die Finanzierung des Konsortiums bereitstellt"
+            },
+            "type": "string",
+            "format": "autocomplete",
+            "options": {
+                "autocomplete": {
+                    "query": "[[Category:OSW3cb8cef2225e403092f098f99bc4c472]] OR [[Category:OSW44deaa5b806d41a2a88594f562b110e9]] |?Display_title_of=label"
+                }
+            }
         },
         "image": {
             "title": "Logo",
@@ -126,15 +392,33 @@
                 "de": "Logo"
             }
         },
+        "legal_name": {
+            "title": "Legal name",
+            "title*": {
+                "en": "Legal name",
+                "de": "Rechtlicher Name"
+            },
+            "type": "string",
+            "format": "text",
+            "default": ""
+        },
+        "legal_form": {
+            "title": "Legal form",
+            "title*": {
+                "en": "Legal form",
+                "de": "Rechtsform"
+            },
+            "type": "string",
+            "format": "text",
+            "default": ""
+        },
         "mailing_list": {
             "title": "Mailing list",
             "title*": {
-                "en": "Mailing list",
                 "de": "E-Mail-Verteiler"
             },
             "description": "Mailing list of the organizational unit.",
             "description*": {
-                "en": "Mailing list of the organizational unit.",
                 "de": "Mailingliste der Organisationseinheit."
             },
             "type": "array",
@@ -148,7 +432,6 @@
         "manager": {
             "title": "Manager",
             "title*": {
-                "en": "Manager",
                 "de": "Manager:in"
             },
             "type": "array",
@@ -157,9 +440,7 @@
                 "title": "",
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[Category:OSW44deaa5b806d41a2a88594f562b110e9]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             },
             "minItems": 1,
             "default": [
@@ -169,13 +450,11 @@
         "member_of": {
             "title": "Member of",
             "title*": {
-                "en": "Member of",
                 "de": "Mitglied in"
             },
-            "description": "The organization this organization is a member of.",
+            "description": "The organization(al unit) this organization is a member of.",
             "description*": {
-                "en": "The organization this organization is a member of.",
-                "de": "Die Organisation, der diese Organisation angeh\u00f6rt."
+                "de": "Die Organisation(seinheit), der diese Organisation angeh\u00f6rt."
             },
             "type": "array",
             "format": "table",
@@ -183,11 +462,56 @@
                 "title": "",
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[Category:OSW1969007d5acf40539642877659a02c23]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
             },
-            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "member_persons": {
+            "title": "Member person(s)",
+            "title*": {
+                "de": "Mitgliedsperson(en)"
+            },
+            "description": "The members (persons) of this organization(al unit).",
+            "description*": {
+                "de": "Die Mitglieder (Personen) dieser Organisation(seinheit)."
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "Member",
+                "title*": {
+                    "de": "Mitglied"
+                },
+                "type": "string",
+                "format": "autocomplete",
+                "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
+            },
+            "default": [
+                ""
+            ]
+        },
+        "member_ous": {
+            "title": "Member OU(s)",
+            "title*": {
+                "de": "Mitglied OE(s)"
+            },
+            "description": "The members (organization units) of this organization(al unit).",
+            "description*": {
+                "de": "Die Mitglieder (Organisationseinheiten) dieser Organisation(seinheit)."
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "Member",
+                "title*": {
+                    "de": "Mitglied"
+                },
+                "type": "string",
+                "format": "autocomplete",
+                "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
+            },
             "default": [
                 ""
             ]
@@ -195,7 +519,6 @@
         "secretary": {
             "title": "Secretary",
             "title*": {
-                "en": "Secretary",
                 "de": "Sekret\u00e4r:in"
             },
             "type": "array",
@@ -204,16 +527,22 @@
                 "title": "",
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[Category:OSW44deaa5b806d41a2a88594f562b110e9]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             },
-            "minItems": 1,
             "default": [
                 ""
             ]
         },
         "postal_address": {
+            "type": "object",
+            "title": "Postal address",
+            "title*": {
+                "de": "Postalische Adresse"
+            },
+            "description": "Physical address of the organizational unit.",
+            "description*": {
+                "de": "Physische Adresse der Organisationseinheit."
+            },
             "eval_template": {
                 "type": "wikitext",
                 "mode": "render",
@@ -241,15 +570,15 @@
                 "country": {
                     "title": "Country",
                     "title*": {
-                        "en": "Country",
                         "de": "Land"
                     },
-                    "type": "string"
+                    "type": "string",
+                    "format": "autocomplete",
+                    "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe"
                 },
                 "state": {
                     "title": "State",
                     "title*": {
-                        "en": "State",
                         "de": "Bundesland"
                     },
                     "type": "string"
@@ -257,7 +586,6 @@
                 "region": {
                     "title": "Region",
                     "title*": {
-                        "en": "Region",
                         "de": "Region"
                     },
                     "type": "string"
@@ -265,7 +593,6 @@
                 "post_office_box_no": {
                     "title": "PO box number",
                     "title*": {
-                        "en": "PO box number",
                         "de": "Postfach nummer"
                     },
                     "type": "number"
@@ -273,7 +600,6 @@
                 "postal_code": {
                     "title": "Postal code",
                     "title*": {
-                        "en": "Postal code",
                         "de": "Postleitzahl"
                     },
                     "type": "string"
@@ -281,7 +607,6 @@
                 "city": {
                     "title": "City",
                     "title*": {
-                        "en": "City",
                         "de": "Stadt"
                     },
                     "type": "string"
@@ -289,7 +614,6 @@
                 "street_name": {
                     "title": "Street",
                     "title*": {
-                        "en": "Street",
                         "de": "Stra\u00dfe"
                     },
                     "type": "string"
@@ -297,29 +621,24 @@
                 "house_no": {
                     "title": "House number",
                     "title*": {
-                        "en": "House number",
                         "de": "Hausnummer"
                     },
                     "type": "string"
                 }
-            },
-            "title": "Postal address",
-            "title*": {
-                "en": "Postal address",
-                "de": "Postalische Adresse"
-            },
-            "type": "object",
-            "description": ""
+            }
         },
         "site": {
-            "title": "Site",
+            "title": "Site(s)",
             "title*": {
-                "en": "Site",
-                "de": "Standort"
+                "de": "Standort(e)"
             },
             "type": "array",
             "format": "table",
             "items": {
+                "title": "Site",
+                "title*": {
+                    "de": "Standort"
+                },
                 "type": "string",
                 "oneOf": [
                     {
@@ -328,16 +647,16 @@
                             "de": "Eintrag mit Autocomplete"
                         },
                         "format": "autocomplete",
-                        "query": "[[Category:OSW473d7a1ed48544d1be83b258b5810948]] |?Display_title_of=label",
-                        "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                        "labelTemplate": "{{result.printouts.label.[0]}}"
+                        "range": "Category:OSW473d7a1ed48544d1be83b258b5810948",
+                        "autocomplete_": true
                     },
                     {
                         "title": "Free text entry",
                         "title*": {
                             "de": "Freitext-Eintrag"
                         },
-                        "format": "string"
+                        "format": "string",
+                        "freetext_": true
                     }
                 ]
             },
@@ -348,25 +667,102 @@
             ]
         },
         "superordinate_ou": {
-            "title": "Superordinate OU",
+            "title": "Superordinate OU(s)",
             "title*": {
-                "en": "Superordinate OU",
-                "de": "\u00dcbergeordnete OE"
+                "de": "\u00dcbergeordnete OE(s)"
             },
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Superordinate OU",
+                "title*": {
+                    "de": "\u00dcbergeordnete OE"
+                },
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[Category:OSW3cb8cef2225e403092f098f99bc4c472]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
             },
-            "minItems": 1,
             "default": [
                 ""
             ]
+        },
+        "tax_id_obj": {
+            "title": "Tax ID",
+            "title*": {
+                "de": "Steuer-ID"
+            },
+            "description": "Tax ID of the organizational unit.",
+            "description*": {
+                "de": "Steuer-ID der Organisationseinheit."
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "ID and country",
+                "title*": {
+                    "de": "ID und Land"
+                },
+                "type": "object",
+                "properties": {
+                    "tax_id": {
+                        "title": "ID",
+                        "title*": {
+                            "de": "ID"
+                        },
+                        "type": "string",
+                        "default": ""
+                    },
+                    "country": {
+                        "title": "Country",
+                        "title*": {
+                            "de": "Land"
+                        },
+                        "type": "string",
+                        "format": "autocomplete",
+                        "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe",
+                        "default": ""
+                    }
+                }
+            }
+        },
+        "vat_id_obj": {
+            "title": "VAT ID",
+            "title*": {
+                "de": "Umsatzsteuer-ID"
+            },
+            "description": "VAT ID of the organizational unit.",
+            "description*": {
+                "de": "Umsatzsteuer-ID der Organisationseinheit."
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "ID and country",
+                "title*": {
+                    "de": "ID und Land"
+                },
+                "type": "object",
+                "properties": {
+                    "vat_id": {
+                        "title": "ID",
+                        "title*": {
+                            "de": "ID"
+                        },
+                        "type": "string",
+                        "default": ""
+                    },
+                    "country": {
+                        "title": "Country",
+                        "title*": {
+                            "de": "Land"
+                        },
+                        "type": "string",
+                        "format": "autocomplete",
+                        "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe",
+                        "default": ""
+                    }
+                }
+            }
         },
         "topic": {
             "title": "Topic(s)",
@@ -379,9 +775,7 @@
                 "title": "",
                 "type": "string",
                 "format": "autocomplete",
-                "query": "[[Category:OSW5a13eeda5ed5405ea7ef62ea6feeceec]] |?Display_title_of=label",
-                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
-                "labelTemplate": "{{result.printouts.label.[0]}}"
+                "range": "Category:OSW5a13eeda5ed5405ea7ef62ea6feeceec"
             },
             "uniqueItems": true,
             "minItems": 1,
@@ -473,10 +867,19 @@
             },
             "uniqueItems": true
         },
-        "type": {
-            "default": [
-                "Category:OSW3cb8cef2225e403092f098f99bc4c472"
-            ]
+        "associated_acl_roles": {
+            "title": "Access control roles",
+            "title*": {
+                "de": "Rollen f\u00fcr die Zugriffskontrolle"
+            },
+            "type": "array",
+            "items": {
+                "title": "Role",
+                "title*": {
+                    "de": "Rolle"
+                },
+                "type": "string"
+            }
         }
     }
 }
