@@ -14,7 +14,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.17.7",
+            "version": "0.17.8",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -658,6 +658,26 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW1969007d5acf40539642877659a02c23.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWcffdc90247c142eca7f23ab6c69e49a1",
+                    "label": "NonGovernmentalOrganization",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWcffdc90247c142eca7f23ab6c69e49a1.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWcffdc90247c142eca7f23ab6c69e49a1.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWcffdc90247c142eca7f23ab6c69e49a1.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWcffdc90247c142eca7f23ab6c69e49a1.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWcffdc90247c142eca7f23ab6c69e49a1.slot_jsonschema.json"
                         }
                     }
                 },
