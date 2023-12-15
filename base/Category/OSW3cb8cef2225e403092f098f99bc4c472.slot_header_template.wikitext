@@ -85,7 +85,7 @@
         <th>{{{_label_member_of|Member of}}}</th>
         <td>{{#ask:[[{{FULLPAGENAME}}]]|?IsMemberOf=|format=plain|mainlabel=-}}</td>
     </tr>
-    {{#if:
+    {{#ifeq:
         {{#ask:[[{{FULLPAGENAME}}]]|?HasType=|format=plain|mainlabel=-}} | Category:OSW1969007d5acf40539642877659a02c23
          | <!-- is of type Category:Organization: show member (organizations) -->
         <tr>
@@ -97,6 +97,7 @@
             <td>{{#ask:
                 [[HasType::Category:OSW3cb8cef2225e403092f098f99bc4c472]][[IsMemberOf::{{FULLPAGENAME}}]]}}
             </td>
+        </tr>
          | <!-- show nothing -->
     }}
     <tr>

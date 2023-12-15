@@ -79,6 +79,7 @@
                 "de": "F\u00f6rderaufruf"
             },
             "type": "string",
+            "format": "autocomplete",
             "options": {
                 "autocomplete": {
                     "category": "Category:OSWd22af0aa3b00462a9da9b509538e8926"
@@ -105,6 +106,10 @@
                 "en": "OU",
                 "de": "OE"
             },
+            "description": "Organizational Unit (OU), which carries out the project",
+            "description*": {
+                "de": "Organisationseinheit (OE), die das Projekt durchf\u00fchrt"
+            },
             "type": "array",
             "items": {
                 "title": "Organizational Unit (OU)",
@@ -124,14 +129,14 @@
             "title": "Project Manager",
             "title*": {
                 "en": "Project Manager",
-                "de": "Projektleiter"
+                "de": "Projektleiter*in"
             },
             "type": "array",
             "items": {
                 "title": "Project Manager",
                 "title*": {
                     "en": "Project Manager",
-                    "de": "Projektleiter"
+                    "de": "Projektleiter*in"
                 },
                 "type": "string",
                 "format": "autocomplete",
@@ -146,20 +151,20 @@
             "title": "Member",
             "title*": {
                 "en": "Member",
-                "de": "Mitarbeiter"
+                "de": "Mitglieder*innen"
             },
             "type": "array",
             "items": {
                 "title": "Member",
                 "title*": {
                     "en": "Member",
-                    "de": "Mitarbeiter"
+                    "de": "Mitglieder*in"
                 },
                 "type": "string",
                 "format": "autocomplete",
                 "options": {
                     "autocomplete": {
-                        "category": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
+                        "query": "[[Category:OSW44deaa5b806d41a2a88594f562b110e9]] OR [[Category:OSW3cb8cef2225e403092f098f99bc4c472]] |?Display_title_of=label"
                     }
                 }
             }
@@ -194,6 +199,12 @@
             }
         },
         "yearly_budget": {
+            "title": "Yearly budget",
+            "type": "array",
+            "format": "array",
+            "title*": {
+                "de": "Jahresbudget"
+            },
             "items": {
                 "title": "Yearly budget",
                 "title*": {

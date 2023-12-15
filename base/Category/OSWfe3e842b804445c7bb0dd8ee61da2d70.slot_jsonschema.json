@@ -1,5 +1,7 @@
 {
-    "@context": [],
+    "@context": [
+        "/wiki/Category:OSW3cb8cef2225e403092f098f99bc4c472?action=raw&slot=jsonschema"
+    ],
     "defaultProperties": {},
     "properties": {
         "type": {

@@ -20,5 +20,15 @@
         "\ud83d\udcb8",
         "\ud83d\udcc3"
     ],
-    "name": "FundingCall"
+    "name": "FundingCall",
+    "description": [
+        {
+            "text": "Announcement of a funding opportunity with details of the funding conditions",
+            "lang": "en"
+        },
+        {
+            "text": "Bekanntgabe einer F\u00f6rderm\u00f6glichkeit unter Angabe der F\u00f6rderbedingungen",
+            "lang": "de"
+        }
+    ]
 }

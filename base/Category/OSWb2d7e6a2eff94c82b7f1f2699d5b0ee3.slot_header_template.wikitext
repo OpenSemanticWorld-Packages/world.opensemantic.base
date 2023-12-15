@@ -23,7 +23,7 @@
 <td>{{#ifeq: {{{project_type|}}} | house_project | {{#switch:{{USERLANGUAGECODE}}|en=House project|de=Hausprojekt}} | {{#ifeq: {{{project_type|}}} | internal | {{#switch:{{USERLANGUAGECODE}}|en=Internal|de=Intern}} | {{#ifeq: {{{project_type|}}} | public | {{#switch:{{USERLANGUAGECODE}}|en=Public|de=Öffentlich}} | {{#ifeq: {{{project_type|}}} | industry | {{#switch:{{USERLANGUAGECODE}}|en=Industry|de=Industrie}} |  }} }} }} }}</td>
 </tr>
 <tr><th>{{{_label_grantor|Grantor}}}</th><td>{{{grantor|}}}</td></tr>
-<tr><th>{{{_label_funding_call|Funding call}}}</th><td>{{{funding_call|}}}</td></tr>
+<tr><th>{{{_label_funding_call|Funding call}}}</th><td>{{#if: {{{funding_call|}}} | [[{{{funding_call|}}}]]}}</td></tr>
 <tr><th>{{{_label_grant_id|Grant ID}}}</th><td>{{{grant_id|}}}</td></tr>
 <tr>
 <th>{{{_label_start_date|Start}}}</th>
