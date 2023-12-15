@@ -14,7 +14,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.17.11",
+            "version": "0.17.12",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
                 {
@@ -942,6 +942,40 @@
                     "namespace": "NS_TEMPLATE",
                     "urlPath": "Template/Editor/Requirements.slot_main.wikitext",
                     "slots": {}
+                },
+                {
+                    "name": "HasId",
+                    "label": "HasId",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasId.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasId.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasId.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasId.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "IsRelatedTo",
+                    "label": "IsRelatedTo",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/IsRelatedTo.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/IsRelatedTo.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/IsRelatedTo.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/IsRelatedTo.slot_jsondata.json"
+                        }
+                    }
                 },
                 {
                     "name": "HasPhoneNumber",
