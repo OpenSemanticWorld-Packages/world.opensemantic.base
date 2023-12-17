@@ -27,6 +27,13 @@
         },
         "/wiki/Category:Item?action=raw&slot=jsonschema"
     ],
+    "defaultProperties": [
+        "funding_call",
+        "ou",
+        "project_manager",
+        "member",
+        "report"
+    ],
     "properties": {
         "subjects": {
             "items": {
@@ -414,6 +421,8 @@
         "en": "Project",
         "de": "Projekt"
     },
-    "description": "",
-    "description*": {}
+    "description": "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim.",
+    "description*": {
+      "de": "Ein (möglicherweise individuelles, in der Regel aber gemeinschaftliches) Unternehmen oder Unternehmung, das auf ein bestimmtes Ziel ausgerichtet ist."
+    }
 }

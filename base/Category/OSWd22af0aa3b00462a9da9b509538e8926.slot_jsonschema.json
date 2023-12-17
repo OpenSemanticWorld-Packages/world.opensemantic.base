@@ -1,6 +1,8 @@
 {
     "@context": [
-        "/wiki/Category:Item?action=raw&slot=jsonschema"
+        {
+            "submission_deadline": "Property:HasEndDate"
+        }
     ],
     "allOf": [
         {
@@ -21,6 +23,10 @@
     },
     "required": [
         "type"
+    ],
+    "defaultProperties": [
+        "submission_deadline",
+        "urls"
     ],
     "properties": {
         "type": {
