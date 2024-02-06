@@ -13,13 +13,13 @@
             "lang": "en"
         },
         {
-            "text": "Oertlichkeit",
+            "text": "Örtlichkeit",
             "lang": "de"
         }
     ],
     "utf8_icon": [
-        "\ud83d\udccd",
-        "\ud83d\udccc",
-        "\ud83d\udd88"
+        "📍",
+        "📌",
+        "🖈"
     ]
 }

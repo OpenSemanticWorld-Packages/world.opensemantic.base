@@ -27,10 +27,12 @@
     "uuid": "3d238d05-316e-45a4-ac95-a11d7b24e36b",
     "title*": {
         "en": "Location",
-        "de": "Oertlichkeit"
+        "de": "Örtlichkeit"
     },
-    "description": "",
-    "description*": {},
+    "description": "A location. Entities that have a somewhat fixed, physical extension.",
+    "description*": {
+        "de": "Eine Örtlichkeit. Entitaeten, die eine mehr oder weniger feste, physische Ausdehnung haben."
+    },
     "required": [
         "type"
     ],
@@ -125,7 +127,7 @@
                     "title": "Street",
                     "title*": {
                         "en": "Street",
-                        "de": "Stra\u00dfe"
+                        "de": "Straße"
                     },
                     "type": "string"
                 },

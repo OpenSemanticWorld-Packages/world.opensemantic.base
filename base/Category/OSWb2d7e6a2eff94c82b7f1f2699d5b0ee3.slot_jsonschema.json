@@ -115,7 +115,7 @@
             },
             "description": "Organizational Unit (OU), which carries out the project",
             "description*": {
-                "de": "Organisationseinheit (OE), die das Projekt durchf\u00fchrt"
+                "de": "Organisationseinheit (OE), die das Projekt durchführt"
             },
             "type": "array",
             "items": {
