@@ -107,26 +107,6 @@
                     }
                 },
                 {
-                    "name": "OSWa5812d3b5119416c8da1606cbe7054eb",
-                    "label": "Term",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSWa5812d3b5119416c8da1606cbe7054eb.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSWa5812d3b5119416c8da1606cbe7054eb.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSWa5812d3b5119416c8da1606cbe7054eb.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSWa5812d3b5119416c8da1606cbe7054eb.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSWa5812d3b5119416c8da1606cbe7054eb.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
                     "name": "OSWfe72974590fd4e8ba94cd4e8366375e8",
                     "label": "Dataset",
                     "namespace": "NS_CATEGORY",
