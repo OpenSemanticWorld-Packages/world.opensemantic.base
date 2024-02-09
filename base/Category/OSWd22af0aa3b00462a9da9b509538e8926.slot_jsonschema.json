@@ -1,12 +1,13 @@
 {
     "@context": [
+        "/wiki/Category:OSWcbb09a36336740c6a2cd62db9bf647ec?action=raw&slot=jsonschema",
         {
             "submission_deadline": "Property:HasEndDate"
         }
     ],
     "allOf": [
         {
-            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+            "$ref": "/wiki/Category:OSWcbb09a36336740c6a2cd62db9bf647ec?action=raw&slot=jsonschema"
         }
     ],
     "type": "object",

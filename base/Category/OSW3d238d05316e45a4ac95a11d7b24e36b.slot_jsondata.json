@@ -17,6 +17,19 @@
             "lang": "de"
         }
     ],
+    "description": [
+        {
+            "text": "A location. Entities that have a somewhat fixed, physical extension.",
+            "lang": "en"
+        },
+        {
+            "text": "Eine Örtlichkeit. Entitaeten, die eine mehr oder weniger feste, physische Ausdehnung haben.",
+            "lang": "de"
+        }
+    ],
+    "instance_rdf_type": [
+        "schema:Place"
+    ],
     "utf8_icon": [
         "📍",
         "📌",

@@ -1,10 +1,9 @@
 {
     "@context": [
-        "/wiki/Category:Item?action=raw&slot=jsonschema",
         {
             "abbreviation": {
                 "@id": "Property:HasAbbreviation",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "city": {
                 "@id": "Property:HasCity",
@@ -28,23 +27,23 @@
             },
             "email": {
                 "@id": "schema:email",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "email*": {
                 "@id": "Property:HasEmail",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "fax_number": {
                 "@id": "schema:faxNumber",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "fax_number*": {
                 "@id": "Property:HasFaxNumber",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "founder": {
                 "@id": "schema:founder",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "founder*": {
                 "@id": "Property:HasFounder",
@@ -52,11 +51,11 @@
             },
             "founding_date": {
                 "@id": "schema:foundingDate",
-                "@type": "@id"
+                "@type": "xsd:date"
             },
             "founding_date*": {
                 "@id": "Property:HasFoundingDate",
-                "@type": "@id"
+                "@type": "xsd:date"
             },
             "founding_location": {
                 "@id": "schema:foundingLocation",
@@ -76,7 +75,7 @@
             },
             "house_no": {
                 "@id": "Property:HasHouseNo",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "image": {
                 "@id": "schema:logo",
@@ -88,11 +87,11 @@
             },
             "legal_name": {
                 "@id": "schema:legalName",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "legal_name*": {
                 "@id": "Property:HasLegalName",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "mailing_list": {
                 "@id": "Property:HasMailingList",
@@ -132,7 +131,7 @@
             },
             "phone_number*": {
                 "@id": "Property:HasPhoneNumber",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "postal_address": {
                 "@id": "schema:address",
@@ -144,19 +143,19 @@
             },
             "postal_code": {
                 "@id": "schema:postalCode",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "postal_code*": {
                 "@id": "Property:HasPostalCode",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "post_office_box_no": {
                 "@id": "schema:postOfficeBoxNumber",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "post_office_box_no*": {
                 "@id": "Property:HasPoBoxNo",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "region": {
                 "@id": "schema:addressLocality",
@@ -204,11 +203,11 @@
             },
             "tax_id": {
                 "@id": "schema:taxID",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "tax_id*": {
                 "@id": "Property:HasTaxId",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "topic": {
                 "@id": "schema:knowsAbout",
@@ -220,11 +219,11 @@
             },
             "vat_id": {
                 "@id": "schema:vatID",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "vat_id*": {
                 "@id": "Property:HasVatId",
-                "@type": "@id"
+                "@type": "xsd:string"
             },
             "website": {
                 "@id": "schema:subjectOf",
@@ -232,12 +231,13 @@
             },
             "website*": {
                 "@id": "Property:HasWebsite",
-                "@type": "@id"
+                "@type": "xsd:anyURI"
             },
             "associated_acl_roles*": {
                 "@id": "Property:HasAssociatedAclRole"
             }
-        }
+        },
+        "/wiki/Category:Item?action=raw&slot=jsonschema"
     ],
     "allOf": [
         {
@@ -256,8 +256,6 @@
         "de": "Die allgemeinste Art von Organisationseinheit - eine Organisation, aber auch Teile einer Organisation"
     },
     "defaultProperties": [
-        "uuid",
-        "label",
         "abbreviation",
         "deputy_manager",
         "mailing_list",
@@ -283,6 +281,7 @@
             ]
         },
         "abbreviation": {
+            "$comment": "should reuse short_name from Entity",
             "title": "Acronym",
             "title*": {
                 "de": "Akronym"
@@ -306,11 +305,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW5eb9c52b804544dc870dfd54ff434428"
             },
-            "uniqueItems": true,
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "deputy_manager": {
             "title": "Deputy manager",
@@ -325,10 +320,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             },
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "founder": {
             "title": "Founder",
@@ -344,10 +336,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             },
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "founding_date": {
             "title": "Founding date",
@@ -356,8 +345,7 @@
                 "de": "Gründungsdatum"
             },
             "type": "string",
-            "format": "date",
-            "default": ""
+            "format": "date"
         },
         "founding_location": {
             "title": "Founding location",
@@ -366,8 +354,7 @@
                 "de": "Gründungsort"
             },
             "type": "string",
-            "format": "text",
-            "default": ""
+            "format": "text"
         },
         "funder": {
             "title": "Funder",
@@ -399,8 +386,7 @@
                 "de": "Rechtlicher Name"
             },
             "type": "string",
-            "format": "text",
-            "default": ""
+            "format": "text"
         },
         "legal_form": {
             "title": "Legal form",
@@ -409,8 +395,7 @@
                 "de": "Rechtsform"
             },
             "type": "string",
-            "format": "text",
-            "default": ""
+            "format": "text"
         },
         "mailing_list": {
             "title": "Mailing list",
@@ -427,7 +412,8 @@
                 "title": "",
                 "type": "string",
                 "format": "email"
-            }
+            },
+            "uniqueItems": true
         },
         "manager": {
             "title": "Manager",
@@ -442,10 +428,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             },
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "member_of": {
             "title": "Member of",
@@ -464,9 +447,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
             },
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "member_persons": {
             "title": "Member person(s)",
@@ -488,9 +469,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             },
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "member_ous": {
             "title": "Member OU(s)",
@@ -512,9 +491,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
             },
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "secretary": {
             "title": "Secretary",
@@ -529,9 +506,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             },
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "postal_address": {
             "type": "object",
@@ -570,6 +545,7 @@
                 "country": {
                     "title": "Country",
                     "title*": {
+                        "en": "Country",
                         "de": "Land"
                     },
                     "type": "string",
@@ -579,27 +555,35 @@
                 "state": {
                     "title": "State",
                     "title*": {
+                        "en": "State",
                         "de": "Bundesland"
                     },
-                    "type": "string"
+                    "type": "string",
+                    "format": "autocomplete",
+                    "range": "Category:OSWab60f9a227954ee0be92344ff6272420"
                 },
                 "region": {
                     "title": "Region",
                     "title*": {
+                        "en": "Region",
                         "de": "Region"
                     },
-                    "type": "string"
+                    "type": "string",
+                    "format": "autocomplete",
+                    "range": "Category:OSW95efaf34e2c7439e8e7967233910e44b"
                 },
                 "post_office_box_no": {
                     "title": "PO box number",
                     "title*": {
+                        "en": "PO box number",
                         "de": "Postfach nummer"
                     },
-                    "type": "number"
+                    "type": "string"
                 },
                 "postal_code": {
                     "title": "Postal code",
                     "title*": {
+                        "en": "Postal code",
                         "de": "Postleitzahl"
                     },
                     "type": "string"
@@ -607,20 +591,25 @@
                 "city": {
                     "title": "City",
                     "title*": {
+                        "en": "City",
                         "de": "Stadt"
                     },
-                    "type": "string"
+                    "type": "string",
+                    "format": "autocomplete",
+                    "range": "Category:OSW807f1da5b42e42f296b213ab06ca873b"
                 },
                 "street_name": {
                     "title": "Street",
                     "title*": {
-                        "de": "Stra\u00dfe"
+                        "en": "Street",
+                        "de": "Straße"
                     },
                     "type": "string"
                 },
                 "house_no": {
                     "title": "House number",
                     "title*": {
+                        "en": "House number",
                         "de": "Hausnummer"
                     },
                     "type": "string"
@@ -640,31 +629,10 @@
                     "de": "Standort"
                 },
                 "type": "string",
-                "oneOf": [
-                    {
-                        "title": "Entry with autocomplete",
-                        "title*": {
-                            "de": "Eintrag mit Autocomplete"
-                        },
-                        "format": "autocomplete",
-                        "range": "Category:OSW473d7a1ed48544d1be83b258b5810948",
-                        "autocomplete_": true
-                    },
-                    {
-                        "title": "Free text entry",
-                        "title*": {
-                            "de": "Freitext-Eintrag"
-                        },
-                        "format": "string",
-                        "freetext_": true
-                    }
-                ]
+                "format": "autocomplete",
+                "range": "Category:OSW473d7a1ed48544d1be83b258b5810948"
             },
-            "uniqueItems": true,
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "superordinate_ou": {
             "title": "Superordinate OU(s)",
@@ -682,9 +650,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
             },
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "tax_id_obj": {
             "title": "Tax ID",
@@ -709,8 +675,7 @@
                         "title*": {
                             "de": "ID"
                         },
-                        "type": "string",
-                        "default": ""
+                        "type": "string"
                     },
                     "country": {
                         "title": "Country",
@@ -719,11 +684,11 @@
                         },
                         "type": "string",
                         "format": "autocomplete",
-                        "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe",
-                        "default": ""
+                        "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe"
                     }
                 }
-            }
+            },
+            "uniqueItems": true
         },
         "vat_id_obj": {
             "title": "VAT ID",
@@ -748,8 +713,7 @@
                         "title*": {
                             "de": "ID"
                         },
-                        "type": "string",
-                        "default": ""
+                        "type": "string"
                     },
                     "country": {
                         "title": "Country",
@@ -758,11 +722,11 @@
                         },
                         "type": "string",
                         "format": "autocomplete",
-                        "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe",
-                        "default": ""
+                        "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe"
                     }
                 }
-            }
+            },
+            "uniqueItems": true
         },
         "topic": {
             "title": "Topic(s)",
@@ -777,11 +741,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW5a13eeda5ed5405ea7ef62ea6feeceec"
             },
-            "uniqueItems": true,
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "website": {
             "title": "Website",

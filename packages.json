@@ -14,12 +14,32 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.18.1",
+            "version": "0.19.0",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
+                {
+                    "name": "OSW712583f2479944deb2546b77cf860dda",
+                    "label": "CreativeWork",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW712583f2479944deb2546b77cf860dda.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW712583f2479944deb2546b77cf860dda.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW712583f2479944deb2546b77cf860dda.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW712583f2479944deb2546b77cf860dda.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW712583f2479944deb2546b77cf860dda.slot_jsonschema.json"
+                        }
+                    }
+                },
                 {
                     "name": "OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26",
                     "label": "Article",
@@ -37,6 +57,45 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                {
+                    "name": "OSW49d68bb7a5de413ba1077bc5f459a766.drawio.svg",
+                    "label": "MetaSchema",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW49d68bb7a5de413ba1077bc5f459a766.drawio.svg.slot_main.wikitext",
+                    "fileURLPath": "File/OSW49d68bb7a5de413ba1077bc5f459a766.drawio.svg",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "File/OSW49d68bb7a5de413ba1077bc5f459a766.drawio.svg.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "File/OSW49d68bb7a5de413ba1077bc5f459a766.drawio.svg.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "File/OSW49d68bb7a5de413ba1077bc5f459a766.drawio.svg.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWe2c50b1034684c1b9a5c21ad371d6381",
+                    "label": "HowTo",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWe2c50b1034684c1b9a5c21ad371d6381.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWe2c50b1034684c1b9a5c21ad371d6381.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWe2c50b1034684c1b9a5c21ad371d6381.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWe2c50b1034684c1b9a5c21ad371d6381.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWe2c50b1034684c1b9a5c21ad371d6381.slot_jsonschema.json"
                         }
                     }
                 },
@@ -63,6 +122,26 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW494f660e6a714a1a9681c517bbb975da.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW37a57741ae2e4dd4b29b1172b6848be8",
+                    "label": "PhysicalItem",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW37a57741ae2e4dd4b29b1172b6848be8.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW37a57741ae2e4dd4b29b1172b6848be8.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW37a57741ae2e4dd4b29b1172b6848be8.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW37a57741ae2e4dd4b29b1172b6848be8.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW37a57741ae2e4dd4b29b1172b6848be8.slot_jsonschema.json"
                         }
                     }
                 },
@@ -149,6 +228,198 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW3d238d05316e45a4ac95a11d7b24e36b.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW473d7a1ed48544d1be83b258b5810948",
+                    "label": "Site",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW4bcd4a99a73f482ea40ac4210dfab836",
+                    "label": "Building",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW6c4212f1a39342be963d2b9efd19c5c2",
+                    "label": "Floor",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWc5ed0ed1e33c4b31887c67af25a610c1",
+                    "label": "Room",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW137e7443b2b94692bd59a0e0a6778b70",
+                    "label": "AdministrativeArea",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW137e7443b2b94692bd59a0e0a6778b70.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW137e7443b2b94692bd59a0e0a6778b70.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW137e7443b2b94692bd59a0e0a6778b70.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW137e7443b2b94692bd59a0e0a6778b70.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW137e7443b2b94692bd59a0e0a6778b70.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW0551abcd6f734047825e3ded4c8a0ffe",
+                    "label": "Country",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW0551abcd6f734047825e3ded4c8a0ffe.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW0551abcd6f734047825e3ded4c8a0ffe.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW0551abcd6f734047825e3ded4c8a0ffe.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW0551abcd6f734047825e3ded4c8a0ffe.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW0551abcd6f734047825e3ded4c8a0ffe.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWab60f9a227954ee0be92344ff6272420",
+                    "label": "State",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWab60f9a227954ee0be92344ff6272420.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWab60f9a227954ee0be92344ff6272420.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWab60f9a227954ee0be92344ff6272420.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWab60f9a227954ee0be92344ff6272420.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWab60f9a227954ee0be92344ff6272420.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW807f1da5b42e42f296b213ab06ca873b",
+                    "label": "City",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW807f1da5b42e42f296b213ab06ca873b.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW807f1da5b42e42f296b213ab06ca873b.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW807f1da5b42e42f296b213ab06ca873b.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW807f1da5b42e42f296b213ab06ca873b.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW807f1da5b42e42f296b213ab06ca873b.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW95efaf34e2c7439e8e7967233910e44b",
+                    "label": "Region",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW95efaf34e2c7439e8e7967233910e44b.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW95efaf34e2c7439e8e7967233910e44b.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW95efaf34e2c7439e8e7967233910e44b.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW95efaf34e2c7439e8e7967233910e44b.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW95efaf34e2c7439e8e7967233910e44b.slot_jsonschema.json"
                         }
                     }
                 },
@@ -346,48 +617,182 @@
                     }
                 },
                 {
-                    "name": "OSW473d7a1ed48544d1be83b258b5810948",
-                    "label": "Site",
+                    "name": "OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3",
+                    "label": "Project",
                     "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_main.wikitext",
+                    "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_main.wikitext",
                     "slots": {
                         "footer": {
-                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_footer.wikitext"
+                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_footer_template.wikitext"
                         },
                         "header": {
-                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_header.wikitext"
+                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_header.wikitext"
                         },
                         "header_template": {
-                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_header_template.wikitext"
+                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_header_template.wikitext"
                         },
                         "jsondata": {
-                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_jsondata.json"
+                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_jsondata.json"
                         },
                         "jsonschema": {
-                            "urlPath": "Category/OSW473d7a1ed48544d1be83b258b5810948.slot_jsonschema.json"
+                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_jsonschema.json"
                         }
                     }
                 },
                 {
-                    "name": "OSW3cb8cef2225e403092f098f99bc4c472",
-                    "label": "OrganizationalUnit",
+                    "name": "OSW847fff8f15e84edcb36da58ffd346d91.png",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW847fff8f15e84edcb36da58ffd346d91.png.slot_main.wikitext",
+                    "fileURLPath": "File/OSW847fff8f15e84edcb36da58ffd346d91.png",
+                    "slots": {}
+                },
+                {
+                    "name": "OSW8b8b696f09b542bbb94f37da80f2892a.png",
+                    "namespace": "NS_FILE",
+                    "urlPath": "File/OSW8b8b696f09b542bbb94f37da80f2892a.png.slot_main.wikitext",
+                    "fileURLPath": "File/OSW8b8b696f09b542bbb94f37da80f2892a.png",
+                    "slots": {}
+                },
+                {
+                    "name": "OSW490e38f9764f4408a244869a0ea98e7c",
+                    "label": "ProjectStatus",
                     "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_main.wikitext",
+                    "urlPath": "Category/OSW490e38f9764f4408a244869a0ea98e7c.slot_main.wikitext",
                     "slots": {
                         "footer": {
-                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_footer.wikitext"
+                            "urlPath": "Category/OSW490e38f9764f4408a244869a0ea98e7c.slot_footer.wikitext"
                         },
                         "header": {
-                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_header_template.wikitext"
+                            "urlPath": "Category/OSW490e38f9764f4408a244869a0ea98e7c.slot_header.wikitext"
                         },
                         "jsondata": {
-                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_jsondata.json"
+                            "urlPath": "Category/OSW490e38f9764f4408a244869a0ea98e7c.slot_jsondata.json"
                         },
                         "jsonschema": {
-                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_jsonschema.json"
+                            "urlPath": "Category/OSW490e38f9764f4408a244869a0ea98e7c.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW595b282aedf048788f3ee326454792ce",
+                    "label": "BudgetType",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW595b282aedf048788f3ee326454792ce.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW595b282aedf048788f3ee326454792ce.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW595b282aedf048788f3ee326454792ce.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW595b282aedf048788f3ee326454792ce.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW595b282aedf048788f3ee326454792ce.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW25bc4daf97644737a76434b88e1d5b21",
+                    "label": "Grant",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW25bc4daf97644737a76434b88e1d5b21.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW25bc4daf97644737a76434b88e1d5b21.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW25bc4daf97644737a76434b88e1d5b21.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW25bc4daf97644737a76434b88e1d5b21.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW25bc4daf97644737a76434b88e1d5b21.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWbe80b28aefd64921ba2e8e2d6225416e",
+                    "label": "MonetaryGrant",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWbe80b28aefd64921ba2e8e2d6225416e.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWbe80b28aefd64921ba2e8e2d6225416e.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWbe80b28aefd64921ba2e8e2d6225416e.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWbe80b28aefd64921ba2e8e2d6225416e.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWbe80b28aefd64921ba2e8e2d6225416e.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWd22af0aa3b00462a9da9b509538e8926",
+                    "label": "FundingCall",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWac9f0e49d8024804bd7d77058322a3fe",
+                    "label": "RoomUsage",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWae92be81cdb34d22844d4791ef790d93",
+                    "label": "AreaUsageType",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_jsonschema.json"
                         }
                     }
                 },
@@ -438,171 +843,25 @@
                     }
                 },
                 {
-                    "name": "OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3",
-                    "label": "Project",
+                    "name": "OSW3cb8cef2225e403092f098f99bc4c472",
+                    "label": "OrganizationalUnit",
                     "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_main.wikitext",
+                    "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_main.wikitext",
                     "slots": {
                         "footer": {
-                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_footer.wikitext"
-                        },
-                        "footer_template": {
-                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_footer_template.wikitext"
+                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_footer.wikitext"
                         },
                         "header": {
-                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_header.wikitext"
+                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_header.wikitext"
                         },
                         "header_template": {
-                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_header_template.wikitext"
+                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_header_template.wikitext"
                         },
                         "jsondata": {
-                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_jsondata.json"
+                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_jsondata.json"
                         },
                         "jsonschema": {
-                            "urlPath": "Category/OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "OSW847fff8f15e84edcb36da58ffd346d91.png",
-                    "namespace": "NS_FILE",
-                    "urlPath": "File/OSW847fff8f15e84edcb36da58ffd346d91.png.slot_main.wikitext",
-                    "fileURLPath": "File/OSW847fff8f15e84edcb36da58ffd346d91.png",
-                    "slots": {}
-                },
-                {
-                    "name": "OSW8b8b696f09b542bbb94f37da80f2892a.png",
-                    "namespace": "NS_FILE",
-                    "urlPath": "File/OSW8b8b696f09b542bbb94f37da80f2892a.png.slot_main.wikitext",
-                    "fileURLPath": "File/OSW8b8b696f09b542bbb94f37da80f2892a.png",
-                    "slots": {}
-                },
-                {
-                    "name": "OSWd22af0aa3b00462a9da9b509538e8926",
-                    "label": "FundingCall",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSWd22af0aa3b00462a9da9b509538e8926.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "OSW4bcd4a99a73f482ea40ac4210dfab836",
-                    "label": "Building",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_header_template.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSW4bcd4a99a73f482ea40ac4210dfab836.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "OSW6c4212f1a39342be963d2b9efd19c5c2",
-                    "label": "Floor",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_header_template.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSW6c4212f1a39342be963d2b9efd19c5c2.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "OSWc5ed0ed1e33c4b31887c67af25a610c1",
-                    "label": "Room",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_header_template.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSWc5ed0ed1e33c4b31887c67af25a610c1.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "OSWac9f0e49d8024804bd7d77058322a3fe",
-                    "label": "RoomUsage",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSWac9f0e49d8024804bd7d77058322a3fe.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "OSWae92be81cdb34d22844d4791ef790d93",
-                    "label": "AreaUsageType",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSWae92be81cdb34d22844d4791ef790d93.slot_jsonschema.json"
+                            "urlPath": "Category/OSW3cb8cef2225e403092f098f99bc4c472.slot_jsonschema.json"
                         }
                     }
                 },
@@ -623,6 +882,26 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW1969007d5acf40539642877659a02c23.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW9d63242855e44ab8b26d6ad9792a67b3",
+                    "label": "EducationalOrganization",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW9d63242855e44ab8b26d6ad9792a67b3.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW9d63242855e44ab8b26d6ad9792a67b3.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW9d63242855e44ab8b26d6ad9792a67b3.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW9d63242855e44ab8b26d6ad9792a67b3.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW9d63242855e44ab8b26d6ad9792a67b3.slot_jsonschema.json"
                         }
                     }
                 },
@@ -827,6 +1106,26 @@
                     }
                 },
                 {
+                    "name": "OSW51653bb12c534c0b92a255b0b5ca3984",
+                    "label": "Function",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW51653bb12c534c0b92a255b0b5ca3984.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW51653bb12c534c0b92a255b0b5ca3984.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW51653bb12c534c0b92a255b0b5ca3984.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW51653bb12c534c0b92a255b0b5ca3984.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW51653bb12c534c0b92a255b0b5ca3984.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
                     "name": "OSW5efde23b1d8c4e1c864ef039cb0616ed",
                     "label": "PersonRole",
                     "namespace": "NS_CATEGORY",
@@ -838,6 +1137,9 @@
                         "header": {
                             "urlPath": "Category/OSW5efde23b1d8c4e1c864ef039cb0616ed.slot_header.wikitext"
                         },
+                        "header_template": {
+                            "urlPath": "Category/OSW5efde23b1d8c4e1c864ef039cb0616ed.slot_header_template.wikitext"
+                        },
                         "jsondata": {
                             "urlPath": "Category/OSW5efde23b1d8c4e1c864ef039cb0616ed.slot_jsondata.json"
                         },
@@ -845,6 +1147,12 @@
                             "urlPath": "Category/OSW5efde23b1d8c4e1c864ef039cb0616ed.slot_jsonschema.json"
                         }
                     }
+                },
+                {
+                    "name": "OSLae92be81cdb34d22844d4791ef790d93",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSLae92be81cdb34d22844d4791ef790d93.slot_main.wikitext",
+                    "slots": {}
                 },
                 {
                     "name": "OSW07a0faef5be94b788514a2dd5dca20bf",
@@ -863,6 +1171,66 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW07a0faef5be94b788514a2dd5dca20bf.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW5a13eeda5ed5405ea7ef62ea6feeceec",
+                    "label": "Topic",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW5a13eeda5ed5405ea7ef62ea6feeceec.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW5a13eeda5ed5405ea7ef62ea6feeceec.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW5a13eeda5ed5405ea7ef62ea6feeceec.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW5a13eeda5ed5405ea7ef62ea6feeceec.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW5a13eeda5ed5405ea7ef62ea6feeceec.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW5eb9c52b804544dc870dfd54ff434428",
+                    "label": "Competence",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW5eb9c52b804544dc870dfd54ff434428.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW5eb9c52b804544dc870dfd54ff434428.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW5eb9c52b804544dc870dfd54ff434428.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW5eb9c52b804544dc870dfd54ff434428.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW5eb9c52b804544dc870dfd54ff434428.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW8cb1935054464c99836d3bc0573a11cc",
+                    "label": "IssueLabel",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW8cb1935054464c99836d3bc0573a11cc.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW8cb1935054464c99836d3bc0573a11cc.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW8cb1935054464c99836d3bc0573a11cc.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW8cb1935054464c99836d3bc0573a11cc.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW8cb1935054464c99836d3bc0573a11cc.slot_jsonschema.json"
                         }
                     }
                 },
@@ -917,6 +1285,23 @@
                         },
                         "jsondata": {
                             "urlPath": "Item/OSWbb07a72940554b1b978c44e5db4bd314.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW55a9a9bda7b248759e48ae2e3ed6df1d",
+                    "label": "Ongoing",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW55a9a9bda7b248759e48ae2e3ed6df1d.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW55a9a9bda7b248759e48ae2e3ed6df1d.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW55a9a9bda7b248759e48ae2e3ed6df1d.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW55a9a9bda7b248759e48ae2e3ed6df1d.slot_jsondata.json"
                         }
                     }
                 },

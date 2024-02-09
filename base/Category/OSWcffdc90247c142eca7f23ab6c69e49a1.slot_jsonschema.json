@@ -24,17 +24,6 @@
             "default": [
                 "Category:OSWcffdc90247c142eca7f23ab6c69e49a1"
             ]
-        },
-        "rdf_type": {
-            "title": "RDF type",
-            "title*": {
-                "de": "RDF-Typ"
-            },
-            "type": "string",
-            "default": "schema:NGO",
-            "options": {
-                "hidden": true
-            }
         }
     }
 }

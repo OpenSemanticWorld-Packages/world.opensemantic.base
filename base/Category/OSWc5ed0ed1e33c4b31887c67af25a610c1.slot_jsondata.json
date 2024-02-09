@@ -16,5 +16,8 @@
     "name": "Room",
     "type": [
         "Category:Category"
+    ],
+    "instance_rdf_type": [
+        "schema:Room"
     ]
 }

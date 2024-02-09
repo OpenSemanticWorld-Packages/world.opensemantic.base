@@ -1,10 +1,13 @@
 {
-    "type": "object",
+    "@context": [
+        "/wiki/Category:OSW1969007d5acf40539642877659a02c23?action=raw&slot=jsonschema"
+    ],
     "allOf": [
         {
             "$ref": "/wiki/Category:OSW1969007d5acf40539642877659a02c23?action=raw&slot=jsonschema"
         }
     ],
+    "type": "object",
     "title": "Corporation",
     "required": [
         "type"

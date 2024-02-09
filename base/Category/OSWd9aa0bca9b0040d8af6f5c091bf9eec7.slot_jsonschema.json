@@ -1,6 +1,5 @@
 {
     "@context": [
-        "/wiki/Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7?action=raw&slot=jsonschema",
         {
             "room": {
                 "@id": "Property:HasRoom",
@@ -11,10 +10,27 @@
                 "@type": "@id"
             },
             "username": {
-                "@id": "Property:HasUsername"
+                "@id": "Property:HasUsername",
+                "@type": "xsd:string"
             }
+        },
+        "/wiki/Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW44deaa5b806d41a2a88594f562b110e9?action=raw&slot=jsonschema"
         }
     ],
+    "title": "User",
+    "title*": {
+        "de": "Nutzer"
+    },
+    "type": "object",
+    "uuid": "d9aa0bca-9b00-40d8-af6f-5c091bf9eec7",
+    "description": "A person who has a user ID.",
+    "description*": {
+        "de": "Eine Person mit Nutzerkennung"
+    },
     "required": [
         "username",
         "type"
@@ -54,10 +70,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSWc5ed0ed1e33c4b31887c67af25a610c1"
             },
-            "uniqueItems": true,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "superior": {
             "title": "Superior(s)",
@@ -79,25 +92,12 @@
                 "format": "autocomplete",
                 "range": "Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7"
             },
-            "uniqueItems": true,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "type": {
             "default": [
                 "Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7"
             ]
         }
-    },
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "/wiki/Category:OSW44deaa5b806d41a2a88594f562b110e9?action=raw&slot=jsonschema"
-        }
-    ],
-    "title": "User",
-    "title*": {
-        "de": "Nutzer"
     }
 }

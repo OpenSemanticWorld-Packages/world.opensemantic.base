@@ -1,6 +1,6 @@
 {
     "@context": [
-        "/wiki/Category:Item?action=raw&slot=jsonschema",
+        "/wiki/Category:OSWe2c50b1034684c1b9a5c21ad371d6381?action=raw&slot=jsonschema",
         {
             "author": "schema:author",
             "preparation_duration": "schema:prepTime",
@@ -19,19 +19,29 @@
     ],
     "allOf": [
         {
-            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+            "$ref": "/wiki/Category:OSWe2c50b1034684c1b9a5c21ad371d6381?action=raw&slot=jsonschema"
         }
     ],
     "title": "Recipe",
     "title*": {
-        "de": "Rezept"
+        "de": "Rezept",
+        "en": "Recipe"
     },
     "description": "Preparation instructions, e.g. for a dish",
     "description*": {
         "de": "Eine Zubereitungsanleitung, z. B. für ein Gericht",
         "en": "Preparation instructions, e.g. for a dish"
     },
+    "uuid": "81e9e22e-7d93-4382-a6a5-6df7d3736957",
+    "required": [
+        "type"
+    ],
     "properties": {
+        "type": {
+            "default": [
+                "Category:OSW81e9e22e7d934382a6a56df7d3736957"
+            ]
+        },
         "output_count": {
             "type": "integer",
             "title": "Yield",
@@ -117,14 +127,6 @@
                     }
                 }
             }
-        },
-        "type": {
-            "default": [
-                "Category:OSW81e9e22e7d934382a6a56df7d3736957"
-            ]
         }
-    },
-    "required": [
-        "type"
-    ]
+    }
 }

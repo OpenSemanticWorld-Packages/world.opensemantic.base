@@ -26,5 +26,8 @@
             "text": "Die allgemeinste Art von Organisationseinheit - eine Organisation, aber auch Teile einer Organisation",
             "lang": "de"
         }
+    ],
+    "instance_rdf_type": [
+        "schema:Organization"
     ]
 }

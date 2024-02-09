@@ -1,6 +1,6 @@
 {
     "subclass_of": [
-        "Category:Item"
+        "Category:OSW712583f2479944deb2546b77cf860dda"
     ],
     "utf8_icon": [
         "📰",
@@ -30,5 +30,8 @@
     ],
     "type": [
         "Category:Category"
+    ],
+    "instance_rdf_type": [
+        "schema:Article"
     ]
 }

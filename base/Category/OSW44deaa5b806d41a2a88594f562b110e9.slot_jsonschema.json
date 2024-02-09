@@ -121,25 +121,14 @@
     "required": [
         "first_name",
         "surname",
-        "type",
-        "rdf_type"
-    ],
-    "data_source_maps": [
-        {
-            "id": "pub.orcid.org",
-            "source": "https://pub.orcid.org/v3.0/{{#split '/' -1}}{{orcid}}{{/split}}",
-            "format": "jsonld",
-            "label": "ORCID",
-            "required": [
-                "orcid"
-            ],
-            "object_map": {
-                "first_name": "$.givenName",
-                "surname": "$.familyName"
-            }
-        }
+        "type"
     ],
     "properties": {
+        "type": {
+            "default": [
+                "Category:OSW44deaa5b806d41a2a88594f562b110e9"
+            ]
+        },
         "first_name": {
             "title": "First name / Given name / Forename",
             "title*": {
@@ -158,10 +147,7 @@
                 "title": "",
                 "type": "string"
             },
-            "uniqueItems": true,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "surname": {
             "title": "Last name / Family name / Surname",
@@ -190,11 +176,7 @@
                 "format": "autocomplete",
                 "query": "[[Category:OSW1969007d5acf40539642877659a02c23]] OR [[Category:OSW5427361692374c8eaa6bd3733b92d343]] |?Display_title_of=label"
             },
-            "uniqueItems": true,
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "organizational_unit": {
             "title": "Organizational (sub)unit",
@@ -216,11 +198,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSWfe3e842b804445c7bb0dd8ee61da2d70"
             },
-            "uniqueItems": true,
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "email": {
             "title": "Email address",
@@ -334,10 +312,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW473d7a1ed48544d1be83b258b5810948"
             },
-            "uniqueItems": true,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "role": {
             "title": "Role",
@@ -352,10 +327,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW5efde23b1d8c4e1c864ef039cb0616ed"
             },
-            "uniqueItems": true,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "competence": {
             "title": "Competence(s)",
@@ -370,10 +342,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW5eb9c52b804544dc870dfd54ff434428"
             },
-            "uniqueItems": true,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "topic": {
             "title": "Topic(s)",
@@ -388,32 +357,7 @@
                 "format": "autocomplete",
                 "range": "Category:OSW5a13eeda5ed5405ea7ef62ea6feeceec"
             },
-            "uniqueItems": true,
-            "default": [
-                ""
-            ]
-        },
-        "type": {
-            "default": [
-                "Category:OSW44deaa5b806d41a2a88594f562b110e9"
-            ]
+            "uniqueItems": true
         }
-    },
-    "title": "Person",
-    "title*": {
-        "de": "Person",
-        "en": "Person"
-    },
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
-        }
-    ],
-    "uuid": "44deaa5b-806d-41a2-a885-94f562b110e9",
-    "description": "Category for a person in general. Subcategories are e.g. 'User', i.e. persons who have a user ID.",
-    "description*": {
-        "en": "Category for a person in general. Subcategories are e.g. 'User', i.e. persons who have a user ID.",
-        "de": "Kategorie f\u00fcr eine Person im Allgemeinen. Unterkategorien sind bsp. 'User', also Personen die \u00fcber eine Nutzerkennung verf\u00fcgen."
     }
 }

@@ -1,6 +1,6 @@
 {
     "subclass_of": [
-        "Category:OSW1969007d5acf40539642877659a02c23"
+        "Category:OSW9d63242855e44ab8b26d6ad9792a67b3"
     ],
     "uuid": "11ee14fb-9f77-4b4b-89bd-b9bb89aac14d",
     "name": "University",
@@ -17,5 +17,6 @@
             "text": "Universität",
             "lang": "de"
         }
-    ]
+    ],
+    "instance_rdf_type": "schema:CollegeOrUniversity"
 }

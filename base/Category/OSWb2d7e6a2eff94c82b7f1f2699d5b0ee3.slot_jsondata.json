@@ -39,5 +39,8 @@
     "name": "Project",
     "utf8_icon": [
         "💰"
+    ],
+    "instance_rdf_type": [
+        "schema:Project"
     ]
 }

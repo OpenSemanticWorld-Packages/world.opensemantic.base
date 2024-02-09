@@ -36,5 +36,8 @@
             "lang": "de"
         }
     ],
-    "name": "Person"
+    "name": "Person",
+    "instance_rdf_type": [
+        "schema:Person"
+    ]
 }

@@ -1,15 +1,37 @@
 {
     "@context": [
         {
-            "manager": "Property:HasManager",
-            "superordinate_ou": "Property:HasSuperordinateOu"
+            "manager": {
+                "@id": "Property:HasManager",
+                "@type": "@id"
+            },
+            "superordinate_ou": {
+                "@id": "Property:HasSuperordinateOu",
+                "@type": "@id"
+            }
+        },
+        "/wiki/Category:OSWfe3e842b804445c7bb0dd8ee61da2d70?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWfe3e842b804445c7bb0dd8ee61da2d70?action=raw&slot=jsonschema"
         }
+    ],
+    "type": "object",
+    "title": "Institute",
+    "required": [
+        "type"
     ],
     "defaultProperties": [
         "uuid",
         "label"
     ],
     "properties": {
+        "type": {
+            "default": [
+                "Category:OSW5427361692374c8eaa6bd3733b92d343"
+            ]
+        },
         "image": {
             "title": "Logo",
             "title*": {
@@ -44,10 +66,7 @@
                 "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
                 "labelTemplate": "{{result.printouts.label.[0]}}"
             },
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "postal_address": {
             "eval_template": {
@@ -177,11 +196,7 @@
                     }
                 ]
             },
-            "uniqueItems": true,
-            "minItems": 1,
-            "default": [
-                ""
-            ]
+            "uniqueItems": true
         },
         "superordinate_ou": {
             "description": "Faculty or organization, the institute belongs to.",
@@ -199,25 +214,7 @@
                 "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
                 "labelTemplate": "{{result.printouts.label.[0]}}"
             },
-            "minItems": 1,
-            "default": [
-                ""
-            ]
-        },
-        "type": {
-            "default": [
-                "Category:OSW5427361692374c8eaa6bd3733b92d343"
-            ]
+            "uniqueItems": true
         }
-    },
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "/wiki/Category:OSWfe3e842b804445c7bb0dd8ee61da2d70?action=raw&slot=jsonschema"
-        }
-    ],
-    "title": "Institute",
-    "required": [
-        "type"
-    ]
+    }
 }

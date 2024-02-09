@@ -14,8 +14,10 @@
         "de": "Standort"
     },
     "uuid": "473d7a1e-d485-44d1-be83-b258b5810948",
-    "description": "",
-    "description*": {},
+    "description": "A site is a location or place where a particular event, activity, or object exists or is situated.",
+    "description*": {
+        "de": "Ein Standort ist ein Ort oder ein Platz, an dem ein bestimmtes Ereignis, eine Aktivität oder ein Objekt existiert oder sich befindet."
+    },
     "required": [
         "type"
     ],

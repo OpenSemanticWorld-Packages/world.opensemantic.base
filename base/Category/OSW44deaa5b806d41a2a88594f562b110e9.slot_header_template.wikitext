@@ -26,7 +26,7 @@
 </tr> 
 <tr> 
 <th>{{{_label_organizational_unit|Department}}}</th> 
-<td>{{#ask:[[{{FULLPAGENAME}}]]|?HasOU=|format=plain|mainlabel=-}}</td> 
+<td>{{#ask:[[{{FULLPAGENAME}}]]|?HasOu=|format=plain|mainlabel=-}}</td> 
 </tr> 
 <tr> 
 <th>{{{_label_located_in|Located at}}}</th> 

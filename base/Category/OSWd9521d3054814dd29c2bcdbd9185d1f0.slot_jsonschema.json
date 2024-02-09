@@ -1,12 +1,30 @@
 {
     "@context": [
-        {}
+        "/wiki/Category:OSWcffdc90247c142eca7f23ab6c69e49a1?action=raw&slot=jsonschema"
     ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWcffdc90247c142eca7f23ab6c69e49a1?action=raw&slot=jsonschema"
+        }
+    ],
+    "title": "Association",
+    "title*": {
+        "de": "Verein"
+    },
+    "type": "object",
     "defaultProperties": [
         "uuid",
         "label"
     ],
+    "required": [
+        "type"
+    ],
     "properties": {
+        "type": {
+            "default": [
+                "Category:OSWd9521d3054814dd29c2bcdbd9185d1f0"
+            ]
+        },
         "manager": {
             "title": "President",
             "title*": {
@@ -18,21 +36,6 @@
                 "en": "The president is the head of the association.",
                 "de": "Der/die Präsident:in ist der Vorsitzende des Vereins."
             }
-        },
-        "type": {
-            "default": [
-                "Category:OSWd9521d3054814dd29c2bcdbd9185d1f0"
-            ]
         }
-    },
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "/wiki/Category:OSW1969007d5acf40539642877659a02c23?action=raw&slot=jsonschema"
-        }
-    ],
-    "title": "Association",
-    "required": [
-        "type"
-    ]
+    }
 }

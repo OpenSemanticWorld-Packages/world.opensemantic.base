@@ -26,14 +26,6 @@
         |de=Lage}}</th>
 <td>{{#ask:[[{{FULLPAGENAME}}]]|?IsLocatedIn=|format=plain|mainlabel=-}}</td>
 </tr>
-{{#if: {{#ask: [[HasRoomFunction::Item:OSW078a57975dd04d7e89bb4ad50cac7aeb]][[{{FULLPAGENAME}}]]}}|<!-- show people, other options: Büroarbeit, Büro-->
-    <tr>
-    <th>{{#switch:{{USERLANGUAGECODE}}
-        |en=Occupants
-        |de=Belegung}}</th>
-    <td>{{#ask: [[Category:OSW44deaa5b806d41a2a88594f562b110e9]][[HasRoom::{{FULLPAGENAME}}]]}}</td>
-    </tr>
-    |<!-- else show nothing -->}}
 <tr>
 <td class="subheading" colspan="2">{{#switch:{{USERLANGUAGECODE}}
     |en=Dimensions
@@ -76,3 +68,27 @@
 <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasResponsiblePerson=|format=plain|mainlabel=-}}</td>
 </tr>
 </table>
+<!-- Occupancy -->
+{{#if: {{#ask: [[Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]][[HasRoom::{{FULLPAGENAME}}]]}} |
+    =={{#switch:{{USERLANGUAGECODE}}|en=Occupancy|de=Belegung|#default=Occupancy}}==
+    {{#set: HasNumberOfOccupants=
+        {{#ask: [[Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]][[HasRoom::{{FULLPAGENAME}}]]
+            |format=count
+            |limit=1000
+            }}
+    }}
+{{#switch:{{USERLANGUAGECODE}}
+        |en=Number of occupants
+        |de=Belegung (Anzahl)
+        |#default=Number of occupants
+    }}: {{#show: {{FULLPAGENAME}} |?HasNumberOfOccupants}}
+    {{#ask: [[Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]][[HasRoom::{{FULLPAGENAME}}]]
+        |?HasOu={{#switch: {{USERLANGUAGECODE}} |en=OU |de=OE |#default=OU}}
+        |?HasPhoneNumber={{#switch: {{USERLANGUAGECODE}} |en=Phone |de=Telefon |#default=Phone}}
+        |format=table
+        |limit=1000
+        |sort=Display title of
+        |order=asc
+        }} 
+    | {{#set: HasNumberOfOccupants=0}}  
+}}

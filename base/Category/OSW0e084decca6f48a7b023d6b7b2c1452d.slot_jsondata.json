@@ -29,5 +29,8 @@
             "text": "Ein Ereignis, entweder lokal, remote oder hybrid. Z.B. eine Besprechung oder eine Konferenz. Dieses Element ist für die Dokumentation von Ereignissen gedacht. Es ist insbesondere für Notizen, Beschlüsse und Aufgaben vorgesehen. Bei wiederkehrenden Ereignissen (Serien) sollten die Aufgaben dort verwaltet werden.",
             "lang": "de"
         }
+    ],
+    "instance_rdf_type": [
+        "schema:Event"
     ]
 }

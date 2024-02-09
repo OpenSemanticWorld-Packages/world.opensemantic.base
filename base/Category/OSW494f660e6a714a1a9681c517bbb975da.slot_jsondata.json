@@ -29,5 +29,8 @@
             "text": "Schriftliche oder filmische Gebrauchsanleitung",
             "lang": "de"
         }
+    ],
+    "instance_rdf_type": [
+        "schema:HowTo"
     ]
 }

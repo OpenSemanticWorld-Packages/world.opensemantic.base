@@ -1,9 +1,24 @@
 {
     "@context": [
-        {}
+        "/wiki/Category:OSW9d63242855e44ab8b26d6ad9792a67b3?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW9d63242855e44ab8b26d6ad9792a67b3?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "title": "University",
+    "required": [
+        "type"
     ],
     "defaultProperties": [],
     "properties": {
+        "type": {
+            "default": [
+                "Category:OSW11ee14fb9f774b4b89bdb9bb89aac14d"
+            ]
+        },
         "manager": {
             "title": "Rector / president",
             "title*": {
@@ -15,21 +30,6 @@
                 "en": "The rector or president is the head of the university.",
                 "de": "Der/die Rektor:in oder Präsident:in ist der/die Leiter:in der Universität."
             }
-        },
-        "type": {
-            "default": [
-                "Category:OSW11ee14fb9f774b4b89bdb9bb89aac14d"
-            ]
         }
-    },
-    "type": "object",
-    "allOf": [
-        {
-            "$ref": "/wiki/Category:OSW1969007d5acf40539642877659a02c23?action=raw&slot=jsonschema"
-        }
-    ],
-    "title": "University",
-    "required": [
-        "type"
-    ]
+    }
 }
