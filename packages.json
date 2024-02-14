@@ -14,7 +14,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.20.0",
+            "version": "0.20.1",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -60,7 +60,6 @@
                         }
                     }
                 },
-                {
                 {
                     "name": "OSW49d68bb7a5de413ba1077bc5f459a766.drawio.svg",
                     "label": "MetaSchema",
