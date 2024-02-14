@@ -1,6 +1,5 @@
 {
     "@context": [
-        "/wiki/Category:Item?action=raw&slot=jsonschema",
         {
             "competence": {
                 "@id": "schema:knowsAbout",
@@ -11,22 +10,28 @@
                 "@type": "@id"
             },
             "email": {
-                "@id": "schema:email"
+                "@id": "schema:email",
+                "@type": "xsd:string"
             },
             "email*": {
-                "@id": "Property:HasEmail"
+                "@id": "Property:HasEmail",
+                "@type": "xsd:string"
             },
             "fax_number": {
-                "@id": "schema:faxNumber"
+                "@id": "schema:faxNumber",
+                "@type": "xsd:string"
             },
             "fax_number*": {
-                "@id": "Property:HasFaxNumber"
+                "@id": "Property:HasFaxNumber",
+                "@type": "xsd:string"
             },
             "first_name": {
-                "@id": "schema:givenName"
+                "@id": "schema:givenName",
+                "@type": "xsd:string"
             },
             "first_name*": {
-                "@id": "Property:HasFirstName"
+                "@id": "Property:HasFirstName",
+                "@type": "xsd:string"
             },
             "located_in": {
                 "@id": "schema:workLocation",
@@ -37,16 +42,20 @@
                 "@type": "@id"
             },
             "middle_name": {
-                "@id": "schema:additionalName"
+                "@id": "schema:additionalName",
+                "@type": "xsd:string"
             },
             "middle_name*": {
-                "@id": "Property:HasMiddleName"
+                "@id": "Property:HasMiddleName",
+                "@type": "xsd:string"
             },
             "orcid": {
-                "@id": "schema:identifier"
+                "@id": "schema:identifier",
+                "@type": "xsd:string"
             },
             "orcid*": {
-                "@id": "Property:HasOrcidId"
+                "@id": "Property:HasOrcidId",
+                "@type": "xsd:string"
             },
             "organization": {
                 "@id": "schema:worksFor",
@@ -65,10 +74,12 @@
                 "@type": "@id"
             },
             "phone_number": {
-                "@id": "schema:telephone"
+                "@id": "schema:telephone",
+                "@type": "xsd:string"
             },
             "phone_number*": {
-                "@id": "Property:HasPhoneNumber"
+                "@id": "Property:HasPhoneNumber",
+                "@type": "xsd:string"
             },
             "role": {
                 "@id": "schema:jobTitle",
@@ -79,10 +90,12 @@
                 "@type": "@id"
             },
             "surname": {
-                "@id": "schema:familyName"
+                "@id": "schema:familyName",
+                "@type": "xsd:string"
             },
             "surname*": {
-                "@id": "Property:HasSurname"
+                "@id": "Property:HasSurname",
+                "@type": "xsd:string"
             },
             "topic": {
                 "@id": "schema:knowsAbout",
@@ -93,13 +106,33 @@
                 "@type": "@id"
             },
             "website": {
-                "@id": "schema:subjectOf"
+                "@id": "schema:subjectOf",
+                "@type": "xsd:string"
             },
             "website*": {
-                "@id": "Property:HasWebsite"
+                "@id": "Property:HasWebsite",
+                "@type": "xsd:string"
             }
+        },
+        "/wiki/Category:Item?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
         }
     ],
+    "title": "Person",
+    "title*": {
+        "de": "Person",
+        "en": "Person"
+    },
+    "type": "object",
+    "uuid": "44deaa5b-806d-41a2-a885-94f562b110e9",
+    "description": "Category for a person in general. Subcategories are e.g. 'User', i.e. persons who have a user ID.",
+    "description*": {
+        "en": "Category for a person in general. Subcategories are e.g. 'User', i.e. persons who have a user ID.",
+        "de": "Kategorie für eine Person im Allgemeinen. Unterkategorien sind bsp. 'User', also Personen die über eine Nutzerkennung verfügen."
+    },
     "defaultProperties": [
         "uuid",
         "label",
