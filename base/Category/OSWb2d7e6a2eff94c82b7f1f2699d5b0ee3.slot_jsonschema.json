@@ -122,7 +122,7 @@
     ],
     "allOf": [
         {
-            "$ref": "/wiki/Category:OSW1969007d5acf40539642877659a02c23?action=raw&slot=jsonschema"
+            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
         }
     ],
     "uuid": "b2d7e6a2-eff9-4c82-b7f1-f2699d5b0ee3",
