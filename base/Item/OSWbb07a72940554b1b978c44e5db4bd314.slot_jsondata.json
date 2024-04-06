@@ -13,5 +13,11 @@
             "lang": "de"
         }
     ],
-    "name": "NonFunctionalRequirement"
+    "name": "NonFunctionalRequirement",
+    "description": [
+        {
+            "text": "More technical and implementation aspects, but also e. g. response time",
+            "lang": "en"
+        }
+    ]
 }

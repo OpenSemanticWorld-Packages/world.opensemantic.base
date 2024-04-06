@@ -10,8 +10,14 @@
         },
         {
             "text": "Funktionale Anforderung",
-            "lang": "en"
+            "lang": "de"
         }
     ],
-    "name": "FunctionalRequirement"
+    "name": "FunctionalRequirement",
+    "description": [
+        {
+            "text": "Primary defined by the user, e. g. features",
+            "lang": "en"
+        }
+    ]
 }
