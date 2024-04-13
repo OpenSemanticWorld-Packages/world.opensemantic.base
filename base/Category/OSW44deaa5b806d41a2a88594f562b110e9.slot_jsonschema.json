@@ -196,7 +196,7 @@
                     "de": "Organisation"
                 },
                 "format": "autocomplete",
-                "query": "[[Category:OSW1969007d5acf40539642877659a02c23]] OR [[Category:OSW5427361692374c8eaa6bd3733b92d343]] |?Display_title_of=label"
+                "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
             },
             "uniqueItems": true
         },
@@ -225,7 +225,7 @@
         "email": {
             "title": "Email address",
             "title*": {
-                "de": "E-Mail"
+                "de": "E-Mail Adresse"
             },
             "eval_template": {
                 "type": "mustache-wikitext",
@@ -235,7 +235,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Email",
+                "title*": {
+                    "de": "E-Mail"
+                },
                 "type": "string",
                 "format": "email"
             },
@@ -254,7 +257,7 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "URL",
                 "type": "string",
                 "format": "uri"
             },
@@ -289,7 +292,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Phone",
+                "title*": {
+                    "de": "Telefon"
+                },
                 "type": "string",
                 "pattern": "(?:(?:(?:\\+|00|011)[\\.\\/\\-\\ \\t]*([17]|2(?:[07]|[1-689]\\d)|3(?:[0-4679]|[578]\\d)|4(?:[013-9]|2\\d)|5(?:[1-8]|[09]\\d)|6(?:[0-6]|[789]\\d)|8(?:[1246]|[035789]\\d)|9(?:[0-58]|[679]\\d))[\\.\\/\\-\\ \\t]*|([17])[\\.\\/\\-\\ ])?(?:\\((\\d{1,6})\\)[\\.\\/\\-\\ \\t]*)?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(\\d{0,10}?)(\\d{1,})(?:[\\.\\/\\-;\\ \\t]*e?xt?[\\.\\/\\-=\\ \\t]*(\\d{1,14}))?)?"
             },
@@ -312,7 +318,7 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Fax",
                 "type": "string",
                 "pattern": "(?:(?:(?:\\+|00|011)[\\.\\/\\-\\ \\t]*([17]|2(?:[07]|[1-689]\\d)|3(?:[0-4679]|[578]\\d)|4(?:[013-9]|2\\d)|5(?:[1-8]|[09]\\d)|6(?:[0-6]|[789]\\d)|8(?:[1246]|[035789]\\d)|9(?:[0-58]|[679]\\d))[\\.\\/\\-\\ \\t]*|([17])[\\.\\/\\-\\ ])?(?:\\((\\d{1,6})\\)[\\.\\/\\-\\ \\t]*)?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(\\d{0,10}?)(\\d{1,})(?:[\\.\\/\\-;\\ \\t]*e?xt?[\\.\\/\\-=\\ \\t]*(\\d{1,14}))?)?"
             },
@@ -337,14 +343,17 @@
             "uniqueItems": true
         },
         "role": {
-            "title": "Role",
+            "title": "Roles",
             "title*": {
-                "de": "Rolle(n)"
+                "de": "Rollen"
             },
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Role",
+                "title*": {
+                    "de": "Rolle"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW5efde23b1d8c4e1c864ef039cb0616ed"
@@ -352,14 +361,17 @@
             "uniqueItems": true
         },
         "competence": {
-            "title": "Competence(s)",
+            "title": "Competences",
             "title*": {
-                "de": "Kompetenz(en)"
+                "de": "Kompetenzen"
             },
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Competence",
+                "title*": {
+                    "de": "Kompetenz"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW5eb9c52b804544dc870dfd54ff434428"
@@ -367,14 +379,17 @@
             "uniqueItems": true
         },
         "topic": {
-            "title": "Topic(s)",
+            "title": "Topics",
             "title*": {
-                "de": "Thema/en"
+                "de": "Themen"
             },
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Topic",
+                "title*": {
+                    "de": "Thema"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW5a13eeda5ed5405ea7ef62ea6feeceec"

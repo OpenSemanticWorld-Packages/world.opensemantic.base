@@ -165,6 +165,10 @@
                 "@id": "Property:HasRegion",
                 "@type": "@id"
             },
+            "ror_id": {
+                "@id": "Property:HasRorId",
+                "@type": "xsd:string"
+            },
             "secretary": {
                 "@id": "Property:HasSecretary",
                 "@type": "@id"
@@ -287,7 +291,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Competence",
+                "title*": {
+                    "de": "Kompetenz"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW5eb9c52b804544dc870dfd54ff434428"
@@ -302,7 +309,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Deputy manager",
+                "title*": {
+                    "de": "Stellvertretende:r Manager:in"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
@@ -312,13 +322,15 @@
         "founder": {
             "title": "Founder",
             "title*": {
-                "en": "Founder",
                 "de": "Gründer:in"
             },
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Founder",
+                "title*": {
+                    "de": "Gründer:in"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
@@ -396,7 +408,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Mailing list",
+                "title*": {
+                    "de": "E-Mail-Verteiler"
+                },
                 "type": "string",
                 "format": "email"
             },
@@ -410,7 +425,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Manager",
+                "title*": {
+                    "de": "Manager:in"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
@@ -429,7 +447,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Member of",
+                "title*": {
+                    "de": "Mitglied in"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
@@ -448,9 +469,9 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "Member",
+                "title": "Member person(s)",
                 "title*": {
-                    "de": "Mitglied"
+                    "de": "Mitgliedsperson(en)"
                 },
                 "type": "string",
                 "format": "autocomplete",
@@ -470,9 +491,9 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "Member",
+                "title": "Member OU(s)",
                 "title*": {
-                    "de": "Mitglied"
+                    "de": "Mitglied OE(s)"
                 },
                 "type": "string",
                 "format": "autocomplete",
@@ -488,7 +509,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Secretary",
+                "title*": {
+                    "de": "Sekretär:in"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
@@ -602,6 +626,17 @@
                     "type": "string"
                 }
             }
+        },
+        "ror_id": {
+            "title": "ROR ID",
+            "title*": {
+                "de": "ROR ID"
+            },
+            "description": "ID provided by https://ror.org/",
+            "description*": {
+                "de": "ID bereitgestellt von https://ror.org/"
+            },
+            "type": "string"
         },
         "site": {
             "title": "Site(s)",
@@ -723,7 +758,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Topic(s)",
+                "title*": {
+                    "de": "Thema/en"
+                },
                 "type": "string",
                 "format": "autocomplete",
                 "range": "Category:OSW5a13eeda5ed5405ea7ef62ea6feeceec"
@@ -743,7 +781,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Website",
+                "title*": {
+                    "de": "Webseite"
+                },
                 "type": "string",
                 "format": "uri"
             },
@@ -762,7 +803,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Email address",
+                "title*": {
+                    "de": "E-Mail"
+                },
                 "type": "string",
                 "format": "email"
             },
@@ -785,7 +829,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Phone number",
+                "title*": {
+                    "de": "Telefonnummer"
+                },
                 "type": "string",
                 "pattern": "(?:(?:(?:\\+|00|011)[\\.\\/\\-\\ \\t]*([17]|2(?:[07]|[1-689]\\d)|3(?:[0-4679]|[578]\\d)|4(?:[013-9]|2\\d)|5(?:[1-8]|[09]\\d)|6(?:[0-6]|[789]\\d)|8(?:[1246]|[035789]\\d)|9(?:[0-58]|[679]\\d))[\\.\\/\\-\\ \\t]*|([17])[\\.\\/\\-\\ ])?(?:\\((\\d{1,6})\\)[\\.\\/\\-\\ \\t]*)?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(\\d{0,10}?)(\\d{1,})(?:[\\.\\/\\-;\\ \\t]*e?xt?[\\.\\/\\-=\\ \\t]*(\\d{1,14}))?)?"
             },
@@ -808,7 +855,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Fax number",
+                "title*": {
+                    "de": "Faxnummer"
+                },
                 "type": "string",
                 "pattern": "(?:(?:(?:\\+|00|011)[\\.\\/\\-\\ \\t]*([17]|2(?:[07]|[1-689]\\d)|3(?:[0-4679]|[578]\\d)|4(?:[013-9]|2\\d)|5(?:[1-8]|[09]\\d)|6(?:[0-6]|[789]\\d)|8(?:[1246]|[035789]\\d)|9(?:[0-58]|[679]\\d))[\\.\\/\\-\\ \\t]*|([17])[\\.\\/\\-\\ ])?(?:\\((\\d{1,6})\\)[\\.\\/\\-\\ \\t]*)?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(?:(\\d{1,6})[\\.\\/\\-\\ ])?(\\d{0,10}?)(\\d{1,})(?:[\\.\\/\\-;\\ \\t]*e?xt?[\\.\\/\\-=\\ \\t]*(\\d{1,14}))?)?"
             },

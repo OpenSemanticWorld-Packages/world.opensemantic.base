@@ -1,6 +1,7 @@
 {
     "@context": [
-        "/wiki/Category:OSWcffdc90247c142eca7f23ab6c69e49a1?action=raw&slot=jsonschema"
+        "/wiki/Category:OSWcffdc90247c142eca7f23ab6c69e49a1?action=raw&slot=jsonschema",
+        {}
     ],
     "allOf": [
         {
