@@ -256,20 +256,7 @@
         "de": "Die allgemeinste Art von Organisationseinheit - eine Organisation, aber auch Teile einer Organisation"
     },
     "defaultProperties": [
-        "abbreviation",
-        "deputy_manager",
-        "mailing_list",
-        "manager",
-        "secretary",
-        "superordinate_ou",
-        "topic",
-        "website",
-        "phone_number",
-        "fax_number",
-        "email",
-        "image",
-        "member_of",
-        "postal_address"
+        "abbreviation"
     ],
     "required": [
         "type"

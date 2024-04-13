@@ -11,7 +11,17 @@
         },
         {
             "text": "Organisationsuntereinheit",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "An organizational unit that explicitly is part of a larger organizational unit.",
             "lang": "en"
+        },
+        {
+            "text": "Eine Organisationseinheit, die ausdrücklich Teil einer größeren Organisationseinheit ist.",
+            "lang": "de"
         }
     ],
     "type": [

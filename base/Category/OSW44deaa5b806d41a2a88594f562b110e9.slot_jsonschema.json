@@ -134,22 +134,11 @@
         "de": "Kategorie für eine Person im Allgemeinen. Unterkategorien sind bsp. 'User', also Personen die über eine Nutzerkennung verfügen."
     },
     "defaultProperties": [
-        "uuid",
-        "label",
         "first_name",
-        "middle_name",
         "surname",
         "organization",
-        "organizational_unit",
         "email",
-        "website",
-        "phone_number",
-        "fax_number",
-        "orcid",
-        "located_in",
-        "role",
-        "competence",
-        "topic"
+        "phone_number"
     ],
     "required": [
         "first_name",

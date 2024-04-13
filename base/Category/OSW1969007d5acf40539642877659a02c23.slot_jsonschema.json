@@ -8,26 +8,10 @@
         }
     ],
     "defaultProperties": [
-        "uuid",
-        "label",
-        "abbreviation",
-        "deputy_manager",
-        "mailing_list",
-        "manager",
-        "secretary",
-        "superordinate_ou",
-        "topic",
-        "website",
-        "phone_number",
-        "fax_number",
-        "email",
         "image",
-        "member_of",
+        "website",
         "postal_address",
-        "site",
-        "legal_name",
-        "legal_form",
-        "superordinate_ou"
+        "member_of"
     ],
     "properties": {
         "type": {
