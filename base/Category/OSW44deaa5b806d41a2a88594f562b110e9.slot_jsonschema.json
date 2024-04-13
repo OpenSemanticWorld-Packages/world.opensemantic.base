@@ -156,7 +156,8 @@
             "title*": {
                 "de": "Vorname"
             },
-            "type": "string"
+            "type": "string",
+            "propertyOrder": -3
         },
         "middle_name": {
             "title": "Middle name(s)",
@@ -166,17 +167,41 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "Name",
                 "type": "string"
             },
-            "uniqueItems": true
+            "uniqueItems": true,
+            "propertyOrder": -2
         },
         "surname": {
             "title": "Last name / Family name / Surname",
             "title*": {
                 "de": "Nachname"
             },
-            "type": "string"
+            "type": "string",
+            "propertyOrder": -1
+        },
+        "label": {
+            "items": {
+                "title": "Display name",
+                "title*": {
+                    "de": "Anzeigenamen"
+                },
+                "properties": {
+                    "text": {
+                        "watch": {
+                            "first_name": "root.first_name",
+                            "middle_name": "root.middle_name",
+                            "surname": "root.surname"
+                        },
+                        "readonly": true,
+                        "dynamic_template": "{{first_name}}{{#each middle_name}} {{.}}{{/each}}{{#if surname}} {{{surname}}}{{/if}}"
+                    }
+                }
+            },
+            "options": {
+                "hidden": true
+            }
         },
         "organization": {
             "title": "Organization",
