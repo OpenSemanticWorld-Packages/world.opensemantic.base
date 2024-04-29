@@ -216,7 +216,7 @@
             },
             "type": "string",
             "format": "autocomplete",
-            "category": "Category:OSW490e38f9764f4408a244869a0ea98e7c",
+            "range": "Category:OSW490e38f9764f4408a244869a0ea98e7c",
             "default": "Item:OSW55a9a9bda7b248759e48ae2e3ed6df1d"
         },
         "funding_call": {
