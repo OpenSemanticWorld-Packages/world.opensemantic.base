@@ -22,12 +22,12 @@
     ],
     "description": [
         {
-            "text": "A two-stage procedure is common for many funding calls. This project status describes a submitted full proposal (second stage).",
+            "text": "A two-stage procedure is common for many tenders. This project status describes a not yet submitted full proposal (second stage).",
             "lang": "en"
         },
         {
-            "text": "Ein zweistufiges Verfahren ist bei vielen Förderaufrufen üblich. Dieser Projektstatus beschreibt einen eingereichten Vollantrag (zweite Stufe).",
-            "lang": "de"
+            "text": "Ein zweistufiges Verfahren ist bei vielen Ausschreibungen üblich. Dieser Projektstatus beschreibt einen noch nicht eingereichten Vollantrag (zweite Stufe).",
+            "lang": "en"
         }
     ],
     "name": "AdmittedForTheFullApplication"
