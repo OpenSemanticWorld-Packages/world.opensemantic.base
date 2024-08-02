@@ -2,6 +2,10 @@
     "@context": [
         {
             "author": {
+                "@id": "schema:Author",
+                "@type": "@id"
+            },
+            "author*": {
                 "@id": "Property:HasAuthor",
                 "@type": "@id"
             }

@@ -12,7 +12,13 @@
         }
     ],
     "type": "object",
+    "uuid": "fe729745-90fd-4e8b-a94c-d4e8366375e8",
     "title": "Dataset",
+    "title*": {
+        "en": "Dataset"
+    },
+    "description": "",
+    "description*": {},
     "required": [
         "type"
     ],

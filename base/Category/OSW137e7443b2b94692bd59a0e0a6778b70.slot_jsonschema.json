@@ -20,26 +20,13 @@
         "de": "Eine geografische Region, die in der Regel unter die Zuständigkeit einer bestimmten Regierung fällt."
     },
     "required": [
-        "type",
-        "rdf_type"
+        "type"
     ],
     "properties": {
         "type": {
             "default": [
                 "Category:OSW137e7443b2b94692bd59a0e0a6778b70"
             ]
-        },
-        "rdf_type": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "default": [
-                "schema:AdministrativeArea"
-            ],
-            "options": {
-                "hidden": true
-            }
         }
     }
 }

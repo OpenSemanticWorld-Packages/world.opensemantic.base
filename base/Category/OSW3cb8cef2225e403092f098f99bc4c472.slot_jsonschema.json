@@ -5,20 +5,12 @@
                 "@id": "Property:HasAbbreviation",
                 "@type": "xsd:string"
             },
-            "city": {
-                "@id": "Property:HasCity",
-                "@type": "@id"
-            },
             "competence": {
                 "@id": "schema:knowsAbout",
                 "@type": "@id"
             },
             "competence*": {
                 "@id": "Property:HasCompetence",
-                "@type": "@id"
-            },
-            "country": {
-                "@id": "Property:HasCountry",
                 "@type": "@id"
             },
             "deputy_manager": {
@@ -72,10 +64,6 @@
             "funder*": {
                 "@id": "Property:HasFunder",
                 "@type": "@id"
-            },
-            "house_no": {
-                "@id": "Property:HasHouseNo",
-                "@type": "xsd:string"
             },
             "image": {
                 "@id": "schema:logo",
@@ -134,36 +122,11 @@
                 "@type": "xsd:string"
             },
             "postal_address": {
-                "@id": "schema:address",
-                "@type": "@id"
-            },
-            "postal_address*": {
                 "@id": "Property:HasPostalAddress",
-                "@type": "@id"
-            },
-            "postal_code": {
-                "@id": "schema:postalCode",
-                "@type": "xsd:string"
-            },
-            "postal_code*": {
-                "@id": "Property:HasPostalCode",
-                "@type": "xsd:string"
-            },
-            "post_office_box_no": {
-                "@id": "schema:postOfficeBoxNumber",
-                "@type": "xsd:string"
-            },
-            "post_office_box_no*": {
-                "@id": "Property:HasPoBoxNo",
-                "@type": "xsd:string"
-            },
-            "region": {
-                "@id": "schema:addressLocality",
-                "@type": "@id"
-            },
-            "region*": {
-                "@id": "Property:HasRegion",
-                "@type": "@id"
+                "@type": "@id",
+                "@context": [
+                    "/wiki/JsonSchema:PostalAddress?action=raw"
+                ]
             },
             "ror_id": {
                 "@id": "Property:HasRorId",
@@ -179,22 +142,6 @@
             },
             "site*": {
                 "@id": "Property:IsLocatedIn",
-                "@type": "@id"
-            },
-            "state": {
-                "@id": "schema:addressRegion",
-                "@type": "@id"
-            },
-            "state*": {
-                "@id": "Property:HasState",
-                "@type": "@id"
-            },
-            "street_name": {
-                "@id": "schema:streetAddress",
-                "@type": "@id"
-            },
-            "street_name*": {
-                "@id": "Property:HasStreet",
                 "@type": "@id"
             },
             "superordinate_ou": {
@@ -520,112 +467,11 @@
             "uniqueItems": true
         },
         "postal_address": {
-            "type": "object",
-            "title": "Postal address",
-            "title*": {
-                "de": "Postalische Adresse"
-            },
-            "description": "Physical address of the organizational unit.",
-            "description*": {
-                "de": "Physische Adresse der Organisationseinheit."
-            },
-            "eval_template": {
-                "type": "wikitext",
-                "mode": "render",
-                "value": "{{{street_name|}}} {{{house_no|}}}, {{{postal_code|}}} {{{city|}}}, {{{country|}}}"
-            },
-            "required": [
-                "uuid"
-            ],
-            "defaultProperties": [
-                "uuid",
-                "street_name",
-                "house_no",
-                "postal_code",
-                "city",
-                "country"
-            ],
-            "properties": {
-                "uuid": {
-                    "type": "string",
-                    "format": "uuid",
-                    "options": {
-                        "hidden": true
-                    }
-                },
-                "country": {
-                    "title": "Country",
-                    "title*": {
-                        "en": "Country",
-                        "de": "Land"
-                    },
-                    "type": "string",
-                    "format": "autocomplete",
-                    "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe"
-                },
-                "state": {
-                    "title": "State",
-                    "title*": {
-                        "en": "State",
-                        "de": "Bundesland"
-                    },
-                    "type": "string",
-                    "format": "autocomplete",
-                    "range": "Category:OSWab60f9a227954ee0be92344ff6272420"
-                },
-                "region": {
-                    "title": "Region",
-                    "title*": {
-                        "en": "Region",
-                        "de": "Region"
-                    },
-                    "type": "string",
-                    "format": "autocomplete",
-                    "range": "Category:OSW95efaf34e2c7439e8e7967233910e44b"
-                },
-                "post_office_box_no": {
-                    "title": "PO box number",
-                    "title*": {
-                        "en": "PO box number",
-                        "de": "Postfach nummer"
-                    },
-                    "type": "string"
-                },
-                "postal_code": {
-                    "title": "Postal code",
-                    "title*": {
-                        "en": "Postal code",
-                        "de": "Postleitzahl"
-                    },
-                    "type": "string"
-                },
-                "city": {
-                    "title": "City",
-                    "title*": {
-                        "en": "City",
-                        "de": "Stadt"
-                    },
-                    "type": "string",
-                    "format": "autocomplete",
-                    "range": "Category:OSW807f1da5b42e42f296b213ab06ca873b"
-                },
-                "street_name": {
-                    "title": "Street",
-                    "title*": {
-                        "en": "Street",
-                        "de": "Straße"
-                    },
-                    "type": "string"
-                },
-                "house_no": {
-                    "title": "House number",
-                    "title*": {
-                        "en": "House number",
-                        "de": "Hausnummer"
-                    },
-                    "type": "string"
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:PostalAddress?action=raw"
                 }
-            }
+            ]
         },
         "ror_id": {
             "title": "ROR ID",

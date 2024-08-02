@@ -2,32 +2,28 @@
     "@context": [
         {
             "abstract": {
-                "@id": "Property:HasAbstract",
-                "@type": "@id"
+                "@id": "Property:HasAbstract"
             },
             "budget_end": {
-                "@id": "Property:HasBudgetEndDate",
-                "@type": "@id"
+                "@id": "Property:HasBudgetEndDate"
             },
             "budget_ou": {
                 "@id": "Property:HasBusinessUnit",
                 "@type": "@id"
             },
             "budget_start": {
-                "@id": "Property:HasBudgetStartDate",
-                "@type": "@id"
+                "@id": "Property:HasBudgetStartDate"
             },
             "budget_type": {
                 "@id": "Property:HasType",
                 "@type": "@id"
             },
             "budget_year": {
-                "@id": "Property:HasBudgetYear",
-                "@type": "@id"
+                "@id": "Property:HasBudgetYear"
             },
             "end_date": {
                 "@id": "Property:HasEndDate",
-                "@type": "@id"
+                "@type": "xsd:date"
             },
             "funding_call": {
                 "@id": "Property:HasFundingCall",
@@ -95,27 +91,24 @@
             },
             "start_date": {
                 "@id": "Property:HasStartDate",
-                "@type": "@id"
+                "@type": "xsd:date"
             },
             "subjects": {
                 "@id": "Property:HasTopic",
                 "@type": "@id"
             },
             "total_budget": {
-                "@id": "Property:HasBudget",
-                "@type": "@id"
+                "@id": "Property:HasBudget"
             },
             "year": {
-                "@id": "Property:HasYear",
-                "@type": "@id"
+                "@id": "Property:HasYear"
             },
             "yearly_budget": {
                 "@id": "Property:HasBudgetPart",
                 "@type": "@id"
             },
             "yearly_budget_sum": {
-                "@id": "Property:HasBudget",
-                "@type": "@id"
+                "@id": "Property:HasBudget"
             }
         },
         "/wiki/Category:Item?action=raw&slot=jsonschema"

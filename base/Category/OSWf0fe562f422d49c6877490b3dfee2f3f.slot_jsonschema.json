@@ -22,20 +22,17 @@
         "responsible_person": {
             "type": "array",
             "title": "Responsible Person",
+            "title*": {
+                "de": "Verantwortliche Person(en)"
+            },
             "items": {
                 "title": "Responsible Person",
+                "title*": {
+                    "de": "Verantwortliche Person"
+                },
                 "type": "string",
                 "format": "autocomplete",
-                "category": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
-            }
-        },
-        "responsible_person_name": {
-            "type": "array",
-            "title": "Responsible Person Name",
-            "description": "use only if responsible person cannot be created as an object",
-            "items": {
-                "title": "Responsible Person Name",
-                "type": "string"
+                "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             }
         },
         "location": {
@@ -46,10 +43,13 @@
             },
             "type": "array",
             "items": {
-                "title": "",
+                "title": "Location",
+                "title*": {
+                    "de": "Ort"
+                },
                 "type": "string",
                 "format": "autocomplete",
-                "category": "Category:OSW3d238d05316e45a4ac95a11d7b24e36b"
+                "range": "Category:OSW3d238d05316e45a4ac95a11d7b24e36b"
             }
         },
         "location_name": {
@@ -65,17 +65,26 @@
             }
         },
         "organizational_unit": {
-            "title": "Organizational Unit",
             "type": "array",
+            "title": "Organizational Unit",
+            "title*": {
+                "de": "Organisationseinheit(en)"
+            },
             "items": {
                 "title": "Organizational Unit",
+                "title*": {
+                    "de": "Organisationseinheit"
+                },
                 "type": "string",
                 "format": "autocomplete",
-                "category": "Category:OSWb8b6278763d54b0784eea9d3b3d183a4"
+                "range": "Category:OSWb8b6278763d54b0784eea9d3b3d183a4"
             }
         },
         "inventory_number": {
             "title": "Inventory Number",
+            "title*": {
+                "de": "Inventarnummer"
+            },
             "type": "string"
         },
         "risk_assessment": {
@@ -85,19 +94,21 @@
             },
             "type": "string",
             "format": "autocomplete",
-            "options": {
-                "autocomplete": {
-                    "category": "Category:OSW3886740859ae459588fee73d3bb3c83e"
-                }
-            }
+            "range": "Category:OSW3886740859ae459588fee73d3bb3c83e"
         },
         "serial_number": {
             "title": "Serial Number",
+            "title*": {
+                "de": "Seriennummer"
+            },
             "type": "string",
             "description": "The Serial Number written on the device"
         },
         "owner": {
             "title": "Owner",
+            "title*": {
+                "de": "Eigentümer"
+            },
             "type": "string"
         },
         "type": {
@@ -106,6 +117,13 @@
             ]
         }
     },
+    "defaultProperties": [
+        "image",
+        "responsible_person",
+        "location",
+        "inventory_number",
+        "risk_assessment"
+    ],
     "uuid": "f0fe562f-422d-49c6-8774-90b3dfee2f3f",
     "title*": {
         "en": "Device",

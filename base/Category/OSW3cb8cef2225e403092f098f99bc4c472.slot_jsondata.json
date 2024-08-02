@@ -29,5 +29,8 @@
     ],
     "instance_rdf_type": [
         "schema:Organization"
+    ],
+    "utf8_icon": [
+        "🏢"
     ]
 }
