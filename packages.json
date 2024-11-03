@@ -14,12 +14,18 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.23.0",
+            "version": "0.23.1",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
+                {
+                    "name": "PostalAddress",
+                    "namespace": "NS_JSONSCHEMA",
+                    "urlPath": "JsonSchema/PostalAddress.slot_main.json",
+                    "slots": {}
+                },
                 {
                     "name": "OSW712583f2479944deb2546b77cf860dda",
                     "label": "CreativeWork",
