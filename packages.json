@@ -14,7 +14,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.23.1",
+            "version": "0.24.0",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -620,6 +620,32 @@
                             "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_jsonschema.json"
                         }
                     }
+                },
+                {
+                    "name": "OSW72eae3c8f41f4a22a94dbc01974ed404",
+                    "label": "PrefectFlow",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW72eae3c8f41f4a22a94dbc01974ed404.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW72eae3c8f41f4a22a94dbc01974ed404.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW72eae3c8f41f4a22a94dbc01974ed404.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW72eae3c8f41f4a22a94dbc01974ed404.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW72eae3c8f41f4a22a94dbc01974ed404.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "PrefectWorkflowRuns",
+                    "namespace": "NS_JSONSCHEMA",
+                    "urlPath": "JsonSchema/PrefectWorkflowRuns.slot_main.json",
+                    "slots": {}
                 },
                 {
                     "name": "OSWb2d7e6a2eff94c82b7f1f2699d5b0ee3",
