@@ -196,6 +196,10 @@
                         },
                         "readonly": true,
                         "dynamic_template": "{{first_name}}{{#each middle_name}} {{.}}{{/each}}{{#if surname}} {{{surname}}}{{/if}}"
+                    },
+                    "lang": {
+                        "type": "string",
+                        "default": "en"
                     }
                 }
             },
