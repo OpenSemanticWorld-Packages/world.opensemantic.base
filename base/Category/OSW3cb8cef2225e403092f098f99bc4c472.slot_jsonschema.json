@@ -555,8 +555,7 @@
                         "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe"
                     }
                 }
-            },
-            "uniqueItems": true
+            }
         },
         "vat_id_obj": {
             "title": "VAT ID",
@@ -593,8 +592,7 @@
                         "range": "Category:OSW0551abcd6f734047825e3ded4c8a0ffe"
                     }
                 }
-            },
-            "uniqueItems": true
+            }
         },
         "topic": {
             "title": "Topic(s)",
