@@ -5,7 +5,8 @@
         "Simon Stier",
         "Lukas Gold",
         "Matthias Albert Popp",
-        "Alexander Triol"
+        "Alexander Triol",
+        "Andreas Räder"
     ],
     "language": "en",
     "licenseName": "CC BY-NC 4.0",
@@ -14,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.25.1",
+            "version": "0.26.0",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -1498,6 +1499,23 @@
                         },
                         "jsondata": {
                             "urlPath": "Item/OSW55a9a9bda7b248759e48ae2e3ed6df1d.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW206adb12f52e4831b10b898c31b11eac",
+                    "label": "Paused",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW206adb12f52e4831b10b898c31b11eac.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW206adb12f52e4831b10b898c31b11eac.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW206adb12f52e4831b10b898c31b11eac.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW206adb12f52e4831b10b898c31b11eac.slot_jsondata.json"
                         }
                     }
                 },
