@@ -12,8 +12,8 @@
 <td>{{{number|}}}</td>
 </tr>
 <tr>
-<th>{{{_label_function|Function}}}</th>
-<td>{{#ask:[[{{FULLPAGENAME}}]]|?HasRoomFunction=|format=plain|mainlabel=-}}</td>
+<th>{{{_label_usage|Usage}}}</th>
+<td>{{#ask:[[{{FULLPAGENAME}}]]|?HasRoomUsage=|format=plain|mainlabel=-}}</td>
 </tr>
 <tr>
 <th>{{{_label_usage_type|Usage type}}}</th>
