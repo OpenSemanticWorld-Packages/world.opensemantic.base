@@ -1,22 +1,18 @@
 {
+    "subclass_of": [
+        "Category:OSWb97757b46edb430591758662c18d354d"
+    ],
     "type": [
         "Category:Category"
     ],
-    "subclass_of": [
-        "Category:Item"
-    ],
-    "utf8_icon": [
-        "📆"
-    ],
     "uuid": "0e084dec-ca6f-48a7-b023-d6b7b2c1452d",
-    "name": "Event",
     "label": [
         {
-            "text": "Event",
+            "text": "Event with People",
             "lang": "en"
         },
         {
-            "text": "Ereignis",
+            "text": "Veranstaltung",
             "lang": "de"
         }
     ],
@@ -30,6 +26,10 @@
             "lang": "de"
         }
     ],
+    "utf8_icon": [
+        "📆"
+    ],
+    "name": "EventWithPeople",
     "instance_rdf_type": [
         "schema:Event"
     ]

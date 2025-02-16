@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.26.0",
+            "version": "0.27.0",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -132,13 +132,36 @@
                     }
                 },
                 {
-                    "name": "OSW0e084decca6f48a7b023d6b7b2c1452d",
+                    "name": "OSWb97757b46edb430591758662c18d354d",
                     "label": "Event",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW0e084decca6f48a7b023d6b7b2c1452d",
+                    "label": "EventWithPeople",
                     "namespace": "NS_CATEGORY",
                     "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_main.wikitext",
                     "slots": {
                         "footer": {
                             "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_footer_template.wikitext"
                         },
                         "header": {
                             "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_header.wikitext"
@@ -151,6 +174,69 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWf62d07b325124027b82fbec0a7b852df",
+                    "label": "EventSeries",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWf62d07b325124027b82fbec0a7b852df.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWf62d07b325124027b82fbec0a7b852df.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSWf62d07b325124027b82fbec0a7b852df.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWf62d07b325124027b82fbec0a7b852df.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWf62d07b325124027b82fbec0a7b852df.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWf62d07b325124027b82fbec0a7b852df.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW5c7c84f0bfbe4347ba7fbe7b346fd106",
+                    "label": "Meeting",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW5c7c84f0bfbe4347ba7fbe7b346fd106.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW5c7c84f0bfbe4347ba7fbe7b346fd106.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW5c7c84f0bfbe4347ba7fbe7b346fd106.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW5c7c84f0bfbe4347ba7fbe7b346fd106.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW5c7c84f0bfbe4347ba7fbe7b346fd106.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW9ed6b89cc3c7492896570951a5b094d6",
+                    "label": "MeetingSeries",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW9ed6b89cc3c7492896570951a5b094d6.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW9ed6b89cc3c7492896570951a5b094d6.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW9ed6b89cc3c7492896570951a5b094d6.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW9ed6b89cc3c7492896570951a5b094d6.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW9ed6b89cc3c7492896570951a5b094d6.slot_jsonschema.json"
                         }
                     }
                 },

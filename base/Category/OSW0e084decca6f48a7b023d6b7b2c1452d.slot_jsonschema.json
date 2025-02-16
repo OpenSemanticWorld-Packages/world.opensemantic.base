@@ -1,25 +1,8 @@
 {
     "@context": [
-        "/wiki/Category:Item?action=raw&slot=jsonschema",
         {
             "associated_ou": {
                 "@id": "Property:HasAssociatedOu",
-                "@type": "@id"
-            },
-            "duration": {
-                "@id": "schema:duration",
-                "@type": "@id"
-            },
-            "duration*": {
-                "@id": "Property:HasDuration",
-                "@type": "@id"
-            },
-            "end_date": {
-                "@id": "schema:endDate",
-                "@type": "@id"
-            },
-            "end_date*": {
-                "@id": "Property:HasEndDateAndTime",
                 "@type": "@id"
             },
             "end_date_min": {
@@ -32,6 +15,22 @@
             },
             "event_series": {
                 "@id": "Property:IsPartOf",
+                "@type": "@id"
+            },
+            "funding": {
+                "@id": "schema:funding",
+                "@type": "@id"
+            },
+            "funding*": {
+                "@id": "Property:HasFunding",
+                "@type": "@id"
+            },
+            "funding_name": {
+                "@id": "schema:funding",
+                "@type": "@id"
+            },
+            "funding_name*": {
+                "@id": "Property:HasFunding",
                 "@type": "@id"
             },
             "location_name": {
@@ -58,12 +57,8 @@
                 "@id": "Property:HasParticipant",
                 "@type": "@id"
             },
-            "start_date": {
-                "@id": "Property:HasStartDateAndTime",
-                "@type": "@id"
-            },
-            "start_date*": {
-                "@id": "schema:startDate",
+            "project": {
+                "@id": "Property:HasProject",
                 "@type": "@id"
             },
             "start_date_min": {
@@ -82,43 +77,57 @@
                 "@id": "Property:HasUrl",
                 "@type": "@id"
             }
-        }
+        },
+        "/wiki/Category:OSWb97757b46edb430591758662c18d354d?action=raw&slot=jsonschema"
     ],
     "allOf": [
         {
-            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+            "$ref": "/wiki/Category:OSWb97757b46edb430591758662c18d354d?action=raw&slot=jsonschema"
         }
     ],
+    "uuid": "0e084dec-ca6f-48a7-b023-d6b7b2c1452d",
     "type": "object",
-    "rdf_type": {
-        "title": "RDF type",
-        "title*": {
-            "de": "RDF-Typ"
-        },
-        "type": "string",
-        "default": "schema:Event",
-        "options": {
-            "hidden": true
-        }
-    },
-    "schema_type": [
-        "schema:Event"
-    ],
-    "title": "Event",
+    "title": "Event with People",
     "title*": {
-        "de": "Ereignis",
-        "en": "Event"
+        "de": "Veranstaltung",
+        "en": "Event with People"
     },
     "description": "An event, either local, remote or hybrid. E.g., a meeting or a conference. This element is intended to be used to document events. It is dedicated especially to notes, resolutions and tasks. For recurring events (series), the tasks should be managed there.",
     "description*": {
         "de": "Ein Ereignis, entweder lokal, remote oder hybrid. Z.B. eine Besprechung oder eine Konferenz. Dieses Element ist für die Dokumentation von Ereignissen gedacht. Es ist insbesondere für Notizen, Beschlüsse und Aufgaben vorgesehen. Bei wiederkehrenden Ereignissen (Serien) sollten die Aufgaben dort verwaltet werden.",
         "en": "An event, either local, remote or hybrid. E.g., a meeting or a conference. This element is intended to be used to document events. It is dedicated especially to notes, resolutions and tasks. For recurring events (series), the tasks should be managed there."
     },
+    "required": [
+        "allday",
+        "start_date",
+        "type"
+    ],
+    "defaultProperties": [
+        "allday",
+        "start_date",
+        "end_date",
+        "event_series",
+        "location_name",
+        "participants",
+        "minutes_taker",
+        "organizer",
+        "project",
+        "event_classifier",
+        "associated_ou"
+    ],
     "properties": {
         "type": {
             "default": [
                 "Category:OSW0e084decca6f48a7b023d6b7b2c1452d"
             ]
+        },
+        "allday": {
+            "type": "boolean",
+            "title": "All day",
+            "title*": {
+                "de": "Ganztägig"
+            },
+            "default": false
         },
         "start_date": {
             "type": "string",
@@ -128,23 +137,20 @@
             },
             "oneOf": [
                 {
-                    "format": "date",
-                    "title": "Date",
-                    "title*": {
-                        "de": "Datum"
-                    }
-                },
-                {
                     "format": "datetime-local",
                     "title": "Date and time",
                     "title*": {
                         "de": "Datum und Uhrzeit"
                     }
+                },
+                {
+                    "format": "date",
+                    "title": "Date",
+                    "title*": {
+                        "de": "Datum"
+                    }
                 }
-            ],
-            "options": {
-                "flatpickr": {}
-            }
+            ]
         },
         "start_date_min": {
             "type": "string",
@@ -154,7 +160,6 @@
             },
             "format": "datetime-local",
             "options": {
-                "flatpickr": {},
                 "conditional_visible": {
                     "modes": "query"
                 },
@@ -173,7 +178,6 @@
             },
             "format": "datetime-local",
             "options": {
-                "flatpickr": {},
                 "conditional_visible": {
                     "modes": "query"
                 },
@@ -185,64 +189,43 @@
             }
         },
         "duration": {
-            "type": "object",
-            "title": "Event duration",
+            "type": "string",
+            "title": "Duration",
             "title*": {
-                "de": "Dauer des Ereignisses"
+                "de": "Dauer"
             },
-            "properties": {
-                "number": {
-                    "type": "number",
-                    "title": "Count",
-                    "title*": {
-                        "de": "Anzahl"
-                    },
-                    "default": 1
-                },
-                "unit": {
-                    "type": "string",
-                    "title": "Unit",
-                    "title*": {
-                        "de": "Einheit"
-                    },
-                    "enum": [
-                        "minute(s)",
-                        "hour(s)",
-                        "day(s)",
-                        "week(s)",
-                        "month(s)",
-                        "year(s)"
-                    ],
-                    "default": "hour(s)"
+            "format": "time",
+            "options": {
+                "flatpickr": {
+                    "enableTime": true,
+                    "noCalendar": true,
+                    "dateFormat": "H:i",
+                    "time_24hr": true
                 }
             }
         },
         "end_date": {
             "type": "string",
-            "format": "datetime",
             "title": "End",
             "title*": {
                 "de": "Ende"
             },
             "oneOf": [
                 {
-                    "format": "date",
-                    "title": "Date",
-                    "title*": {
-                        "de": "Datum"
-                    }
-                },
-                {
                     "format": "datetime-local",
                     "title": "Date and time",
                     "title*": {
                         "de": "Datum und Uhrzeit"
                     }
+                },
+                {
+                    "format": "date",
+                    "title": "Date",
+                    "title*": {
+                        "de": "Datum"
+                    }
                 }
-            ],
-            "options": {
-                "flatpickr": {}
-            }
+            ]
         },
         "event_series": {
             "title": "Part of (event series)",
@@ -261,6 +244,48 @@
                 }
             },
             "default": ""
+        },
+        "funding": {
+            "title": "Funding",
+            "title*": {
+                "de": "Förderung"
+            },
+            "description": "Funding (Grant) for the event.",
+            "description*": {
+                "de": "Förderung für das Ereignis."
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "Funding",
+                "title*": {
+                    "de": "Förderung"
+                },
+                "type": "string",
+                "format": "autocomplete",
+                "category": "Category:OSW25bc4daf97644737a76434b88e1d5b21",
+                "default": ""
+            }
+        },
+        "funding_name": {
+            "title": "Funding (grant no. or name)",
+            "title*": {
+                "de": "Förderung (Förderkennzeichen oder Bezeichnung)"
+            },
+            "description": "Name of the funding (Grant) for the event.",
+            "description*": {
+                "de": "Name oder Kennzeichen der Förderung für das Ereignis."
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "Funding",
+                "title*": {
+                    "de": "Förderung"
+                },
+                "type": "string",
+                "default": ""
+            }
         },
         "location_name": {
             "type": "string",
@@ -287,7 +312,20 @@
             "enum": [
                 "internal",
                 "external"
-            ]
+            ],
+            "default": "",
+            "options": {
+                "enum_titles": [
+                    "Internal",
+                    "External"
+                ],
+                "enum_titles*": {
+                    "de": [
+                        "Intern",
+                        "Extern"
+                    ]
+                }
+            }
         },
         "participants": {
             "title": "Participants",
@@ -426,9 +464,5 @@
                 ""
             ]
         }
-    },
-    "required": [
-        "type"
-    ],
-    "uuid": "0e084dec-ca6f-48a7-b023-d6b7b2c1452d"
+    }
 }
