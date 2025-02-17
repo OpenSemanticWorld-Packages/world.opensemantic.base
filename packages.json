@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.27.1",
+            "version": "0.27.2",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -26,6 +26,35 @@
                     "namespace": "NS_JSONSCHEMA",
                     "urlPath": "JsonSchema/PostalAddress.slot_main.json",
                     "slots": {}
+                },
+                {
+                    "name": "StartDate",
+                    "namespace": "NS_JSONSCHEMA",
+                    "urlPath": "JsonSchema/StartDate.slot_main.json",
+                    "slots": {}
+                },
+                {
+                    "name": "StartDateTime",
+                    "namespace": "NS_JSONSCHEMA",
+                    "urlPath": "JsonSchema/StartDateTime.slot_main.json",
+                    "slots": {}
+                },
+                {
+                    "name": "EndDate",
+                    "namespace": "NS_JSONSCHEMA",
+                    "urlPath": "JsonSchema/EndDate.slot_main.json",
+                    "slots": {}
+                },
+                {
+                    "name": "EndDateTime",
+                    "namespace": "NS_JSONSCHEMA",
+                    "urlPath": "JsonSchema/EndDateTime.slot_main.json",
+                    "slots": {}
+                },
+                {
+                    "name": "Duration",
+                    "namespace": "NS_JSONSCHEMA",
+                    "urlPath": "JsonSchema/Duration.slot_main.json"
                 },
                 {
                     "name": "OSW712583f2479944deb2546b77cf860dda",
