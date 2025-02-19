@@ -1,3 +1,13 @@
+== {{{_label_abstract|Abstract}}} == 
+{{{abstract|}}}
+
+== Kanban ==
+
+{{Editor/Kanban
+| file_name = Kanban Board
+| full_width = 1
+| edit = 1
+}}
 
 == {{#switch:{{USERLANGUAGECODE}} |#default=Documents |en=Documents |de=Dokumente}} ==
 

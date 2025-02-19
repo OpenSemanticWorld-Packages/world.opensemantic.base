@@ -543,10 +543,26 @@
         },
         "abstract": {
             "title": "Abstract",
-            "type": "string",
-            "format": "textarea",
             "title*": {
-                "de": "Abstrakt"
+                "de": "Kurzbeschreibung"
+            },
+            "type": "array",
+            "format": "table",
+            "eval_template": {
+                "type": "mustache-wikitext",
+                "mode": "render",
+                "$comment": "Displays value according to user language with eng as fallback option. Note: {{=<% %>=}} changes mustache expression from {{..}} to <% %> for mixing with wikitext templates",
+                "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%#abstract%> | {{#ifeq: <%lang%>|en|#default|<%lang%>}} = <%text%> <%/abstract%> }}"
+            },
+            "items": {
+                "eval_template": [
+                    {
+                        "type": "wikitext",
+                        "mode": "store",
+                        "value": "{{{text}}}@{{{lang}}}"
+                    }
+                ],
+                "$ref": "/wiki/JsonSchema:Description?action=raw"
             }
         }
     }
