@@ -69,10 +69,10 @@
 </tr>
 </table>
 <!-- Occupancy -->
-{{#if: {{#ask: [[Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]][[HasRoom::{{FULLPAGENAME}}]]}} |
+{{#if: {{#ask: [[Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]][[HasRoom::{{FULLPAGENAME}}]][[HasEmploymentContractStatus::Item:OSW62770459451644f3841c502df8a5cb1d]]}} |
     =={{#switch:{{USERLANGUAGECODE}}|en=Occupancy|de=Belegung|#default=Occupancy}}==
     {{#set: HasNumberOfOccupants=
-        {{#ask: [[Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]][[HasRoom::{{FULLPAGENAME}}]]
+        {{#ask: [[Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]][[HasRoom::{{FULLPAGENAME}}]][[HasEmploymentContractStatus::Item:OSW62770459451644f3841c502df8a5cb1d]]
             |format=count
             |limit=1000
             }}
@@ -82,7 +82,7 @@
         |de=Belegung (Anzahl)
         |#default=Number of occupants
     }}: {{#show: {{FULLPAGENAME}} |?HasNumberOfOccupants}}
-    {{#ask: [[Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]][[HasRoom::{{FULLPAGENAME}}]]
+    {{#ask: [[Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7]][[HasRoom::{{FULLPAGENAME}}]][[HasEmploymentContractStatus::Item:OSW62770459451644f3841c502df8a5cb1d]]
         |?HasOu={{#switch: {{USERLANGUAGECODE}} |en=OU |de=OE |#default=OU}}
         |?HasPhoneNumber={{#switch: {{USERLANGUAGECODE}} |en=Phone |de=Telefon |#default=Phone}}
         |format=table

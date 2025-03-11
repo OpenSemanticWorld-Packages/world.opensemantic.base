@@ -53,3 +53,5 @@
         format=table
         }}
     | }}
+<!-- employment contract status -->
+{{#set: HasEmploymentContractStatus={{{employment_contract_status|Item:OSW62770459451644f3841c502df8a5cb1d}}} }}

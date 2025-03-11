@@ -1,6 +1,10 @@
 {
     "@context": [
         {
+            "employment_contract_status": {
+                "@id": "Property:HasEmploymentContractStatus",
+                "@type": "@id"
+            },
             "room": {
                 "@id": "Property:HasRoom",
                 "@type": "@id"
@@ -93,6 +97,20 @@
                 "range": "Category:OSWd9aa0bca9b0040d8af6f5c091bf9eec7"
             },
             "uniqueItems": true
+        },
+        "employment_contract_status": {
+            "title": "Status of the employment contract",
+            "title*": {
+                "de": "Status des Arbeitsvertrages"
+            },
+            "description": "Whether a user has an active employment contract (stil employed) or not",
+            "description*": {
+                "de": "Gibt an, ob ein Nutzer einen aktiven Arbeitsvertrag hat (noch beschäftigt ist) oder nicht"
+            },
+            "type": "string",
+            "format": "autocomplete",
+            "range": "Category:OSW781ad17c7eef4161ade5a7b690aca6b5",
+            "default": "Item:OSW62770459451644f3841c502df8a5cb1d"
         },
         "type": {
             "default": [
