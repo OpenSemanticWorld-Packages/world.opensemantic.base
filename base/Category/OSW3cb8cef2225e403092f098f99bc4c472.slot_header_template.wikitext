@@ -129,7 +129,7 @@
 <!-- Overview of Members -->
 =={{#switch:{{USERLANGUAGECODE}}|en=Members |de=Mitarbeitende|#default=Members}}==
 {{#set: HasNumberOfMembers=
-    {{#ask: [[Category:OSW44deaa5b806d41a2a88594f562b110e9]][[HasOu::{{FULLPAGENAME}}]]
+    {{#ask: [[Category:OSW44deaa5b806d41a2a88594f562b110e9]][[HasOu::{{FULLPAGENAME}}]][[HasEmploymentContractStatus::Item:OSW62770459451644f3841c502df8a5cb1d]]
         |format=count
         |limit=1000
         }}
@@ -139,7 +139,18 @@
         |de=Mitarbeitende (Anzahl)
         |#default=Number of members
     }}: {{#show: {{FULLPAGENAME}} |?HasNumberOfMembers}}
-{{#ask: [[Category:OSW44deaa5b806d41a2a88594f562b110e9]][[HasOu::{{FULLPAGENAME}}]]
+{{#ask: [[Category:OSW44deaa5b806d41a2a88594f562b110e9]][[HasOu::{{FULLPAGENAME}}]][[HasEmploymentContractStatus::Item:OSW62770459451644f3841c502df8a5cb1d]]
+    |?HasRoom={{#switch: {{USERLANGUAGECODE}} |en=Room |de=Raum |#default=Room}}
+    |?HasPhoneNumber={{#switch: {{USERLANGUAGECODE}} |en=Phone |de=Telefon |#default=Phone}}
+    |?HasSuperior={{#switch: {{USERLANGUAGECODE}} |en=Superior |de=Führungskraft |#default=Superior}}
+    |?HasRole={{#switch: {{USERLANGUAGECODE}} |en=Role |de=Rolle |#default=Role}}
+    |format=table
+    |limit=1000
+    |sort=Display title of
+    |order=asc
+    }}
+=={{#switch:{{USERLANGUAGECODE}}|en=Former members |de=Ausgeschiedene Mitarbeitende|#default=Former members}}==
+{{#ask: [[Category:OSW44deaa5b806d41a2a88594f562b110e9]][[HasOu::{{FULLPAGENAME}}]][[HasEmploymentContractStatus::Item:OSWacf5f4db53264d29ae8744d03796be0b]]
     |?HasRoom={{#switch: {{USERLANGUAGECODE}} |en=Room |de=Raum |#default=Room}}
     |?HasPhoneNumber={{#switch: {{USERLANGUAGECODE}} |en=Phone |de=Telefon |#default=Phone}}
     |?HasSuperior={{#switch: {{USERLANGUAGECODE}} |en=Superior |de=Führungskraft |#default=Superior}}
