@@ -113,6 +113,14 @@
                 "@id": "Property:IsMemberOf",
                 "@type": "@id"
             },
+            "employees*": {
+                "@id": "schema:employee",
+                "@type": "@id"
+            },
+            "employees**": {
+                "@reverse": "Property:HasOrganization",
+                "@type": "@id"
+            },
             "phone_number": {
                 "@id": "schema:telephone",
                 "@type": "@id"
@@ -720,6 +728,22 @@
                     "de": "Rolle"
                 },
                 "type": "string"
+            }
+        }
+    },
+    "x-oold-reverse-defaultProperties": [
+        "employees"
+    ],
+    "x-oold-reverse-properties": {
+        "employees": {
+            "type": "array",
+            "title": "Employees",
+            "items": {
+                "type": "string",
+                "format": "autocomplete",
+                "title": "Person",
+                "$comment": "range is Person",
+                "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9"
             }
         }
     }
