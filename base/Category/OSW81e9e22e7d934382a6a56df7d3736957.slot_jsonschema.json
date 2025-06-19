@@ -1,6 +1,5 @@
 {
     "@context": [
-        "/wiki/Category:OSWe2c50b1034684c1b9a5c21ad371d6381?action=raw&slot=jsonschema",
         {
             "author": "schema:author",
             "preparation_duration": "schema:prepTime",
@@ -11,11 +10,8 @@
             "steps": "schema:recipeInstructions",
             "step_name": "schema:name",
             "step_description": "schema:text"
-        }
-    ],
-    "type": "object",
-    "schema_type": [
-        "schema:Recipe"
+        },
+        "/wiki/Category:OSWe2c50b1034684c1b9a5c21ad371d6381?action=raw&slot=jsonschema"
     ],
     "allOf": [
         {
@@ -32,6 +28,7 @@
         "de": "Eine Zubereitungsanleitung, z. B. für ein Gericht",
         "en": "Preparation instructions, e.g. for a dish"
     },
+    "type": "object",
     "uuid": "81e9e22e-7d93-4382-a6a5-6df7d3736957",
     "required": [
         "type"

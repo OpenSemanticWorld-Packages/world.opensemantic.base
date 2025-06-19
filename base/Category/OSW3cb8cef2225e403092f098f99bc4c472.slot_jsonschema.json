@@ -2,7 +2,15 @@
     "@context": [
         {
             "abbreviation": {
+                "@id": "Property:HasId",
+                "@type": "xsd:string"
+            },
+            "abbreviation*": {
                 "@id": "Property:HasAbbreviation",
+                "@type": "xsd:string"
+            },
+            "abbreviation**": {
+                "@id": "Property:HasAcronym",
                 "@type": "xsd:string"
             },
             "competence": {
@@ -205,14 +213,16 @@
     ],
     "title": "OrganizationalUnit",
     "title*": {
-        "de": "Organisationseinheit"
+        "de": "Organisationseinheit",
+        "en": "Organizational unit"
     },
     "uuid": "3cb8cef2-225e-4030-92f0-98f99bc4c472",
     "id": "OSW3cb8cef2225e403092f098f99bc4c472",
     "type": "object",
     "description": "The most general kind of organizational unit - an organization but also parts of an organization",
     "description*": {
-        "de": "Die allgemeinste Art von Organisationseinheit - eine Organisation, aber auch Teile einer Organisation"
+        "de": "Die allgemeinste Art von Organisationseinheit - eine Organisation, aber auch Teile einer Organisation",
+        "en": "The most general kind of organizational unit - an organization but also parts of an organization"
     },
     "defaultProperties": [
         "abbreviation"

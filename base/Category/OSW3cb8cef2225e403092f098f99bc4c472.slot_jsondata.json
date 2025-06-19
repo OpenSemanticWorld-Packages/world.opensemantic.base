@@ -1,12 +1,11 @@
 {
-    "type": [
-        "Category:Category"
-    ],
     "subclass_of": [
         "Category:Item"
     ],
+    "type": [
+        "Category:Category"
+    ],
     "uuid": "3cb8cef2-225e-4030-92f0-98f99bc4c472",
-    "name": "OrganizationalUnit",
     "label": [
         {
             "text": "Organizational unit",
@@ -27,6 +26,7 @@
             "lang": "de"
         }
     ],
+    "name": "OrganizationalUnit",
     "instance_rdf_type": [
         "schema:Organization"
     ],
