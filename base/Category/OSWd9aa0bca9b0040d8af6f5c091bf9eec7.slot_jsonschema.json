@@ -52,7 +52,15 @@
             "description*": {
                 "de": "Organization-User-ID"
             },
-            "type": "string"
+            "type": "string",
+            "eval_template": [
+                {
+                    "type": "mustache-wikitext",
+                    "mode": "render",
+                    "$comment": "Displays a link to the system user page, preventing redirect to the user entity page",
+                    "value": "{{=<% %>=}} [{{fullurl:User:<%username%>|redirect=no}} <%username%>]"
+                }
+            ]
         },
         "room": {
             "title": "Room(s)",
