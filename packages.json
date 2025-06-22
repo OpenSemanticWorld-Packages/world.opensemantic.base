@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.31.1",
+            "version": "0.31.2",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -707,9 +707,6 @@
                         },
                         "header": {
                             "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_header_template.wikitext"
                         },
                         "jsondata": {
                             "urlPath": "Category/OSW8c56fd1e858f499da801691c5f2b7309.slot_jsondata.json"
