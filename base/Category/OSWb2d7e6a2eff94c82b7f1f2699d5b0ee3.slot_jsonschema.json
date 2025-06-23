@@ -1,5 +1,6 @@
 {
     "@context": [
+        "/wiki/Category:Item?action=raw&slot=jsonschema",
         {
             "abstract": {
                 "@id": "Property:HasAbstract"
@@ -24,6 +25,10 @@
             "end_date": {
                 "@id": "Property:HasEndDate",
                 "@type": "xsd:date"
+            },
+            "funding_type": {
+                "@id": "Property:HasFundingType",
+                "@type": "@id"
             },
             "funding_call": {
                 "@id": "Property:HasFundingCall",
@@ -98,7 +103,7 @@
                 "@type": "@id"
             },
             "total_budget": {
-                "@id": "Property:HasBudget"
+                "@id": "Property:HasStatement"
             },
             "year": {
                 "@id": "Property:HasYear"
@@ -108,10 +113,15 @@
                 "@type": "@id"
             },
             "yearly_budget_sum": {
-                "@id": "Property:HasBudget"
+                "@id": "Property:HasStatement"
+            },
+            "yearly_budget_sum_weighted": {
+                "@id": "Property:HasStatement"
+            },
+            "probability_of_successful_funding": {
+                "@id": "Property:HasStatement"
             }
-        },
-        "/wiki/Category:Item?action=raw&slot=jsonschema"
+        }
     ],
     "allOf": [
         {
@@ -119,6 +129,7 @@
         }
     ],
     "uuid": "b2d7e6a2-eff9-4c82-b7f1-f2699d5b0ee3",
+    "id": "project",
     "type": "object",
     "title": "Project",
     "title*": {
@@ -134,8 +145,8 @@
     ],
     "defaultProperties": [
         "subjects",
-        "project_type",
         "project_status",
+        "funding_type",
         "funding_call",
         "funder",
         "funding",
@@ -147,7 +158,6 @@
         "start_date",
         "end_date",
         "total_budget",
-        "yearly_budget",
         "proposal",
         "abstract"
     ],
@@ -173,8 +183,10 @@
             }
         },
         "project_type": {
-            "title": "Project type",
             "type": "string",
+            "deprecated": true,
+            "title": "Project type (deprecated)",
+            "description": "Replaced with Project / Funding Type",
             "enum": [
                 "house_project",
                 "internal",
@@ -182,7 +194,10 @@
                 "industry"
             ],
             "title*": {
-                "de": "Projekttyp"
+                "de": "Projekttyp (veraltet)"
+            },
+            "description*": {
+                "de": "Ersetzt mit Projekt- bzw. Förderart"
             },
             "default": "",
             "options": {
@@ -201,6 +216,15 @@
                     ]
                 }
             }
+        },
+        "funding_type": {
+            "type": "string",
+            "format": "autocomplete",
+            "title": "Project / Funding Type",
+            "title*": {
+                "de": "Projekt- bzw. Förderart"
+            },
+            "range": "Category:OSW67f2ef61ba284c919fefa00d0e95a7a0"
         },
         "project_status": {
             "title": "Project status",
@@ -232,7 +256,7 @@
             },
             "type": "string",
             "format": "autocomplete",
-            "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
+            "category": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
         },
         "funding": {
             "title": "Funding",
@@ -245,7 +269,11 @@
             },
             "type": "string",
             "format": "autocomplete",
-            "range": "Category:OSWbe80b28aefd64921ba2e8e2d6225416e"
+            "options": {
+                "autocomplete": {
+                    "category": "Category:OSWbe80b28aefd64921ba2e8e2d6225416e"
+                }
+            }
         },
         "funding_name": {
             "title": "Funding (name)",
@@ -257,6 +285,33 @@
                 "de": "Förderung oder Vertrag. Verwenden Sie diese Eigenschaft, um einen Text einzugeben, wenn Sie keine neue Instanz von Grant erstellen möchten."
             },
             "type": "string"
+        },
+        "probability_of_successful_funding": {
+            "title": "Probability of Successful Funding in percent",
+            "title*": {
+                "de": "Wahrscheinlichkeit einer erfolgreichen Förderung in Prozent"
+            },
+            "description": "Indicates the likelihood that the funding will be approved, determines the weighted budget",
+            "description*": {
+                "de": "Gibt die Wahrscheinlichkeit an, dass die Förderung genehmigt wird, bestimmt das gewichtete Budget"
+            },
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
+            "properties": {
+                "quantity": {
+                    "options": {
+                        "hidden": true
+                    },
+                    "default": "Property:HasProbabilityOfSuccessfulFunding"
+                },
+                "unit": {
+                    "default": "Property:HasDimensionlessRatio#OSW8b3dc9b793074afc8ab8b03041f97f16",
+                    "readOnly": true
+                }
+            }
         },
         "ou": {
             "title": "OU",
@@ -345,7 +400,7 @@
                 },
                 "type": "string",
                 "format": "autocomplete",
-                "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
+                "category": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
             }
         },
         "start_date": {
@@ -371,20 +426,39 @@
             }
         },
         "total_budget": {
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
             "title": "Total Budget",
-            "type": "number",
             "title*": {
                 "de": "Budgetsumme"
+            },
+            "properties": {
+                "quantity": {
+                    "options": {
+                        "hidden": true
+                    },
+                    "default": "Property:HasBudget"
+                },
+                "unit": {
+                    "title": "Currency",
+                    "title*": {
+                        "de": "Währung"
+                    }
+                }
             }
         },
         "yearly_budget": {
             "title": "Yearly budget",
             "type": "array",
-            "format": "array",
+            "format": "table",
             "title*": {
                 "de": "Jahresbudget"
             },
             "items": {
+                "id": "yearly_budget",
                 "title": "Yearly budget",
                 "title*": {
                     "de": "Jahresbudget"
@@ -392,6 +466,12 @@
                 "type": "object",
                 "required": [
                     "uuid"
+                ],
+                "defaultProperties": [
+                    "budget_year",
+                    "yearly_budget_sum",
+                    "budget_type",
+                    "budget_ou"
                 ],
                 "properties": {
                     "uuid": {
@@ -401,18 +481,158 @@
                             "hidden": true
                         }
                     },
-                    "yearly_budget_sum": {
-                        "title": "Yearly Budget Sum",
-                        "type": "number",
-                        "title*": {
-                            "de": "Summe Jahresbudget"
-                        }
-                    },
                     "budget_year": {
                         "title": "Year",
                         "type": "string",
                         "title*": {
                             "de": "Jahr"
+                        }
+                    },
+                    "yearly_budget_sum": {
+                        "allOf": [
+                            {
+                                "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                            }
+                        ],
+                        "title": "Yearly Budget Sum",
+                        "title*": {
+                            "de": "Summe Jahresbudget"
+                        },
+                        "options": {
+                            "disable_collapse": true,
+                            "disable_properties": true,
+                            "compact": true
+                        },
+                        "properties": {
+                            "quantity": {
+                                "options": {
+                                    "hidden": true
+                                },
+                                "default": "Property:HasBudget"
+                            },
+                            "numerical_value": {
+                                "options": {
+                                    "grid_columns": 6
+                                }
+                            },
+                            "unit": {
+                                "title": "Currency",
+                                "title*": {
+                                    "de": "Währung"
+                                },
+                                "propertyOrder": 1001,
+                                "options": {
+                                    "grid_columns": 6
+                                }
+                            }
+                        }
+                    },
+                    "yearly_budget_sum_weighted": {
+                        "_allOf": [
+                            {
+                                "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                            }
+                        ],
+                        "id": "statement",
+                        "title": "weighted sum",
+                        "title*": {
+                            "de": "Gewichtete Summe"
+                        },
+                        "_description": "weighted with probability of successful funding",
+                        "_description*": {
+                            "de": "gewichtet mit Erfolgswahrscheinlichkeit"
+                        },
+                        "options": {
+                            "disable_collapse": true,
+                            "disable_properties": true,
+                            "compact": true
+                        },
+                        "required": [
+                            "uuid",
+                            "quantity",
+                            "value",
+                            "numerical_value",
+                            "unit",
+                            "unit_symbol"
+                        ],
+                        "properties": {
+                            "uuid": {
+                                "type": "string",
+                                "format": "uuid",
+                                "options": {
+                                    "hidden": true
+                                }
+                            },
+                            "quantity": {
+                                "type": "string",
+                                "options": {
+                                    "hidden": true
+                                },
+                                "default": "Property:HasWeightedBudget"
+                            },
+                            "numerical_value": {
+                                "type": "string",
+                                "_format": "template",
+                                "options": {
+                                    "grid_columns": 12,
+                                    "hidden": true,
+                                    "dynamic_template": {
+                                        "override": "always"
+                                    }
+                                },
+                                "watch": {
+                                    "probability_of_successful_funding": "probability_of_successful_funding.numerical_value",
+                                    "yearly_budget_sum_value": "yearly_budget.yearly_budget_sum.numerical_value"
+                                },
+                                "dynamic_template": "{{#calc 0.01 '*'}}{{#calc probability_of_successful_funding '*'}}{{yearly_budget_sum_value}}{{/calc}}{{/calc}}"
+                            },
+                            "value": {
+                                "type": "string",
+                                "title": "Wert",
+                                "_format": "template",
+                                "options": {
+                                    "grid_columns": 12,
+                                    "hidden": false
+                                },
+                                "_watch": {
+                                    "probability_of_successful_funding": "probability_of_successful_funding.numerical_value",
+                                    "yearly_budget_sum_value": "yearly_budget.yearly_budget_sum.numerical_value",
+                                    "yearly_budget_sum_unit_symbol": "yearly_budget.yearly_budget_sum.unit_symbol"
+                                },
+                                "watch": {
+                                    "numerical_value": "statement.numerical_value",
+                                    "unit_symbol": "statement.unit_symbol"
+                                },
+                                "template": "{{{numerical_value}}} {{{unit_symbol}}}"
+                            },
+                            "unit": {
+                                "type": "string",
+                                "title": "Currency",
+                                "title*": {
+                                    "de": "Währung"
+                                },
+                                "_format": "template",
+                                "propertyOrder": 1001,
+                                "options": {
+                                    "grid_columns": 6,
+                                    "hidden": true
+                                },
+                                "watch": {
+                                    "yearly_budget_sum_unit": "yearly_budget.yearly_budget_sum.unit"
+                                },
+                                "template": "{{yearly_budget_sum_unit}}"
+                            },
+                            "unit_symbol": {
+                                "type": "string",
+                                "watch": {
+                                    "yearly_budget_sum_unit_symbol": "yearly_budget.yearly_budget_sum.unit_symbol"
+                                },
+                                "template": "{{yearly_budget_sum_unit_symbol}}",
+                                "options": {
+                                    "grid_columns": 6,
+                                    "hidden": true
+                                }
+                            }
                         }
                     },
                     "budget_start": {
@@ -437,22 +657,9 @@
                             "en": "OU",
                             "de": "OE"
                         },
-                        "type": "array",
-                        "format": "table",
-                        "items": {
-                            "title": "OU",
-                            "title*": {
-                                "en": "OU",
-                                "de": "OE"
-                            },
-                            "type": "string",
-                            "format": "autocomplete",
-                            "options": {
-                                "autocomplete": {
-                                    "category": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
-                                }
-                            }
-                        }
+                        "type": "string",
+                        "format": "autocomplete",
+                        "range": "Category:OSW3cb8cef2225e403092f098f99bc4c472"
                     },
                     "budget_type": {
                         "title": "Type",
@@ -464,6 +671,10 @@
                         "range": "Category:OSW595b282aedf048788f3ee326454792ce"
                     }
                 }
+            },
+            "options": {
+                "disable_array_reorder": false,
+                "enable_array_copy": true
             }
         },
         "proposal": {
