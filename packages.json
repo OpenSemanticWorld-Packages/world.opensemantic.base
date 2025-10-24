@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.35.0",
+            "version": "0.36.0",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -710,6 +710,49 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW77e749fc598341ac8b6d2fff21574058.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW22dc1c3790974a1bb7187d7a77f7e767",
+                    "label": "DataSoftware",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW22dc1c3790974a1bb7187d7a77f7e767.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW22dc1c3790974a1bb7187d7a77f7e767.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW22dc1c3790974a1bb7187d7a77f7e767.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSW22dc1c3790974a1bb7187d7a77f7e767.slot_header_template.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW22dc1c3790974a1bb7187d7a77f7e767.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW22dc1c3790974a1bb7187d7a77f7e767.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW51ad0d1716254c77a2b7a03217f23b43",
+                    "label": "Database",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW51ad0d1716254c77a2b7a03217f23b43.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW51ad0d1716254c77a2b7a03217f23b43.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW51ad0d1716254c77a2b7a03217f23b43.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW51ad0d1716254c77a2b7a03217f23b43.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW51ad0d1716254c77a2b7a03217f23b43.slot_jsonschema.json"
                         }
                     }
                 },

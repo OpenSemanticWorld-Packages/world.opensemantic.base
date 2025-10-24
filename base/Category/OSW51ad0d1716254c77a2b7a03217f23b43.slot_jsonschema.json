@@ -1,0 +1,125 @@
+{
+    "@context": [
+        {
+            "server": {
+                "@id": "Property:HasDbServer",
+                "@type": "@id"
+            },
+            "db_schema": {
+                "@id": "Property:HasDbSchema",
+                "@type": "@id"
+            },
+            "schema_name": "Property:HasName",
+            "activated_extension": {
+                "@id": "Property:HasActivatedDbExtension",
+                "@type": "@id"
+            }
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW77e749fc598341ac8b6d2fff21574058?action=raw&slot=jsonschema"
+        }
+    ],
+    "title": "Database",
+    "type": "object",
+    "required": [
+        "type",
+        "name"
+    ],
+    "defaultProperties": [
+        "server"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW51ad0d1716254c77a2b7a03217f23b43"
+            ]
+        },
+        "name": {
+            "type": "string",
+            "title": "The identifier of the database",
+            "title*": {
+                "de": "Der eindeutige bezeichner der Datenbank"
+            },
+            "options": {
+                "hidden": false
+            }
+        },
+        "server": {
+            "title": "Database server",
+            "title*": {
+                "de": "Datenbank-Server"
+            },
+            "type": "string",
+            "format": "autocomplete",
+            "range": "Category:OSWacdb001c926c46b998af3e645d36b13f"
+        },
+        "db_schema": {
+            "title": "Database schema",
+            "title*": {
+                "de": "Datenbank-Schema"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "object",
+                "required": [
+                    "uuid",
+                    "schema_name"
+                ],
+                "properties": {
+                    "uuid": {
+                        "type": "string",
+                        "format": "uuid",
+                        "options": {
+                            "hidden": true
+                        }
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "Makes this subobject an instance of DatabaseSchema",
+                        "default": "Category:OSWc1dc531bc4e84d409d9ee5719b3b7632",
+                        "options": {
+                            "hidden": true
+                        }
+                    },
+                    "schema_name": {
+                        "title": "Schema name",
+                        "title*": {
+                            "de": "Schema-Name"
+                        },
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "activated_extension": {
+            "title": "Activated extension",
+            "title*": {
+                "de": "Aktivierte Erweiterung"
+            },
+            "watch": {
+                "server": "server"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "watch": {
+                    "w_server": "server"
+                },
+                "options": {
+                    "autocomplete": {
+                        "query": "[[-HasInstalledDbExtension::$(w_server)]]|?Display_title_of=label|?HasImage"
+                    }
+                }
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    }
+}

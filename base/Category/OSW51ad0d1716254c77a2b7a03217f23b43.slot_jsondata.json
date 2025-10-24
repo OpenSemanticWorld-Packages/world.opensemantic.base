@@ -1,0 +1,22 @@
+{
+    "uuid": "51ad0d17-1625-4c77-a2b7-a03217f23b43",
+    "label": [
+        {
+            "text": "Database",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "A Database stores data and supplies it later.",
+            "lang": "en"
+        }
+    ],
+    "subclass_of": [
+        "Category:OSW77e749fc598341ac8b6d2fff21574058"
+    ],
+    "name": "Database",
+    "type": [
+        "Category:Category"
+    ]
+}
