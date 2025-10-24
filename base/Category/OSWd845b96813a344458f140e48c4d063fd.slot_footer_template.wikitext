@@ -1,0 +1,9 @@
+=={{#switch: {{USERLANGUAGECODE}} |en=Instances|de=Instanzen|#default=Instances}}==
+{{#ask: [[{{FULLPAGENAME}}]]
+|?IsLocatedIn
+|?HasDepartment
+|?HasResponsiblePerson
+|?HasAccesories
+|format=datatable
+|pageLength=10
+}}

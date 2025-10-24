@@ -1,3 +1,28 @@
+=={{#switch:{{USERLANGUAGECODE}}|en=Instances|de=Instanzen/Exemplare|#default=Instances}}==  
+{{#ask: [[{{FULLPAGENAME}}]]
+|?HasType={{#switch:{{USERLANGUAGECODE}}|en=Type|de=Typ|#default=Type}}
+|?HasDescription={{#switch:{{USERLANGUAGECODE}}|en=Description|de=Beschreibung|#default=Description}}
+|?HasManufacturer={{#switch:{{USERLANGUAGECODE}}|en=Manufacturer|de=Hersteller|#default=Manufacturer}}
+|?IsLocatedIn={{#switch:{{USERLANGUAGECODE}}|en=Location|de=Standort|#default=Location}}
+|?HasResponsiblePerson={{#switch:{{USERLANGUAGECODE}}|en=Responsible Person|de=Verantwortlich|#default=Responsible Person}}
+|format=datatable
+|limit = 2000
+}}
+
+=={{#switch:{{USERLANGUAGECODE}}|en=Subcategories|de=Subkategorien|#default=Subcategories}}==
+{{#ask:
+ [[SubClassOf::{{FULLPAGENAME}}]] OR
+ [[SubClassOf.SubClassOf::{{FULLPAGENAME}}]] OR
+ [[SubClassOf.SubClassOf.SubClassOf::{{FULLPAGENAME}}]] OR
+ [[SubClassOf.SubClassOf.SubClassOf.SubClassOf::{{FULLPAGENAME}}]] OR [[SubClassOf.SubClassOf.SubClassOf.SubClassOf.SubClassOf::{{FULLPAGENAME}}]]
+ |?HasDescription={{#switch:{{USERLANGUAGECODE}}|en=Description|de=Beschreibung|#default=Description}}
+ |?HasManufacturer={{#switch:{{USERLANGUAGECODE}}|en=Manufacturer|de=Hersteller|#default=Manufacturer}}
+ |format=datatable
+ |limit = 2000
+}}
+
+== Tutorial ==
+[[Item:OSW9e3bf8a77562480c83f33d98c33c78e8|{{#switch:{{USERLANGUAGECODE}}|en=Device management|de=Geräteverwaltung|#default=Device management}}]]
 <!--
 ==[[:Category:OSW20691106529a419d829f3d057b99f3e1|Categories]] (Process / Idea Level)==
 <div class="pagebot-button" data-config='{  "params": {"categories": ["Category:OSW20691106529a419d829f3d057b99f3e1"]},    "label": "➕ Create Device Category" }'></div>
@@ -6,7 +31,7 @@
 |?HasTypicalProcess = Typical Process
 |format=datatable
 }}
-==[[:Category:OSWbeec89bdcbc64d8f90a459ba19c46dcc|Types]] (Manufacturer Level) ==
+==[[:Category:OSWbeec89bdcbc64d8f90a459ba19c46dcc|Types]] (Manufacturer Level)==
 <div class="pagebot-button" data-config='{    "params": {"categories": ["Category:OSWbeec89bdcbc64d8f90a459ba19c46dcc"]},    "label": "➕ Create Device Type" }'></div>
 <br>
 {{#ask: [[Category:OSWbeec89bdcbc64d8f90a459ba19c46dcc]]
@@ -14,7 +39,7 @@
 |format=datatable
 }}
 
--->
+
 
 ==[[:Category:OSWf0fe562f422d49c6877490b3dfee2f3f|{{#switch:{{USERLANGUAGECODE}}|en=Instances|de=Instanzen/Exemplare|#default=Instances}}]]==  
 
@@ -37,7 +62,7 @@
  |format=datatable
  |limit = 2000
 }}
-=={{#switch:{{USERLANGUAGECODE}}|en=All Device Categories|de=Alle Gerätekategorien|#default=All Device Categories}} ==
+=={{#switch:{{USERLANGUAGECODE}}|en=All Device Categories|de=Alle Gerätekategorien|#default=All Device Categories}}==
 {{#ask:
  [[SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]] OR
  [[SubClassOf.SubClassOf::Category:OSWf0fe562f422d49c6877490b3dfee2f3f]] OR

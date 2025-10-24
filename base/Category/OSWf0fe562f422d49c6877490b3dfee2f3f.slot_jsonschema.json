@@ -1,23 +1,78 @@
 {
     "@context": [
+        "/wiki/Category:OSWe427aafafbac4262955b9f690a83405d?action=raw&slot=jsonschema",
+        "/wiki/Category:OSW37a57741ae2e4dd4b29b1172b6848be8?action=raw&slot=jsonschema",
         {
-            "responsible_person": "Property:HasResponsiblePerson",
-            "location": "Property:IsLocatedIn",
-            "organizational_unit": "Property:HasDepartment",
+            "accessories": {
+                "@id": "Property:HasAccessories",
+                "@type": "@id"
+            },
             "inventory_number": "Property:HasInventoryNumber",
-            "risk_assessment": "Property:HasRiskAssessment",
-            "owner": "Property:HasOwner",
-            "serial_number": "Property:HasSerialNumber"
-        },
-        "/wiki/Category:OSWe427aafafbac4262955b9f690a83405d?action=raw&slot=jsonschema"
+            "location": {
+                "@id": "Property:IsLocatedIn",
+                "@type": "@id"
+            },
+            "organizational_unit": {
+                "@id": "Property:HasDepartment",
+                "@type": "@id"
+            },
+            "organizational_unit*": {
+                "@id": "Property:HasOu",
+                "@type": "@id"
+            },
+            "owner": {
+                "@id": "Property:HasOwner",
+                "@type": "@id"
+            },
+            "purpose": {
+                "@id": "Property:HasPurpose",
+                "@type": "@id"
+            },
+            "responsible_person": {
+                "@id": "Property:HasResponsiblePerson",
+                "@type": "@id"
+            },
+            "risk_assessment": {
+                "@id": "Property:HasRiskAssessment",
+                "@type": "@id"
+            },
+            "serial_number": "Property:HasSerialNumber",
+            "typical_processes": {
+                "@id": "Property:HasTypicalProcess",
+                "@type": "@id"
+            }
+        }
     ],
     "allOf": [
         {
             "$ref": "/wiki/Category:OSWe427aafafbac4262955b9f690a83405d?action=raw&slot=jsonschema"
+        },
+        {
+            "$ref": "/wiki/Category:OSW37a57741ae2e4dd4b29b1172b6848be8?action=raw&slot=jsonschema"
         }
     ],
-    "title": "Device",
     "type": "object",
+    "uuid": "f0fe562f-422d-49c6-8774-90b3dfee2f3f",
+    "title": "Device",
+    "title*": {
+        "en": "Device",
+        "de": "Gerät"
+    },
+    "description": "A Tool that is a (phyiscal) piece of Hardware.",
+    "description*": {
+        "en": "A Tool that is a (phyiscal) piece of Hardware.",
+        "de": "Ein Werkzeug, das ein (physisches) Stück Ausrüstung ist."
+    },
+    "required": [
+        "type"
+    ],
+    "defaultProperties": [
+        "image",
+        "responsible_person",
+        "location",
+        "inventory_number",
+        "_device_type_properties"
+    ],
     "properties": {
         "responsible_person": {
             "type": "array",
@@ -52,17 +107,49 @@
                 "range": "Category:OSW3d238d05316e45a4ac95a11d7b24e36b"
             }
         },
-        "location_name": {
-            "title": "Location Name",
-            "description": "Only use if Location Object cannot be found and created",
+        "manufacturer_type_id": {
+            "type": "string",
+            "title": "Manufacturer Type ID",
             "title*": {
-                "de": "Ort (Name)"
+                "de": "Hersteller Typen-ID"
+            },
+            "description": "Product ID provided by the manufacturer",
+            "description*": {
+                "de": "Produkt-ID des Herstellers."
+            }
+        },
+        "manufacturer_type_name": {
+            "type": "string",
+            "title": "Manufacturer Type Name",
+            "title*": {
+                "de": "Hersteller Typenbezeichnung"
+            },
+            "description": "Product name provided by the manufacturer. Often more human friendly than the type id.",
+            "description*": {
+                "de": "Produktname des Herstellers. Oftmals ein einfacherer Alias neben der Typen-ID"
+            }
+        },
+        "typical_processes": {
+            "title": "Typical Processes",
+            "title*": {
+                "de": "Typische Prozesse"
             },
             "type": "array",
             "items": {
-                "title": "",
-                "type": "string"
-            }
+                "type": "string",
+                "format": "autocomplete",
+                "title": "Process",
+                "$comment": "range are processes / subcategories of Process",
+                "subclassof_range": "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203"
+            },
+            "eval_template": [
+                {
+                    "type": "mustache-wikitext",
+                    "mode": "render",
+                    "$comment": "render buttons for each typical process with which an instance for the corresponding process can be created",
+                    "value": "{{#typical_processes}}* [[:{{{.}}}]] <div class=\"pagebot-button\" data-config='{ \"label\": \"➕\",   \"params\": {\"categories\": [\"{{{.}}}\"] ,\"jsondata\":{\"tool\":[\"{{=<% %>=}}{{FULLPAGENAME}}<%={{ }}=%>\"]}}}'></div>\n{{/typical_processes}}"
+                }
+            ]
         },
         "organizational_unit": {
             "type": "array",
@@ -111,30 +198,51 @@
             },
             "type": "string"
         },
+        "accessories": {
+            "title": "Accessories",
+            "title*": {
+                "de": "Zubehör"
+            },
+            "description": "Things that are used together with this device or replacement parts",
+            "description*": {
+                "de": "Dinge, die zusammen mit diesem Gerät benutzt werden oder Ersatzteile"
+            },
+            "type": "array",
+            "items": {
+                "title": "Accessory",
+                "title*": {
+                    "de": "Zubehör"
+                },
+                "type": "string",
+                "format": "autocomplete",
+                "range": "Category:Item"
+            }
+        },
         "type": {
             "default": [
                 "Category:OSWf0fe562f422d49c6877490b3dfee2f3f"
             ]
+        },
+        "_device_type_properties": {
+            "title": "Information from Type",
+            "title*": {
+                "en": "Device type information",
+                "de": "Informationen des Gerätetyps"
+            },
+            "default": "visible",
+            "type": "string",
+            "options": {
+                "hidden": true
+            },
+            "propertyOrder": 10000,
+            "eval_template": [
+                {
+                    "type": "mustache-wikitext",
+                    "mode": "render",
+                    "$comment": "information from jsondata slots in class hirarchy",
+                    "value": "{{=<% %>=}} <tr><td>{{#switch:{{USERLANGUAGECODE}}|en=Manufacturer|de=Hersteller}}</td><td>{{#ask:[[-HasType::{{FULLPAGENAME}}]][[HasManufacturer::+]]|?HasManufacturer=|format=plain|mainlabel=-}}</td> </tr><tr><td>{{#switch:{{USERLANGUAGECODE}}|en=Manual|de=Bedienungsanleitung}}</td><td>{{#ask:[[-HasType::{{FULLPAGENAME}}]]|?HasManual=|format=plain|mainlabel=-}}</td> </tr><%={{ }}=%>"
+                }
+            ]
         }
-    },
-    "defaultProperties": [
-        "image",
-        "responsible_person",
-        "location",
-        "inventory_number",
-        "risk_assessment"
-    ],
-    "uuid": "f0fe562f-422d-49c6-8774-90b3dfee2f3f",
-    "title*": {
-        "en": "Device",
-        "de": "Gerät"
-    },
-    "description": "A Tool that is a (phyiscal) piece of Hardware.",
-    "description*": {
-        "en": "A Tool that is a (phyiscal) piece of Hardware.",
-        "de": "Ein Werkzeug, das ein (physisches) Stück Ausrüstung ist."
-    },
-    "required": [
-        "type"
-    ]
+    }
 }

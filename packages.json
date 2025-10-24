@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.34.0",
+            "version": "0.35.0",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -528,18 +528,18 @@
                 },
                 {
                     "name": "OSWd845b96813a344458f140e48c4d063fd",
-                    "label": "MetaDeviceCategory",
+                    "label": "DeviceType",
                     "namespace": "NS_CATEGORY",
                     "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_main.wikitext",
                     "slots": {
                         "footer": {
                             "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_footer.wikitext"
                         },
+                        "footer_template": {
+                            "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_footer_template.wikitext"
+                        },
                         "header": {
                             "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_header_template.wikitext"
                         },
                         "jsondata": {
                             "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_jsondata.json"
@@ -560,9 +560,6 @@
                         },
                         "header": {
                             "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_header_template.wikitext"
                         },
                         "jsondata": {
                             "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_jsondata.json"
@@ -592,7 +589,7 @@
                 },
                 {
                     "name": "OSW0b6e695c4bb74e9ea5aa7f5da3150653",
-                    "label": "MetaStrictParticipantsProcessCategory",
+                    "label": "StrictParticipantsProcessType",
                     "namespace": "NS_CATEGORY",
                     "urlPath": "Category/OSW0b6e695c4bb74e9ea5aa7f5da3150653.slot_main.wikitext",
                     "slots": {
