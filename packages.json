@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.33.1",
+            "version": "0.33.2",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -2194,23 +2194,6 @@
                         },
                         "jsondata": {
                             "urlPath": "Property/HasOwner.slot_jsondata.json"
-                        }
-                    }
-                },
-                {
-                    "name": "HasSerialNumber",
-                    "label": "HasSerialNumber",
-                    "namespace": "SMW_NS_PROPERTY",
-                    "urlPath": "Property/HasSerialNumber.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Property/HasSerialNumber.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Property/HasSerialNumber.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Property/HasSerialNumber.slot_jsondata.json"
                         }
                     }
                 },
