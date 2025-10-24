@@ -1,0 +1,15 @@
+{
+    "type": [
+        "Category:DataProperty"
+    ],
+    "name": "HasEmail",
+    "property_type": "Email",
+    "uuid": "64f7fc97-6b1a-4159-903c-1b01b8edeb44",
+    "label": [
+        {
+            "text": "Email",
+            "lang": "de"
+        }
+    ],
+    "description": []
+}

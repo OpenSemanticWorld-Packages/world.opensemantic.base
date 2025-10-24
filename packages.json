@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.33.2",
+            "version": "0.33.3",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -2248,6 +2248,23 @@
                         },
                         "jsonschema": {
                             "urlPath": "Property/HasPostalAddress.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasEmail",
+                    "label": "HasEmail",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasEmail.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasEmail.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasEmail.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasEmail.slot_jsondata.json"
                         }
                     }
                 },
