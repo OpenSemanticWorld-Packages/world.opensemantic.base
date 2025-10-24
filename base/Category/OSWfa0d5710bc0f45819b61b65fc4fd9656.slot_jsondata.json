@@ -1,9 +1,9 @@
 {
-    "type": [
-        "Category:Category"
-    ],
     "subclass_of": [
         "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203"
+    ],
+    "type": [
+        "Category:Category"
     ],
     "uuid": "fa0d5710-bc0f-4581-9b61-b65fc4fd9656",
     "label": [
@@ -16,5 +16,8 @@
             "lang": "de"
         }
     ],
-    "name": "StrictParticipantsProcess"
+    "name": "StrictParticipantsProcess",
+    "metaclass": [
+        "Category:OSW0b6e695c4bb74e9ea5aa7f5da3150653"
+    ]
 }
