@@ -1,0 +1,8 @@
+==[[:Category:OSW494f660e6a714a1a9681c517bbb975da|{{#switch:{{USERLANGUAGECODE}}|en=Instances|de=Instanzen|#default=Instances}}]]==  
+{{#ask: [[Category:OSW494f660e6a714a1a9681c517bbb975da]]
+|?HasDescription={{#switch:{{USERLANGUAGECODE}}|en=Description|de=Beschreibung|#default=Description}}
+|+lang={{USERLANGUAGECODE}}
+|mainlabel={{#switch:{{USERLANGUAGECODE}}|en=Title|de=Titel|#default=Title}}
+|format=datatable
+|limit = 2000
+}}

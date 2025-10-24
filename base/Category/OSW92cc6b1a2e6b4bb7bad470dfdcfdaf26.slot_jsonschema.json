@@ -5,22 +5,6 @@
                 "@id": "wiki:File-3A",
                 "@prefix": true
             },
-            "headline": {
-                "@id": "schema:headline",
-                "@type": "xsd:string"
-            },
-            "headline*": {
-                "@id": "Property:HasAuthor",
-                "@type": "xsd:string"
-            },
-            "author": {
-                "@id": "schema:author",
-                "@type": "@id"
-            },
-            "author*": {
-                "@id": "Property:HasAuthor",
-                "@type": "@id"
-            },
             "related_to": {
                 "@id": "Property:IsRelatedTo",
                 "@type": "@id"

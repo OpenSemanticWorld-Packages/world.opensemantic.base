@@ -65,6 +65,10 @@
                 "@id": "Property:HasOrganization",
                 "@type": "@id"
             },
+            "organization**": {
+                "@id": "Property:HasOu",
+                "@type": "@id"
+            },
             "organizational_unit": {
                 "@id": "schema:memberOf",
                 "@type": "@id"
@@ -133,6 +137,21 @@
         "en": "Category for a person in general. Subcategories are e.g. 'User', i.e. persons who have a user ID.",
         "de": "Kategorie für eine Person im Allgemeinen. Unterkategorien sind bsp. 'User', also Personen die über eine Nutzerkennung verfügen."
     },
+    "data_source_maps": [
+        {
+            "id": "pub.orcid.org",
+            "source": "https://pub.orcid.org/v3.0/{{#split '/' -1}}{{orcid}}{{/split}}",
+            "format": "jsonld",
+            "label": "ORCID",
+            "required": [
+                "orcid"
+            ],
+            "object_map": {
+                "first_name": "$.givenName",
+                "surname": "$.familyName"
+            }
+        }
+    ],
     "defaultProperties": [
         "first_name",
         "surname",

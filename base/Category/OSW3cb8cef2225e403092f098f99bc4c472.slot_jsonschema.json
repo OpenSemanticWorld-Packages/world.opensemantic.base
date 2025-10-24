@@ -237,7 +237,6 @@
             ]
         },
         "abbreviation": {
-            "$comment": "should reuse short_name from Entity",
             "title": "Acronym",
             "title*": {
                 "de": "Akronym"

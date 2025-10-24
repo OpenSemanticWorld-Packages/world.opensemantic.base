@@ -1,5 +1,5 @@
 
-== Tutorial Graph ==
+<h2 class="section-collapsible-initial-collapsed section-heading--collapsed">{{#switch:{{USERLANGUAGECODE}}|de=Tutorium Graph|#default=Tutorial Graph}}</h2>
 {{Template:Editor/Graph
 | file_name = graph-01
 | page_name = {{FULLPAGENAME}}

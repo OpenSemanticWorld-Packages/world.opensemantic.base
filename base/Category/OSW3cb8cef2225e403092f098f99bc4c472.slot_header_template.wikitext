@@ -69,7 +69,7 @@
     </tr>
     <tr>
         <th>{{{_label_superordinate_ou|Superordinate OU}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasSuperOrdinateOu=|format=plain|mainlabel=-}}</td>
+        <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasSuperordinateOu=|format=plain|mainlabel=-}}</td>
     </tr>
     <tr>
         <th>{{#switch:{{USERLANGUAGECODE}}
@@ -78,7 +78,7 @@
             |#default=Subordinate OU}}
         </th>
         <td>{{#ask:
-            [[HasType::Category:OSW3cb8cef2225e403092f098f99bc4c472]][[HasSuperordinateOu::{{FULLPAGENAME}}]]}}
+            [[HasSuperordinateOu::{{FULLPAGENAME}}]]|format=plain}}
         </td>
     </tr>
     <tr>
