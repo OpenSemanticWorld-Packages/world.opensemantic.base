@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.37.1",
+            "version": "0.37.2",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -54,7 +54,35 @@
                 {
                     "name": "Duration",
                     "namespace": "NS_JSONSCHEMA",
-                    "urlPath": "JsonSchema/Duration.slot_main.json"
+                    "urlPath": "JsonSchema/Duration.slot_main.json",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "JsonSchema/Duration.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "JsonSchema/Duration.slot_header.wikitext"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWb4e577c7867b43ed87adec9d92592638",
+                    "label": "Role",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWb4e577c7867b43ed87adec9d92592638.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWb4e577c7867b43ed87adec9d92592638.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWb4e577c7867b43ed87adec9d92592638.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWb4e577c7867b43ed87adec9d92592638.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWb4e577c7867b43ed87adec9d92592638.slot_jsonschema.json"
+                        }
+                    }
                 },
                 {
                     "name": "OSW712583f2479944deb2546b77cf860dda",
@@ -288,6 +316,66 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWfe72974590fd4e8ba94cd4e8366375e8.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW0d6584b3e2b64e9595733c4c3963c486",
+                    "label": "DatasetSchema",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW0d6584b3e2b64e9595733c4c3963c486.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW0d6584b3e2b64e9595733c4c3963c486.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW0d6584b3e2b64e9595733c4c3963c486.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW0d6584b3e2b64e9595733c4c3963c486.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW0d6584b3e2b64e9595733c4c3963c486.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWafcac83979f4472298b6acdc01981728",
+                    "label": "DigitalDocument",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWafcac83979f4472298b6acdc01981728.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWafcac83979f4472298b6acdc01981728.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWafcac83979f4472298b6acdc01981728.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWafcac83979f4472298b6acdc01981728.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWafcac83979f4472298b6acdc01981728.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWccac243b31f94574847861e5d9685b82",
+                    "label": "DataFormat",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWccac243b31f94574847861e5d9685b82.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWccac243b31f94574847861e5d9685b82.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWccac243b31f94574847861e5d9685b82.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWccac243b31f94574847861e5d9685b82.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWccac243b31f94574847861e5d9685b82.slot_jsonschema.json"
                         }
                     }
                 },
@@ -563,9 +651,6 @@
                         },
                         "header": {
                             "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_header_template.wikitext"
                         },
                         "jsondata": {
                             "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_jsondata.json"
@@ -884,7 +969,7 @@
                         }
                     }
                 },
-		{
+                {
                     "name": "OSW22dc1c3790974a1bb7187d7a77f7e767",
                     "label": "DataSoftware",
                     "namespace": "NS_CATEGORY",
@@ -907,7 +992,7 @@
                         }
                     }
                 },
-		{
+                {
                     "name": "OSW51ad0d1716254c77a2b7a03217f23b43",
                     "label": "Database",
                     "namespace": "NS_CATEGORY",
