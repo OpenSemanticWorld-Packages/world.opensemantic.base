@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.36.0",
+            "version": "0.37.1",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -541,6 +541,9 @@
                         "header": {
                             "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_header.wikitext"
                         },
+                        "header_template": {
+                            "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_header_template.wikitext"
+                        },
                         "jsondata": {
                             "urlPath": "Category/OSWd845b96813a344458f140e48c4d063fd.slot_jsondata.json"
                         },
@@ -560,6 +563,9 @@
                         },
                         "header": {
                             "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_header.wikitext"
+                        },
+                        "header_template": {
+                            "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_header_template.wikitext"
                         },
                         "jsondata": {
                             "urlPath": "Category/OSWf0fe562f422d49c6877490b3dfee2f3f.slot_jsondata.json"
@@ -648,22 +654,187 @@
                     }
                 },
                 {
-                    "name": "OSW3886740859ae459588fee73d3bb3c83e",
-                    "label": "RiskAssessmentProcess",
+                    "name": "OSWe21775c8dd604739885dfc24c32cc548",
+                    "label": "Procedure",
                     "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_main.wikitext",
+                    "urlPath": "Category/OSWe21775c8dd604739885dfc24c32cc548.slot_main.wikitext",
                     "slots": {
                         "footer": {
-                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_footer.wikitext"
+                            "urlPath": "Category/OSWe21775c8dd604739885dfc24c32cc548.slot_footer.wikitext"
                         },
                         "header": {
-                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_header.wikitext"
+                            "urlPath": "Category/OSWe21775c8dd604739885dfc24c32cc548.slot_header.wikitext"
                         },
                         "jsondata": {
-                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_jsondata.json"
+                            "urlPath": "Category/OSWe21775c8dd604739885dfc24c32cc548.slot_jsondata.json"
                         },
                         "jsonschema": {
-                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_jsonschema.json"
+                            "urlPath": "Category/OSWe21775c8dd604739885dfc24c32cc548.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW0c69914a29b74f3c9e9d9ff7a6880715",
+                    "label": "Shipment",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW0c69914a29b74f3c9e9d9ff7a6880715.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW0c69914a29b74f3c9e9d9ff7a6880715.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSW0c69914a29b74f3c9e9d9ff7a6880715.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW0c69914a29b74f3c9e9d9ff7a6880715.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW0c69914a29b74f3c9e9d9ff7a6880715.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW0c69914a29b74f3c9e9d9ff7a6880715.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW5be796e8a33c4567be1f31453fa747e8",
+                    "label": "ShippingServiceProvider",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW5be796e8a33c4567be1f31453fa747e8.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW5be796e8a33c4567be1f31453fa747e8.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW5be796e8a33c4567be1f31453fa747e8.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW5be796e8a33c4567be1f31453fa747e8.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW5be796e8a33c4567be1f31453fa747e8.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWf8bf7b1902d94125ad8c20590087c4f6",
+                    "label": "ShipmentStatus",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWf8bf7b1902d94125ad8c20590087c4f6.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWf8bf7b1902d94125ad8c20590087c4f6.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWf8bf7b1902d94125ad8c20590087c4f6.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWf8bf7b1902d94125ad8c20590087c4f6.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWf8bf7b1902d94125ad8c20590087c4f6.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWaf335426cb8e44e9a3b109bcdc881bb4",
+                    "label": "InTransit",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWaf335426cb8e44e9a3b109bcdc881bb4.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWaf335426cb8e44e9a3b109bcdc881bb4.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWaf335426cb8e44e9a3b109bcdc881bb4.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWaf335426cb8e44e9a3b109bcdc881bb4.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW1e8a24565cc54dffa319d04b9e88858c",
+                    "label": "Returned",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW1e8a24565cc54dffa319d04b9e88858c.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW1e8a24565cc54dffa319d04b9e88858c.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW1e8a24565cc54dffa319d04b9e88858c.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW1e8a24565cc54dffa319d04b9e88858c.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW51a0d24db743463799547f5c63de95cc",
+                    "label": "Delivered",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW51a0d24db743463799547f5c63de95cc.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW51a0d24db743463799547f5c63de95cc.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW51a0d24db743463799547f5c63de95cc.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW51a0d24db743463799547f5c63de95cc.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW771e9816bce64e20938befcfbfb9493f",
+                    "label": "Cancelled",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW771e9816bce64e20938befcfbfb9493f.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW771e9816bce64e20938befcfbfb9493f.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW771e9816bce64e20938befcfbfb9493f.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW771e9816bce64e20938befcfbfb9493f.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWd47f63e08475463abe8d6cffbd2f93ea",
+                    "label": "ReadyForPickup",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWd47f63e08475463abe8d6cffbd2f93ea.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWd47f63e08475463abe8d6cffbd2f93ea.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWd47f63e08475463abe8d6cffbd2f93ea.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWd47f63e08475463abe8d6cffbd2f93ea.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWe60b7cc0603a4a59af0914b51b5d2b17",
+                    "label": "Problem",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSWe60b7cc0603a4a59af0914b51b5d2b17.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSWe60b7cc0603a4a59af0914b51b5d2b17.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSWe60b7cc0603a4a59af0914b51b5d2b17.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSWe60b7cc0603a4a59af0914b51b5d2b17.slot_jsondata.json"
                         }
                     }
                 },
@@ -713,7 +884,7 @@
                         }
                     }
                 },
-                {
+		{
                     "name": "OSW22dc1c3790974a1bb7187d7a77f7e767",
                     "label": "DataSoftware",
                     "namespace": "NS_CATEGORY",
@@ -736,7 +907,7 @@
                         }
                     }
                 },
-                {
+		{
                     "name": "OSW51ad0d1716254c77a2b7a03217f23b43",
                     "label": "Database",
                     "namespace": "NS_CATEGORY",
@@ -1285,6 +1456,26 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW11ee14fb9f774b4b89bdb9bb89aac14d.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWd4129507353742858a60720736334513",
+                    "label": "Manufacturer",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWd4129507353742858a60720736334513.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWd4129507353742858a60720736334513.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWd4129507353742858a60720736334513.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWd4129507353742858a60720736334513.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWd4129507353742858a60720736334513.slot_jsonschema.json"
                         }
                     }
                 },
@@ -2135,6 +2326,9 @@
                         },
                         "jsondata": {
                             "urlPath": "Property/HasManufacturer.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Property/HasManufacturer.slot_jsonschema.json"
                         }
                     }
                 },
@@ -2220,23 +2414,6 @@
                         },
                         "jsondata": {
                             "urlPath": "Property/HasInventoryNumber.slot_jsondata.json"
-                        }
-                    }
-                },
-                {
-                    "name": "HasRiskAssessment",
-                    "label": "HasRiskAssessment",
-                    "namespace": "SMW_NS_PROPERTY",
-                    "urlPath": "Property/HasRiskAssessment.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Property/HasRiskAssessment.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Property/HasRiskAssessment.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Property/HasRiskAssessment.slot_jsondata.json"
                         }
                     }
                 },
@@ -2393,6 +2570,57 @@
                         },
                         "jsondata": {
                             "urlPath": "Property/HasWeightedBudget.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasAbbreviation",
+                    "label": "HasAbbreviation",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasAbbreviation.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasAbbreviation.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasAbbreviation.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasAbbreviation.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasOrganization",
+                    "label": "HasOrganization",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasOrganization.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasOrganization.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasOrganization.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasOrganization.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasOu",
+                    "label": "HasOu",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasOu.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasOu.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasOu.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasOu.slot_jsondata.json"
                         }
                     }
                 }

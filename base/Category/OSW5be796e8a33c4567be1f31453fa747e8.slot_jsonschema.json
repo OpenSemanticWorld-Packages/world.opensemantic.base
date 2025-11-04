@@ -1,0 +1,52 @@
+{
+    "@context": [
+        "/wiki/Category:OSWb4e577c7867b43ed87adec9d92592638?action=raw&slot=jsonschema",
+        {
+            "tracking_system_link": {
+                "@id": "Property:HasTrackingSystemLink"
+            }
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWb4e577c7867b43ed87adec9d92592638?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "5be796e8-a33c-4567-be1f-31453fa747e8",
+    "title": "ShippingServiceProvider",
+    "title*": {
+        "en": "Shipping service provider",
+        "de": "Versanddienstleister"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type"
+    ],
+    "defaultProperties": [
+        "tracking_system_link"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW5be796e8a33c4567be1f31453fa747e8"
+            ]
+        },
+        "tracking_system_link": {
+            "title": "Tracking system link",
+            "title*": {
+                "de": "Link zur Sendungsverfolgung"
+            },
+            "type": "string",
+            "format": "uri",
+            "eval_template": [
+                {
+                    "type": "wikitext",
+                    "mode": "render",
+                    "value": "[{{{tracking_system_link}}} Link]"
+                }
+            ]
+        }
+    }
+}

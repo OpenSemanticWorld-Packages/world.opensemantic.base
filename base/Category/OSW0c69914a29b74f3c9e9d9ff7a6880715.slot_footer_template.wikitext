@@ -1,0 +1,6 @@
+== {{#switch:{{USERLANGUAGECODE}}|#default=Map|de=Karte}} ==
+{{#display_map: 
+|lines=
+{{#ask:[[{{{recipient_site|}}}]]|?HasGpsCoordinates=|format=plain|link=none|mainlabel=-}}:
+{{#ask:[[{{{sender_site|}}}]]|?HasGpsCoordinates=|format=plain|link=none|mainlabel=-}}
+}}

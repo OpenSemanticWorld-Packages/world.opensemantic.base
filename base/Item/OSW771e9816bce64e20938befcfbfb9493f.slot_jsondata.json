@@ -1,0 +1,21 @@
+{
+    "type": [
+        "Category:OSWf8bf7b1902d94125ad8c20590087c4f6"
+    ],
+    "uuid": "771e9816-bce6-4e20-938b-efcfbfb9493f",
+    "label": [
+        {
+            "text": "Cancelled",
+            "lang": "en"
+        },
+        {
+            "text": "Abgesagt",
+            "lang": "de"
+        }
+    ],
+    "description": [],
+    "rdf_type": [
+        "schema:OrderCancelled"
+    ],
+    "name": "Cancelled"
+}

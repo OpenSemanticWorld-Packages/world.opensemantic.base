@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "/wiki/Category:OSWb4e577c7867b43ed87adec9d92592638?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWb4e577c7867b43ed87adec9d92592638?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "d4129507-3537-4285-8a60-720736334513",
+    "title": "Manufacturer",
+    "title*": {
+        "en": "Manufacturer",
+        "de": "Hersteller"
+    },
+    "description": "Categorization category to describe the usage of an organizational unit as manufacturer of, e.g., a device.",
+    "description*": {
+        "en": "Categorization category to describe the usage of an organizational unit as manufacturer of, e.g., a device.",
+        "de": "Ordnungskategorie zur Beschreibung der Verwendung einer Organisationseinheit als Hersteller von z.B. einem Gerät."
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWd4129507353742858a60720736334513"
+            ]
+        }
+    }
+}

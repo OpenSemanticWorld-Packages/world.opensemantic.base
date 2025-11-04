@@ -1,9 +1,10 @@
 =={{#switch: {{USERLANGUAGECODE}} |en=Instances|de=Instanzen|#default=Instances}}==
 {{#ask: [[{{FULLPAGENAME}}]]
-|?IsLocatedIn
-|?HasDepartment
-|?HasResponsiblePerson
-|?HasAccesories
+|?HasType={{#switch: {{USERLANGUAGECODE}} |en=Type|de=Typ|#default=Type}}
+|?IsLocatedIn={{#switch: {{USERLANGUAGECODE}} |en=Located in|de=Standort|#default=Located in}}
+|?HasDepartment={{#switch: {{USERLANGUAGECODE}} |en=Department|de=Abteilung|#default=Department}}
+|?HasResponsiblePerson={{#switch: {{USERLANGUAGECODE}} |en=Repsonsible person|de=Verantwortliche Person|#default=Repsonsible person}}
+|?HasAccesories={{#switch: {{USERLANGUAGECODE}} |en=Accesories|de=Zubehör|#default=Accesories}}
 |format=datatable
 |pageLength=10
 }}

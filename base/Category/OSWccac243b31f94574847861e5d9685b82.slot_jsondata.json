@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:OSW34f9d66c7e1241c8b9543231526f126d"
+    ],
+    "uuid": "ccac243b-31f9-4574-8478-61e5d9685b82",
+    "label": [
+        {
+            "text": "Data format",
+            "lang": "en"
+        },
+        {
+            "text": "Daten format",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "The format of a dataset",
+            "lang": "en"
+        },
+        {
+            "text": "Das Format eines Datensatzes",
+            "lang": "de"
+        }
+    ],
+    "name": "DataFormat",
+    "type": [
+        "Category:Category"
+    ]
+}

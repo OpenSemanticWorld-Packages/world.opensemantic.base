@@ -1,0 +1,15 @@
+{
+    "type": [
+        "Category:ObjectProperty"
+    ],
+    "name": "HasOrganization",
+    "property_type": "Page",
+    "uuid": "0ca2d871-734f-4e6b-a0ac-ef6ecf21f44c",
+    "label": [
+        {
+            "text": "HasOrganization",
+            "lang": "en"
+        }
+    ],
+    "description": []
+}

@@ -1,0 +1,29 @@
+{
+    "subclass_of": [
+        "Category:Item"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "0c69914a-29b7-4f3c-9e9d-9ff7a6880715",
+    "label": [
+        {
+            "text": "Shipment",
+            "lang": "en"
+        }
+    ],
+    "utf8_icon": [
+        "📦"
+    ],
+    "description": [
+        {
+            "text": "Items delivered from a sender to a recipient.",
+            "lang": "en"
+        },
+        {
+            "text": "Sendung, die von einem Absender an einen Empfänger zugestellt werden.",
+            "lang": "de"
+        }
+    ],
+    "name": "Shipment"
+}

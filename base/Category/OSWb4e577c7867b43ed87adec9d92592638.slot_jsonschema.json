@@ -1,0 +1,32 @@
+{
+    "@context": [
+        "/wiki/Category:OSWa5812d3b5119416c8da1606cbe7054eb?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWa5812d3b5119416c8da1606cbe7054eb?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "b4e577c7-867b-43ed-87ad-ec9d92592638",
+    "title": "Role",
+    "title*": {
+        "en": "Role",
+        "de": "Rolle"
+    },
+    "description": "Role of a person or organization",
+    "description*": {
+        "en": "Role of a person or organization",
+        "de": "Rolle einer Person oder Organisation"
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWb4e577c7867b43ed87adec9d92592638"
+            ]
+        }
+    }
+}

@@ -1,6 +1,7 @@
 {
     "@context": [
-        {
+      "/wiki/Category:OSWfe3e842b804445c7bb0dd8ee61da2d70?action=raw&slot=jsonschema",
+      {
             "manager": {
                 "@id": "Property:HasManager",
                 "@type": "@id"
@@ -9,8 +10,7 @@
                 "@id": "Property:HasSuperordinateOu",
                 "@type": "@id"
             }
-        },
-        "/wiki/Category:OSWfe3e842b804445c7bb0dd8ee61da2d70?action=raw&slot=jsonschema"
+        }
     ],
     "allOf": [
         {

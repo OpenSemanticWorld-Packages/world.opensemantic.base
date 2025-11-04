@@ -1,0 +1,29 @@
+{
+    "@context": [
+        "/wiki/Category:OSW2c32802be59040248c85eda3479d484c?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW2c32802be59040248c85eda3479d484c?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "f8bf7b19-02d9-4125-ad8c-20590087c4f6",
+    "title": "ShipmentStatus",
+    "title*": {
+        "en": "Shipment Status",
+        "de": "Sendungsstatus"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWf8bf7b1902d94125ad8c20590087c4f6"
+            ]
+        }
+    }
+}

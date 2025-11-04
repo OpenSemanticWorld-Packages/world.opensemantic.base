@@ -1,0 +1,21 @@
+{
+    "type": [
+        "Category:OSWf8bf7b1902d94125ad8c20590087c4f6"
+    ],
+    "uuid": "af335426-cb8e-44e9-a3b1-09bcdc881bb4",
+    "label": [
+        {
+            "text": "In Transit",
+            "lang": "en"
+        },
+        {
+            "text": "Auf dem Weg",
+            "lang": "de"
+        }
+    ],
+    "description": [],
+    "name": "InTransit",
+    "rdf_type": [
+        "schema:OrderInTransit"
+    ]
+}

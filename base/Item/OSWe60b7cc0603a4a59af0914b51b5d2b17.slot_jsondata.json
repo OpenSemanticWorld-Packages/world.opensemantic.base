@@ -1,0 +1,21 @@
+{
+    "type": [
+        "Category:OSWf8bf7b1902d94125ad8c20590087c4f6"
+    ],
+    "uuid": "e60b7cc0-603a-4a59-af09-14b51b5d2b17",
+    "label": [
+        {
+            "text": "Problem",
+            "lang": "en"
+        },
+        {
+            "text": "Problem",
+            "lang": "de"
+        }
+    ],
+    "description": [],
+    "rdf_type": [
+        "schema:OrderProblem"
+    ],
+    "name": "Problem"
+}

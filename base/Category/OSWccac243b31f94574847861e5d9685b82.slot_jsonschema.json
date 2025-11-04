@@ -1,0 +1,37 @@
+{
+    "properties": {
+        "specification": {
+            "title": "Specification",
+            "title*": {
+                "de": "Spezifikation"
+            },
+            "type": "string",
+            "description": "Either text or link",
+            "description*": {
+                "de": "Entweder Text oder Link"
+            }
+        },
+        "type": {
+            "default": [
+                "Category:OSWccac243b31f94574847861e5d9685b82"
+            ]
+        }
+    },
+    "defaultProperties": [
+        "specification",
+        "description",
+        "label",
+        "short_name"
+    ],
+    "title": "DataFormat",
+    "type": "object",
+    "allOf": [
+        {
+            "type": "object",
+            "$ref": "/wiki/Category:OSW34f9d66c7e1241c8b9543231526f126d?action=raw&slot=jsonschema"
+        }
+    ],
+    "required": [
+        "type"
+    ]
+}

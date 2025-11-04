@@ -1,0 +1,21 @@
+{
+    "type": [
+        "Category:OSWf8bf7b1902d94125ad8c20590087c4f6"
+    ],
+    "uuid": "1e8a2456-5cc5-4dff-a319-d04b9e88858c",
+    "label": [
+        {
+            "text": "Returned",
+            "lang": "en"
+        },
+        {
+            "text": "Zurückgeschickt",
+            "lang": "de"
+        }
+    ],
+    "description": [],
+    "name": "Returned",
+    "rdf_type": [
+        "schema:Returned"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:OSW34f9d66c7e1241c8b9543231526f126d"
+    ],
+    "uuid": "0d6584b3-e2b6-4e95-9573-3c4c3963c486",
+    "label": [
+        {
+            "text": "Dataset schema",
+            "lang": "en"
+        },
+        {
+            "text": "Datensatz-Schema",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "A dataset schema describes the structure of the dataset itself.",
+            "lang": "en"
+        },
+        {
+            "text": "Ein Datensatz-Schema beschreibt die Struktur des Datensatzes selbst.",
+            "lang": "de"
+        }
+    ],
+    "name": "DatasetSchema",
+    "type": [
+        "Category:Category"
+    ]
+}

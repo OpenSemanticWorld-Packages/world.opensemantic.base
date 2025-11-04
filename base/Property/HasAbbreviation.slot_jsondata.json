@@ -1,0 +1,28 @@
+{
+    "type": [
+        "Category:AnnotationProperty"
+    ],
+    "name": "HasAbbreviation",
+    "property_type": "Text",
+    "uuid": "33513010-721c-41d9-a7f8-373640dff5d6",
+    "label": [
+        {
+            "text": "Abbreviation",
+            "lang": "en"
+        },
+        {
+            "text": "Abkürzung",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "A short name, abbreviation or acronym, e.g. EU for European Union",
+            "lang": "en"
+        },
+        {
+            "text": "Ein Kurzname, Akronym oder eine Abkürzung, z.B. EU für Europäische Union",
+            "lang": "de"
+        }
+    ]
+}

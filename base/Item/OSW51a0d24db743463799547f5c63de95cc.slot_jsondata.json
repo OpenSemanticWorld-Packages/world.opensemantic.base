@@ -1,0 +1,21 @@
+{
+    "type": [
+        "Category:OSWf8bf7b1902d94125ad8c20590087c4f6"
+    ],
+    "uuid": "51a0d24d-b743-4637-9954-7f5c63de95cc",
+    "label": [
+        {
+            "text": "Delivered",
+            "lang": "en"
+        },
+        {
+            "text": "Zugestellt",
+            "lang": "de"
+        }
+    ],
+    "description": [],
+    "name": "Delivered",
+    "rdf_type": [
+        "schema:OrderDelivered"
+    ]
+}

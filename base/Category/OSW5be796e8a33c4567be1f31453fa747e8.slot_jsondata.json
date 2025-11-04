@@ -1,0 +1,20 @@
+{
+    "subclass_of": [
+        "Category:OSWb4e577c7867b43ed87adec9d92592638"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "5be796e8-a33c-4567-be1f-31453fa747e8",
+    "label": [
+        {
+            "text": "Shipping service provider",
+            "lang": "en"
+        },
+        {
+            "text": "Versanddienstleister",
+            "lang": "de"
+        }
+    ],
+    "name": "ShippingServiceProvider"
+}

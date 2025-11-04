@@ -1,0 +1,27 @@
+{
+    "subclass_of": [
+        "Category:OSW2c32802be59040248c85eda3479d484c"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "f8bf7b19-02d9-4125-ad8c-20590087c4f6",
+    "label": [
+        {
+            "text": "Shipment Status",
+            "lang": "en"
+        },
+        {
+            "text": "Sendungsstatus",
+            "lang": "de"
+        }
+    ],
+    "name": "ShipmentStatus",
+    "instance_rdf_type": [
+        "schema:OrderStatus"
+    ],
+    "rdf_type": [],
+    "rdf_class": [
+        "schema:OrderStatus"
+    ]
+}

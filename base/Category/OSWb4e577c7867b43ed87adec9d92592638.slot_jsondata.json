@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:OSWa5812d3b5119416c8da1606cbe7054eb"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "b4e577c7-867b-43ed-87ad-ec9d92592638",
+    "label": [
+        {
+            "text": "Role",
+            "lang": "en"
+        },
+        {
+            "text": "Rolle",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Role of a person or organization",
+            "lang": "en"
+        },
+        {
+            "text": "Rolle einer Person oder Organisation",
+            "lang": "de"
+        }
+    ],
+    "name": "Role"
+}

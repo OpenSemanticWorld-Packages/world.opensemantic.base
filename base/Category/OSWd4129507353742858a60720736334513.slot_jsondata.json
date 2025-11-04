@@ -1,0 +1,33 @@
+{
+    "subclass_of": [
+        "Category:OSWb4e577c7867b43ed87adec9d92592638"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "d4129507-3537-4285-8a60-720736334513",
+    "label": [
+        {
+            "text": "Manufacturer",
+            "lang": "en"
+        },
+        {
+            "text": "Hersteller",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Categorization category to describe the usage of an organizational unit as manufacturer of, e.g., a device.",
+            "lang": "en"
+        },
+        {
+            "text": "Ordnungskategorie zur Beschreibung der Verwendung einer Organisationseinheit als Hersteller von z.B. einem Gerät.",
+            "lang": "de"
+        }
+    ],
+    "keywords": [
+        "Item:OSW452ec0273916478099c4716395e1bc18"
+    ],
+    "name": "Manufacturer"
+}

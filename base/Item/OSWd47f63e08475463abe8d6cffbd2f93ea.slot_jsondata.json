@@ -1,0 +1,25 @@
+{
+    "type": [
+        "Category:OSWf8bf7b1902d94125ad8c20590087c4f6"
+    ],
+    "uuid": "d47f63e0-8475-463a-be8d-6cffbd2f93ea",
+    "label": [
+        {
+            "text": "Ready for pickup",
+            "lang": "en"
+        },
+        {
+            "text": "Bereit zur Abholung",
+            "lang": "de"
+        },
+        {
+            "text": "Pickup available",
+            "lang": "en"
+        }
+    ],
+    "description": [],
+    "rdf_type": [
+        "schema:OrderPickupAvailable"
+    ],
+    "name": "ReadyForPickup"
+}
