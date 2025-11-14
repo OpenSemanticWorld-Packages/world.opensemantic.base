@@ -479,7 +479,8 @@
                         "format": "uuid",
                         "options": {
                             "hidden": true
-                        }
+                        },
+                        "title": "UUID"
                     },
                     "budget_year": {
                         "title": "Year",
@@ -561,7 +562,8 @@
                                 "format": "uuid",
                                 "options": {
                                     "hidden": true
-                                }
+                                },
+                                "title": "UUID"
                             },
                             "quantity": {
                                 "type": "string",

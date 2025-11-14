@@ -102,7 +102,8 @@
                     "format": "uuid",
                     "options": {
                         "hidden": true
-                    }
+                    },
+                    "title": "UUID"
                 },
                 "latitude": {
                     "title": "Latitude",

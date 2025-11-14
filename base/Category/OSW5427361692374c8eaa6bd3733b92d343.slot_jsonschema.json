@@ -91,7 +91,8 @@
                     "format": "uuid",
                     "options": {
                         "hidden": true
-                    }
+                    },
+                    "title": "UUID"
                 },
                 "country": {
                     "title": "Country",
