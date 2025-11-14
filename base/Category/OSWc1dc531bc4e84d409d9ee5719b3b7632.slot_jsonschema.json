@@ -1,0 +1,45 @@
+{
+    "@context": [
+        {
+            "database": "Property:HasDatabase"
+        }
+    ],
+    "properties": {
+        "database": {
+            "title": "Database",
+            "title*": {
+                "de": "Datenbank"
+            },
+            "description": "Database that holds the schema",
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[HasType::Category:OSW51ad0d1716254c77a2b7a03217f23b43]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "[[:{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "minItems": 1,
+            "default": [
+                ""
+            ]
+        },
+        "type": {
+            "default": [
+                "Category:OSWc1dc531bc4e84d409d9ee5719b3b7632"
+            ]
+        }
+    },
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW741ce713d6304d09bd953572cee9be8f?action=raw&slot=jsonschema"
+        }
+    ],
+    "title": "DatabaseSchema",
+    "required": [
+        "type"
+    ]
+}

@@ -1,0 +1,5 @@
+
+=={{#switch:{{USERLANGUAGECODE}}|en=Overview of Databases|de=Datenbanken-Übersicht}}==
+
+
+{{#ask: [[Category:OSW51ad0d1716254c77a2b7a03217f23b43]]|?HasDbSchema.HasName=Schema|format=datatable|mainlabel={{#switch:{{USERLANGUAGECODE}}|en=Database|de=Datenbank}}}}

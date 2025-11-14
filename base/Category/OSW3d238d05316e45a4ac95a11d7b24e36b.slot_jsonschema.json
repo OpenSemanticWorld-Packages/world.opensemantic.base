@@ -59,7 +59,6 @@
         "type"
     ],
     "defaultProperties": [
-        "uuid",
         "label",
         "gps_coordinates",
         "postal_address"

@@ -1,0 +1,16 @@
+{
+    "uuid": "acdb001c-926c-46b9-98af-3e645d36b13f",
+    "label": [
+        {
+            "text": "Database server",
+            "lang": "en"
+        }
+    ],
+    "subclass_of": [
+        "Category:OSW8c56fd1e858f499da801691c5f2b7309"
+    ],
+    "name": "DatabaseServer",
+    "type": [
+        "Category:Category"
+    ]
+}

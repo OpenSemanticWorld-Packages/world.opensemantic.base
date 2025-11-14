@@ -1,0 +1,16 @@
+<table class="info_box">
+<tr>
+<th class="heading" colspan="2">{{{_label_schema|Database Schema}}}</th>
+</tr>
+<tr>
+<td class="subheading" colspan="2">Info</td>
+</tr>
+<tr>
+<th>{{#switch:{{USERLANGUAGECODE}}|en=Databases|de=Datenbanken}}</th>
+<td>{{#ask: [[Category:OSW51ad0d1716254c77a2b7a03217f23b43]]}}</td>
+</tr>
+<tr>
+<th>{{#switch:{{USERLANGUAGECODE}}|en=Schemas|de=Schemas}}</th>
+<td>{{#ask: [[Category:OSW51ad0d1716254c77a2b7a03217f23b43]]|?HasDbSchema.HasName=|format=plain|mainlabel=-}}</td>
+</tr>
+</table>

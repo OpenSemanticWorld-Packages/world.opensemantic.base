@@ -1,0 +1,30 @@
+{
+    "type": [
+        "Category:Category"
+    ],
+    "subclass_of": [
+        "Category:OSWa5812d3b5119416c8da1606cbe7054eb"
+    ],
+    "uuid": "34f9d66c-7e12-41c8-b954-3231526f126d",
+    "label": [
+        {
+            "text": "Data term",
+            "lang": "en"
+        },
+        {
+            "text": "Daten-Begriff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Term in context with data",
+            "lang": "en"
+        },
+        {
+            "text": "Begriff im Kontext mit Daten ",
+            "lang": "de"
+        }
+    ],
+    "name": "DataTerm"
+}

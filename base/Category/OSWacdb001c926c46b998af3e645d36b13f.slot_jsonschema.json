@@ -1,0 +1,60 @@
+{
+    "@context": [
+        {
+            "db_type": "Property:HasDbType",
+            "installed_extension": "Property:HasInstalledDbExtension"
+        }
+    ],
+    "title": "DatabaseServer",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW8c56fd1e858f499da801691c5f2b7309?action=raw&slot=jsonschema"
+        }
+    ],
+    "properties": {
+        "db_type": {
+            "title": "Database type",
+            "title*": {
+                "en": "Database type",
+                "de": "Datenbanktyp"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[HasType::Category:OSW33c7c3a4076a4a58b20d818c162e84e6]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "{{#if result.printouts.HasImage.0.fulltext}}[[{{result.printouts.HasImage.0.fulltext}}|right|x66px]]</br>{{/if}}[[{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "minItems": 1
+        },
+        "installed_extension": {
+            "title": "Installed extension",
+            "title*": {
+                "de": "Installierte Erweiterung"
+            },
+            "type": "array",
+            "format": "table",
+            "items": {
+                "title": "",
+                "type": "string",
+                "format": "autocomplete",
+                "query": "[[HasType::Category:OSW70a532050a6a4b019d1a4a958515017f]] |?Display_title_of=label",
+                "previewWikiTextTemplate": "{{#if result.printouts.HasImage.0.fulltext}}[[{{result.printouts.HasImage.0.fulltext}}|right|x66px]]</br>{{/if}}[[{{result.fulltext}}]]",
+                "labelTemplate": "{{result.printouts.label.[0]}}"
+            },
+            "minItems": 1
+        },
+        "type": {
+            "default": [
+                "Category:OSWacdb001c926c46b998af3e645d36b13f"
+            ]
+        }
+    },
+    "required": [
+        "type"
+    ]
+}

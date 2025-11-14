@@ -72,7 +72,8 @@
                         "format": "uuid",
                         "options": {
                             "hidden": false
-                        }
+                        },
+                        "title": "UUID"
                     },
                     "name": {
                         "title": "Name",
