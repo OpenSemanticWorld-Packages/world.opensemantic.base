@@ -1,7 +1,7 @@
 {
     "@context": [
-      "/wiki/Category:OSWfe3e842b804445c7bb0dd8ee61da2d70?action=raw&slot=jsonschema",
-      {
+        "/wiki/Category:OSWfe3e842b804445c7bb0dd8ee61da2d70?action=raw&slot=jsonschema",
+        {
             "manager": {
                 "@id": "Property:HasManager",
                 "@type": "@id"
@@ -17,8 +17,18 @@
             "$ref": "/wiki/Category:OSWfe3e842b804445c7bb0dd8ee61da2d70?action=raw&slot=jsonschema"
         }
     ],
+    "type": "object",
+    "title": "Department",
+    "required": [
+        "type"
+    ],
     "defaultProperties": [],
     "properties": {
+        "type": {
+            "default": [
+                "Category:OSW94aa074255374580b70337340c5ccc1b"
+            ]
+        },
         "manager": {
             "title": "Head",
             "title*": {
@@ -46,16 +56,6 @@
             "default": [
                 ""
             ]
-        },
-        "type": {
-            "default": [
-                "Category:OSW94aa074255374580b70337340c5ccc1b"
-            ]
         }
-    },
-    "type": "object",
-    "title": "Department",
-    "required": [
-        "type"
-    ]
+    }
 }

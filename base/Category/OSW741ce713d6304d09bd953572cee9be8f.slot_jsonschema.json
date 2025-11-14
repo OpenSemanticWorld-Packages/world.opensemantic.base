@@ -1,0 +1,22 @@
+{
+    "@context": [
+        "/wiki/Category:OSWa5812d3b5119416c8da1606cbe7054eb?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWa5812d3b5119416c8da1606cbe7054eb?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "title": "DatabaseTerms",
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW741ce713d6304d09bd953572cee9be8f"
+            ]
+        }
+    }
+}

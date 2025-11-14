@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:OSWa5812d3b5119416c8da1606cbe7054eb"
+    ],
+    "uuid": "741ce713-d630-4d09-bd95-3572cee9be8f",
+    "name": "DatabaseTerm",
+    "label": [
+        {
+            "text": "Database term",
+            "lang": "en"
+        },
+        {
+            "text": "Datenbank-Begriff",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Category to sort database terms into which are items",
+            "lang": "en"
+        },
+        {
+            "text": "Kategorie zum Einsortieren von Datenbank-Begriffen, die zudem der Kategorie:Item angehören",
+            "lang": "de"
+        }
+    ],
+    "type": [
+        "Category:Category"
+    ]
+}
