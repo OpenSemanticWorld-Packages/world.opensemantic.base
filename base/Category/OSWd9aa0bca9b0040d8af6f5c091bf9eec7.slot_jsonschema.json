@@ -1,5 +1,7 @@
 {
     "@context": [
+        "/wiki/Category:OSW44deaa5b806d41a2a88594f562b110e9?action=raw&slot=jsonschema",
+        "/wiki/Category:OSW8b3e627eb76b46d68fce3a12ff220c8e?action=raw&slot=jsonschema",
         {
             "employment_contract_status": {
                 "@id": "Property:HasEmploymentContractStatus",
@@ -12,17 +14,15 @@
             "superior": {
                 "@id": "Property:HasSuperior",
                 "@type": "@id"
-            },
-            "username": {
-                "@id": "Property:HasUsername",
-                "@type": "xsd:string"
             }
-        },
-        "/wiki/Category:OSW44deaa5b806d41a2a88594f562b110e9?action=raw&slot=jsonschema"
+        }
     ],
     "allOf": [
         {
             "$ref": "/wiki/Category:OSW44deaa5b806d41a2a88594f562b110e9?action=raw&slot=jsonschema"
+        },
+        {
+            "$ref": "/wiki/Category:OSW8b3e627eb76b46d68fce3a12ff220c8e?action=raw&slot=jsonschema"
         }
     ],
     "title": "User",
@@ -36,32 +36,9 @@
         "de": "Eine Person mit Nutzerkennung"
     },
     "required": [
-        "username",
         "type"
     ],
-    "defaultProperties": [
-        "username"
-    ],
     "properties": {
-        "username": {
-            "title": "Username",
-            "title*": {
-                "de": "Nutzername"
-            },
-            "description": "Organization user ID",
-            "description*": {
-                "de": "Organization-User-ID"
-            },
-            "type": "string",
-            "eval_template": [
-                {
-                    "type": "mustache-wikitext",
-                    "mode": "render",
-                    "$comment": "Displays a link to the system user page, preventing redirect to the user entity page",
-                    "value": "{{=<% %>=}} [{{fullurl:User:<%username%>|redirect=no}} <%username%>]"
-                }
-            ]
-        },
         "room": {
             "title": "Room(s)",
             "title*": {

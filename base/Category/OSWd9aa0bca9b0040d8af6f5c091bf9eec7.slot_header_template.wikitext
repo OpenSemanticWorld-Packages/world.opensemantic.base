@@ -3,10 +3,6 @@
 <th class="heading" colspan="2">{{{_label_schema|User}}}</th>
 </tr>
 <tr> 
-<th>{{{_label_username|Username}}}</th> 
-<td>{{{username|}}}</td> 
-</tr>
-<tr> 
 <th>{{{_label_abbreviation|Abbreviation}}}</th> 
 <td>{{{abbreviation|}}}</td> 
 </tr> 
