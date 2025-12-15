@@ -15,12 +15,29 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.39.0",
+            "version": "0.40.0",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.base/main/base/",
             "pages": [
+                {
+                    "name": "OSW92cf5f3e72824a65b5d48746b4722e10",
+                    "label": "WorldOpensemanticBase",
+                    "namespace": "NS_ITEM",
+                    "urlPath": "Item/OSW92cf5f3e72824a65b5d48746b4722e10.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Item/OSW92cf5f3e72824a65b5d48746b4722e10.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Item/OSW92cf5f3e72824a65b5d48746b4722e10.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Item/OSW92cf5f3e72824a65b5d48746b4722e10.slot_jsondata.json"
+                        }
+                    }
+                },
                 {
                     "name": "PostalAddress",
                     "namespace": "NS_JSONSCHEMA",
@@ -2382,23 +2399,6 @@
                     "slots": {}
                 },
                 {
-                    "name": "HasId",
-                    "label": "HasId",
-                    "namespace": "SMW_NS_PROPERTY",
-                    "urlPath": "Property/HasId.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Property/HasId.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Property/HasId.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Property/HasId.slot_jsondata.json"
-                        }
-                    }
-                },
-                {
                     "name": "IsRelatedTo",
                     "label": "IsRelatedTo",
                     "namespace": "SMW_NS_PROPERTY",
@@ -2480,77 +2480,6 @@
                         },
                         "jsondata": {
                             "urlPath": "Property/HasContact.slot_jsondata.json"
-                        }
-                    }
-                },
-                {
-                    "name": "HasUrl",
-                    "label": "HasUrl",
-                    "namespace": "SMW_NS_PROPERTY",
-                    "urlPath": "Property/HasUrl.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Property/HasUrl.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Property/HasUrl.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Property/HasUrl.slot_jsondata.json"
-                        }
-                    }
-                },
-                {
-                    "name": "HasVersion",
-                    "label": "HasVersion",
-                    "namespace": "SMW_NS_PROPERTY",
-                    "urlPath": "Property/HasVersion.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Property/HasVersion.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Property/HasVersion.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Property/HasVersion.slot_jsondata.json"
-                        }
-                    }
-                },
-                {
-                    "name": "HasManufacturer",
-                    "label": "HasManufacturer",
-                    "namespace": "SMW_NS_PROPERTY",
-                    "urlPath": "Property/HasManufacturer.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Property/HasManufacturer.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Property/HasManufacturer.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Property/HasManufacturer.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Property/HasManufacturer.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "HasManual",
-                    "label": "HasManual",
-                    "namespace": "SMW_NS_PROPERTY",
-                    "urlPath": "Property/HasManual.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Property/HasManual.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Property/HasManual.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Property/HasManual.slot_jsondata.json"
                         }
                     }
                 },
