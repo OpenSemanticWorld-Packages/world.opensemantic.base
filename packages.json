@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.40.0",
+            "version": "0.40.1",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -184,26 +184,6 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW494f660e6a714a1a9681c517bbb975da.slot_jsonschema.json"
-                        }
-                    }
-                },
-                {
-                    "name": "OSWb97757b46edb430591758662c18d354d",
-                    "label": "Event",
-                    "namespace": "NS_CATEGORY",
-                    "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_main.wikitext",
-                    "slots": {
-                        "footer": {
-                            "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_footer.wikitext"
-                        },
-                        "header": {
-                            "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_header.wikitext"
-                        },
-                        "jsondata": {
-                            "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_jsondata.json"
-                        },
-                        "jsonschema": {
-                            "urlPath": "Category/OSWb97757b46edb430591758662c18d354d.slot_jsonschema.json"
                         }
                     }
                 },

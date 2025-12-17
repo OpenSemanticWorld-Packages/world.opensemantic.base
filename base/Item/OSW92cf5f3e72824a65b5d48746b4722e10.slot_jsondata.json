@@ -3,7 +3,7 @@
         "Category:OSW31a9c96c1f444f84b944d49afbce409b"
     ],
     "global_id": "world.opensemantic.base",
-    "version": "0.40.0",
+    "version": "0.40.1",
     "url": [
         "https://github.com/OpenSemanticWorld-Packages/world.opensemantic.base"
     ],
@@ -19,7 +19,6 @@
         "Category:OSW92cc6b1a2e6b4bb7bad470dfdcfdaf26",
         "Category:OSWe2c50b1034684c1b9a5c21ad371d6381",
         "Category:OSW494f660e6a714a1a9681c517bbb975da",
-        "Category:OSWb97757b46edb430591758662c18d354d",
         "Category:OSW0e084decca6f48a7b023d6b7b2c1452d",
         "Category:OSWf62d07b325124027b82fbec0a7b852df",
         "Category:OSW5c7c84f0bfbe4347ba7fbe7b346fd106",
@@ -138,8 +137,6 @@
         "Property:HasApprover",
         "Property:HasOrderer",
         "Property:HasContact",
-        "Property:HasManufacturer",
-        "Property:HasManual",
         "Property:HasResponsiblePerson",
         "Property:IsLocatedIn",
         "Property:HasDepartment",
