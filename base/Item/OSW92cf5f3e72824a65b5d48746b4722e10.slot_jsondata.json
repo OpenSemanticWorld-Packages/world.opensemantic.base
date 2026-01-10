@@ -3,11 +3,12 @@
         "Category:OSW31a9c96c1f444f84b944d49afbce409b"
     ],
     "global_id": "world.opensemantic.base",
-    "version": "0.40.1",
+    "version": "0.40.2",
     "url": [
         "https://github.com/OpenSemanticWorld-Packages/world.opensemantic.base"
     ],
     "parts": [
+        "Item:OSW92cf5f3e72824a65b5d48746b4722e10",
         "JsonSchema:PostalAddress",
         "JsonSchema:StartDate",
         "JsonSchema:StartDateTime",
@@ -161,6 +162,21 @@
             "lang": "de"
         }
     ],
-    "description": [],
-    "name": "WorldOpensemanticBase"
+    "name": "WorldOpensemanticBase",
+    "description": [
+        {
+            "text": "Provides base items like Article, Person, Project",
+            "lang": "en"
+        }
+    ],
+    "meta": {
+        "uuid": "b00ed18d-1511-4c60-810d-29b2cfc92283",
+        "wiki_page": {
+            "title": "OSW92cf5f3e72824a65b5d48746b4722e10",
+            "namespace": "Item"
+        },
+        "change_id": [
+            "7c0e30fe-4471-4a6d-93e3-876e37a30e02"
+        ]
+    }
 }
