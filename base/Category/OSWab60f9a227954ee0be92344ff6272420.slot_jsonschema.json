@@ -20,8 +20,7 @@
         "de": "Ein Staat oder eine Provinz eines Landes."
     },
     "required": [
-        "type",
-        "rdf_type"
+        "type"
     ],
     "properties": {
         "type": {

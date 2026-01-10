@@ -2,10 +2,6 @@
     "@context": [
         "/wiki/Category:OSW712583f2479944deb2546b77cf860dda?action=raw&slot=jsonschema",
         {
-            "File_": {
-                "@id": "wiki:File-3A",
-                "@prefix": true
-            },
             "related_to": {
                 "@id": "Property:IsRelatedTo",
                 "@type": "@id"
