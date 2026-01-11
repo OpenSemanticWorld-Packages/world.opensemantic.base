@@ -529,11 +529,6 @@
                         }
                     },
                     "yearly_budget_sum_weighted": {
-                        "_allOf": [
-                            {
-                                "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
-                            }
-                        ],
                         "id": "statement",
                         "title": "weighted sum",
                         "title*": {
