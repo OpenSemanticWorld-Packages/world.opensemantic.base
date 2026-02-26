@@ -1,64 +1,7 @@
+<!-- @renderInfoBox -->
 <table class="info_box">
     <tr>
-        <th class="heading" colspan="2">{{{_label_schema|Organizational unit}}}</th>
-    </tr>
-    <tr>
-        <th>{{{_label_acronym|Acronym}}}</th>
-        <td>{{{abbreviation|}}}</td>
-    </tr>
-    <tr>
-        <td class="subheading" colspan="2">{{#switch:{{USERLANGUAGECODE}}
-            |en=Contact
-            |de=Kontakt
-            |#default=Contact}}
-        </td>
-    </tr>
-    <tr>
-        <th>{{{_label_website|Website}}}</th>
-        <td>{{{website|}}}</td>
-    </tr>
-    <tr>
-        <th>{{{_label_email|E-mail}}}</th>
-        <td>{{{email|}}}</td>
-    </tr>
-    <tr>
-        <th>{{{_label_mailing_list|Mailing list}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasMailingList=|format=plain|mainlabel=-}}</td>
-    </tr>
-    <tr>
-        <th>{{{_label_phone_number|Phone number}}}</th>
-        <td>{{{phone_number|}}}</td>
-    </tr>
-    <tr>
-        <th>{{{_label_fax_number|Fax number}}}</th>
-        <td>{{{fax_number|}}}</td>
-    </tr>
-    <tr>
-        <th>{{{_label_postal_address|Postal address}}}</th>
-        <td>{{{postal_address|}}}</td>
-    </tr>
-    <tr>
-        <th>{{{_label_site|Site}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?IsLocatedIn=|format=plain|mainlabel=-}}</td>
-    </tr>
-    <tr>
-        <td class="subheading" colspan="2">{{#switch:{{USERLANGUAGECODE}}
-            |en=Management
-            |de=Management
-            |#default=Management}}
-        </td>
-    </tr>
-    <tr>
-        <th>{{{_label_manager|Manager}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasManager=|format=plain|mainlabel=-}}</td>
-    </tr>
-    <tr>
-        <th>{{{_label_deputy_manager|Deputy manager}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasDeputyManager=|format=plain|mainlabel=-}}</td>
-    </tr>
-    <tr>
-        <th>{{{_label_secretary|Secretary}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasSecretary=|format=plain|mainlabel=-}}</td>
+        <th class="heading" colspan="2">{{{_label_schema|Organizational unit}}} Details</th>
     </tr>
     <tr>
         <td class="subheading" colspan="2">{{#switch:{{USERLANGUAGECODE}}
@@ -66,10 +9,6 @@
             |de=Relationen
             |#default=Relations}}
         </td>
-    </tr>
-    <tr>
-        <th>{{{_label_superordinate_ou|Superordinate OU}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasSuperordinateOu=|format=plain|mainlabel=-}}</td>
     </tr>
     <tr>
         <th>{{#switch:{{USERLANGUAGECODE}}
@@ -80,10 +19,6 @@
         <td>{{#ask:
             [[HasSuperordinateOu::{{FULLPAGENAME}}]]|format=plain}}
         </td>
-    </tr>
-    <tr>
-        <th>{{{_label_member_of|Member of}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?IsMemberOf=|format=plain|mainlabel=-}}</td>
     </tr>
     {{#ifeq:
         {{#ask:[[{{FULLPAGENAME}}]]|?HasType=|format=plain|mainlabel=-}} | Category:OSW1969007d5acf40539642877659a02c23
@@ -109,21 +44,6 @@
         <td>{{#ask:
             [[Category:OSW44deaa5b806d41a2a88594f562b110e9]][[HasOu::{{FULLPAGENAME}}]]}}
         </td>
-    </tr>
-    <tr>
-        <td class="subheading" colspan="2">{{#switch:{{USERLANGUAGECODE}}
-            |en=Expertise
-            |de=Expertise
-            |#default=Expertise}}
-        </td>
-    </tr>
-    <tr>
-        <th>{{{_label_competence|Competence}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasCompetence=|format=plain|mainlabel=-}}</td>
-    </tr>
-    <tr>
-        <th>{{{_label_topic|Topic}}}</th>
-        <td>{{#ask:[[{{FULLPAGENAME}}]]|?HasTopic=|format=plain|mainlabel=-}}</td>
     </tr>
 </table>
 <!-- Overview of Members -->

@@ -1,16 +1,10 @@
+<!-- @renderInfoBox -->
 <table class="info_box">
 <tr>
-<th class="heading" colspan="2">{{{_label_schema|Floor}}}</th>
-</tr>
-<tr><!--
-<th>{{{_label_located_in|Building}}}</th> -->
-<th>{{#switch:{{USERLANGUAGECODE}}
-        |en=Location
-        |de=Lage}}</th>
-<td>{{#ask:[[{{FULLPAGENAME}}]]|?IsLocatedIn=|format=plain|mainlabel=-}}</td> 
+<th class="heading" colspan="2">{{{_label_schema|Floor}}} Details</th>
 </tr>
 <tr>
-<th>{{#switch:{{USERLANGUAGECODE}}|en=Rooms|de=Räume}}</th></th>
+<th>{{#switch:{{USERLANGUAGECODE}}|en=Rooms|de=Räume}}</th>
 <td>{{#ask: [[Category:OSWc5ed0ed1e33c4b31887c67af25a610c1]][[IsLocatedIn::{{FULLPAGENAME}}]]}}</td>
 </tr>
 </table>
@@ -38,8 +32,8 @@
         |limit=1000
         |sort=Display title of
         |order=asc
-        }} 
-    | {{#set: HasNumberOfRooms=0}}  
+        }}
+    | {{#set: HasNumberOfRooms=0}}
 }}
 <!-- Occupancy -->
 =={{#switch:{{USERLANGUAGECODE}}|en=Occupancy|de=Belegung|#default=Occupancy}}==

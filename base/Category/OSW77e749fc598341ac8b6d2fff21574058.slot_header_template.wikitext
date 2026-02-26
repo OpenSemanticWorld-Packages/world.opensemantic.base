@@ -1,13 +1,13 @@
+<!-- @renderInfoBox -->
 <table class="info_box">
 <tr>
-<th class="heading" colspan="2">{{{_label_schema|Software}}}</th>
+<th class="heading" colspan="2">{{{_label_schema|Software}}} Details</th>
 </tr>
 <tr>
 <th>{{#switch:{{USERLANGUAGECODE}}|en=Repository|de=Repository}}</th>
 <td>{{#arraymap:{{{repository|}}}|<nowiki> </nowiki>|__REPO__|* [__REPO__ {{#explode: {{#explode: __REPO__ |//|1}} |/|0}}]|\n}}<!-- create a link list with domains as labels --></td>
 </tr>
 </table>
-
 
 {{#if: {{{readme|}}}|
 = Readme =

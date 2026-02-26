@@ -1,9 +1,7 @@
+<!-- @renderInfoBox -->
 <table class="info_box">
 <tr>
-<th class="heading" colspan="2">{{{_label_schema|Database Schema}}}</th>
-</tr>
-<tr>
-<td class="subheading" colspan="2">Info</td>
+<th class="heading" colspan="2">{{{_label_schema|Database Schema}}} Details</th>
 </tr>
 <tr>
 <th>{{#switch:{{USERLANGUAGECODE}}|en=Databases|de=Datenbanken}}</th>

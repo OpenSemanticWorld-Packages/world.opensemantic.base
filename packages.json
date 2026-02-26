@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.40.3",
+            "version": "0.40.4",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -201,9 +201,6 @@
                         },
                         "header": {
                             "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_header_template.wikitext"
                         },
                         "jsondata": {
                             "urlPath": "Category/OSW0e084decca6f48a7b023d6b7b2c1452d.slot_jsondata.json"
@@ -1352,9 +1349,6 @@
                         },
                         "header": {
                             "urlPath": "Category/OSW90640829797c4b859548a796f8f6dca6.slot_header.wikitext"
-                        },
-                        "header_template": {
-                            "urlPath": "Category/OSW90640829797c4b859548a796f8f6dca6.slot_header_template.wikitext"
                         },
                         "jsondata": {
                             "urlPath": "Category/OSW90640829797c4b859548a796f8f6dca6.slot_jsondata.json"

@@ -1,15 +1,11 @@
+<!-- @renderInfoBox -->
 <table class="info_box">
 <tr>
-<th class="heading" colspan="2">{{{_label_schema|Site}}}</th>
+<th class="heading" colspan="2">{{{_label_schema|Site}}} Details</th>
 </tr>
-<!--
-<tr>
-<td class="subheading" colspan="2">Info</td>
-</tr>
--->
 <tr>
 <th>{{#switch:{{USERLANGUAGECODE}}|en=Buildings|de=Gebäude}}</th>
-<td>{{#ask: [[Category:OSW4bcd4a99a73f482ea40ac4210dfab836]][[IsLocatedIn::{{FULLPAGENAME}}]]}}</td> <!-- Display {{SUBPAGENAME}} -->
+<td>{{#ask: [[Category:OSW4bcd4a99a73f482ea40ac4210dfab836]][[IsLocatedIn::{{FULLPAGENAME}}]]}}</td>
 </tr>
 </table>
 <!-- Overview of buildings -->
