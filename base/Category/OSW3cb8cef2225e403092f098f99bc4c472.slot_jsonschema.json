@@ -549,9 +549,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "ID and country",
+                "title": "TaxIdAndCountry",
                 "title*": {
-                    "de": "ID und Land"
+                    "en": "Tax ID and country",
+                    "de": "Steuer-ID und Land"
                 },
                 "type": "object",
                 "properties": {
@@ -586,9 +587,10 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "ID and country",
+                "title": "VatIdAndCountry",
                 "title*": {
-                    "de": "ID und Land"
+                    "en": "VAT ID and country",
+                    "de": "USt-ID und Land"
                 },
                 "type": "object",
                 "properties": {

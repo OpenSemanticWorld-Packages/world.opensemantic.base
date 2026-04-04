@@ -159,7 +159,7 @@
                     "type": "string"
                 }
             },
-            "title": "Postal address",
+            "title": "InstitutePostalAddress",
             "title*": {
                 "en": "Postal address",
                 "de": "Postalische Adresse"

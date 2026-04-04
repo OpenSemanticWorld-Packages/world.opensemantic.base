@@ -63,7 +63,7 @@
             "type": "array",
             "format": "table",
             "items": {
-                "title": "",
+                "title": "DatabaseSchemaEntry",
                 "type": "object",
                 "required": [
                     "uuid",

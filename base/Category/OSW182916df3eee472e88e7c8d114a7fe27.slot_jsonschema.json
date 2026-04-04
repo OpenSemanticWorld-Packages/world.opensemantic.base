@@ -49,9 +49,9 @@
             },
             "items": {
                 "type": "object",
-                "title": "Constituent",
+                "title": "MaterialConstituent",
                 "title*": {
-                    "de": "Bestandteil"
+                    "de": "Materialbestandteil"
                 },
                 "headerTemplate": "{{i1}} - {{self.name}}",
                 "required": [
