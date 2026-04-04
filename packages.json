@@ -15,7 +15,7 @@
             "globalID": "world.opensemantic.base",
             "label": "OSW Base",
             "description": "Provides base items like Article, Person, Project",
-            "version": "0.40.4",
+            "version": "0.40.5",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],
@@ -746,6 +746,26 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW1a271f289649413488e2841580e43a45.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW3886740859ae459588fee73d3bb3c83e",
+                    "label": "RiskAssessmentProcess",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW3886740859ae459588fee73d3bb3c83e.slot_jsonschema.json"
                         }
                     }
                 },
@@ -2644,6 +2664,23 @@
                         },
                         "jsondata": {
                             "urlPath": "Property/HasProbabilityOfSuccessfulFunding.slot_jsondata.json"
+                        }
+                    }
+                },
+                {
+                    "name": "HasMonetaryValue",
+                    "label": "HasMonetaryValue",
+                    "namespace": "SMW_NS_PROPERTY",
+                    "urlPath": "Property/HasMonetaryValue.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Property/HasMonetaryValue.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Property/HasMonetaryValue.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Property/HasMonetaryValue.slot_jsondata.json"
                         }
                     }
                 },
