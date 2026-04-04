@@ -247,13 +247,6 @@
                             "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#label}} |{{lang}}={{text}} {{/label}} {{=<% %>=}} }}"
                         },
                         "items": {
-                            "eval_template": [
-                                {
-                                    "type": "wikitext",
-                                    "mode": "store",
-                                    "value": "{{{text}}}@{{{lang}}}"
-                                }
-                            ],
                             "$ref": "/wiki/JsonSchema:Label?action=raw"
                         },
                         "options": {
@@ -278,13 +271,6 @@
                             "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#description}} |{{lang}}={{text}} {{/description}} {{=<% %>=}} }}"
                         },
                         "items": {
-                            "eval_template": [
-                                {
-                                    "type": "wikitext",
-                                    "mode": "store",
-                                    "value": "{{{text}}}@{{{lang}}}"
-                                }
-                            ],
                             "$ref": "/wiki/JsonSchema:Description?action=raw"
                         },
                         "options": {
@@ -472,13 +458,6 @@
                             "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#description}} |{{lang}}={{text}} {{/description}} {{=<% %>=}} }}"
                         },
                         "items": {
-                            "eval_template": [
-                                {
-                                    "type": "wikitext",
-                                    "mode": "store",
-                                    "value": "{{{text}}}@{{{lang}}}"
-                                }
-                            ],
                             "$ref": "/wiki/JsonSchema:Description?action=raw"
                         },
                         "options": {

@@ -87,15 +87,9 @@
             "items": {
                 "title": "Conclusion",
                 "title*": {
+                    "en": "Conclusion",
                     "de": "Fazit"
                 },
-                "eval_template": [
-                    {
-                        "type": "wikitext",
-                        "mode": "store",
-                        "value": "{{{text}}}@{{{lang}}}"
-                    }
-                ],
                 "$ref": "/wiki/JsonSchema:Label?action=raw"
             },
             "minItems": 1

@@ -763,13 +763,6 @@
                 "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%#abstract%> | {{#ifeq: <%lang%>|en|#default|<%lang%>}} = <%text%> <%/abstract%> }}"
             },
             "items": {
-                "eval_template": [
-                    {
-                        "type": "wikitext",
-                        "mode": "store",
-                        "value": "{{{text}}}@{{{lang}}}"
-                    }
-                ],
                 "$ref": "/wiki/JsonSchema:Description?action=raw"
             }
         }
