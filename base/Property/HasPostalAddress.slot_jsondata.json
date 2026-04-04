@@ -2,9 +2,7 @@
     "type": [
         "Category:ObjectProperty"
     ],
-    "range": [
-        "Category:OSW78e0bffd49c540c18b7fcf4b1210f6c4"
-    ],
+    "range": [],
     "name": "HasPostalAddress",
     "property_type": "Page",
     "uuid": "75fd2ff3-8e3a-4208-aaee-0bf1dfe8bf7c",

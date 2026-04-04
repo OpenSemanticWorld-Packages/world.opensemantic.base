@@ -9,7 +9,5 @@
     "description*": {
         "de": "Weist eine Postanschrift zu"
     },
-    "type": "string",
-    "format": "autocomplete",
-    "range": "Category:OSW78e0bffd49c540c18b7fcf4b1210f6c4"
+    "type": "string"
 }

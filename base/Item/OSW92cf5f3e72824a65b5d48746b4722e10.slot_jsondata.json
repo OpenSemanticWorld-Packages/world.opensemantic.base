@@ -3,7 +3,7 @@
         "Category:OSW31a9c96c1f444f84b944d49afbce409b"
     ],
     "global_id": "world.opensemantic.base",
-    "version": "0.40.5",
+    "version": "0.42.0",
     "url": [
         "https://github.com/OpenSemanticWorld-Packages/world.opensemantic.base"
     ],
@@ -43,6 +43,10 @@
         "Category:OSW95efaf34e2c7439e8e7967233910e44b",
         "Category:OSWd845b96813a344458f140e48c4d063fd",
         "Category:OSWf0fe562f422d49c6877490b3dfee2f3f",
+        "Category:OSWca99a9bb9ad24386b222d18a73c2af5e",
+        "Category:OSW37a57741ae2e4dd4b29b1172b6848be8",
+        "Category:OSW182916df3eee472e88e7c8d114a7fe27",
+        "Category:OSW31ca9a739cb24079b36824045c0832aa",
         "Category:OSW0b6e695c4bb74e9ea5aa7f5da3150653",
         "Category:OSWfa0d5710bc0f45819b61b65fc4fd9656",
         "Category:OSW1a271f289649413488e2841580e43a45",
@@ -51,8 +55,6 @@
         "Category:OSWc11438cd6c814ed1a5a253555ee351b4",
         "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203",
         "Category:OSWc5d4829ed2744a219ba027171c75fa1d",
-        "Category:OSWca99a9bb9ad24386b222d18a73c2af5e",
-        "Category:OSW37a57741ae2e4dd4b29b1172b6848be8",
         "Category:OSW2c32802be59040248c85eda3479d484c",
         "Category:OSW9725d7a91bab4f1aa68f423e4e9bfcf4",
         "Item:OSWf474ec34b7df451ea8356134241aef8a",
@@ -65,6 +67,7 @@
         "Category:OSWe427aafafbac4262955b9f690a83405d",
         "Category:OSWb97757b46edb430591758662c18d354d",
         "Category:OSW5433f882b9f14dca81994e058c8ab4a0",
+        "Category:OSWa2c8dd387d0b4a0c807a5a7bde190ba3",
         "Category:OSW0c69914a29b74f3c9e9d9ff7a6880715",
         "Category:OSW5be796e8a33c4567be1f31453fa747e8",
         "Category:OSWf8bf7b1902d94125ad8c20590087c4f6",
@@ -213,9 +216,9 @@
         }
     ],
     "meta": {
-        "uuid": "3eaff25a-b06e-464e-b461-826aeeb80c00",
+        "uuid": "294d88fd-b80f-4ad5-88e4-46f16bf5b221",
         "change_id": [
-            "b68523e9-0da5-40d8-b781-207dd54b31a7"
+            "1df32643-019e-4f21-84cb-63e6691ef624"
         ]
     }
 }
