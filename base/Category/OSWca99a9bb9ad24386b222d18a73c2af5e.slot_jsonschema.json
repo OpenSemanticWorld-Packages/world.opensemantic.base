@@ -240,9 +240,9 @@
             "description": "Components or parts",
             "items": {
                 "type": "object",
-                "title": "Item",
+                "title": "Constituent",
                 "title*": {
-                    "de": "Item"
+                    "de": "Bestandteil"
                 },
                 "headerTemplate": "{{i1}} - {{self.name}}",
                 "required": [

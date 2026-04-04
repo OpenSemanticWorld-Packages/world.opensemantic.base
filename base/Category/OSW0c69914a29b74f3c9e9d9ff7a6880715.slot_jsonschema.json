@@ -483,9 +483,9 @@
             "items": {
                 "type": "object",
                 "format": "grid-strict",
-                "title": "Item",
+                "title": "ShipmentItem",
                 "title*": {
-                    "de": "Item"
+                    "de": "Sendungsgegenstand"
                 },
                 "id": "included_item",
                 "defaultProperties": [],
