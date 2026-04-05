@@ -129,6 +129,11 @@
                 "de": "Ein leeres Label wird durch das automatisch generierte Label ersetzt, das auf Absender, Empfänger, Versanddatum und Beschreibungstext basiert."
             },
             "items": {
+                "title": "ShipmentLabel",
+                "title*": {
+                    "en": "Shipment label",
+                    "de": "Sendungslabel"
+                },
                 "properties": {
                     "text": {
                         "watch": {
