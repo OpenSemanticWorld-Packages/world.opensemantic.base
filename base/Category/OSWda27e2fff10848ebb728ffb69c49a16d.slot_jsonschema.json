@@ -7,8 +7,14 @@
                 "@type": "@id"
             },
             "data_channels": {
-                "@id": "Property:HasDataSource",
-                "@type": "@id"
+                "@id": "Property:HasDataChannel",
+                "@type": "@id",
+                "@context": {
+                    "characteristic": {
+                        "@id": "Property:HasCharacteristic",
+                        "@type": "@id"
+                    }
+                }
             }
         }
     ],
@@ -21,6 +27,10 @@
     "title": "DataTool",
     "required": [
         "type"
+    ],
+    "defaultProperties": [
+        "storage_locations",
+        "data_channels"
     ],
     "properties": {
         "type": {
@@ -45,57 +55,146 @@
             "minItems": 1
         },
         "data_channels": {
-            "title": "Data Source",
-            "type": "array",
-            "format": "array",
+            "title": "DataChannels",
             "title*": {
-                "de": "Datenquellen"
+                "en": "Data channels",
+                "de": "Datenkanäle"
             },
-            "eval_template": {
-                "type": "mustache-wikitext",
-                "mode": "render",
-                "value": "{{#data_sources}} {{{name}}} [[:{{{type}}}]] <br>{{/data_sources}}"
+            "type": "array",
+            "format": "tabs",
+            "options": {
+                "enable_array_copy": true,
+                "array_copy_ignore": [
+                    "uuid",
+                    "osw_id"
+                ]
             },
             "items": {
-                "title": "Data Source",
+                "id": "channel",
+                "title": "DataChannel",
                 "title*": {
-                    "de": "Datenquelle"
+                    "en": "Data channel",
+                    "de": "Datenkanal"
                 },
+                "headerTemplate": "{{ i1 }} - {{{ self.name }}}",
                 "type": "object",
                 "required": [
                     "uuid",
+                    "osw_id",
                     "name"
+                ],
+                "defaultProperties": [
+                    "label",
+                    "description",
+                    "characteristic",
+                    "unit"
                 ],
                 "properties": {
                     "uuid": {
+                        "title": "UUID",
                         "type": "string",
-                        "format": "uuid",
+                        "$comment": "format uuid field are copied, if not set in copy_ignore",
+                        "format": null,
+                        "dynamic_template": "{{_uuid_}}",
                         "options": {
-                            "hidden": false
-                        },
-                        "title": "UUID"
-                    },
-                    "name": {
-                        "title": "Name",
-                        "description": "Technical / Machine compatible name",
-                        "description*": {
-                            "de": "Technischer / Maschinenkompatibler Name"
-                        },
-                        "type": "string",
-                        "options": {
-                            "hidden": false
+                            "hidden": true,
+                            "dynamic_template": {
+                                "override": "empty"
+                            }
                         }
                     },
-                    "type": {
-                        "title": "Type (depricated)",
+                    "osw_id": {
+                        "title": "OSW-ID",
+                        "type": "string",
+                        "watch": {
+                            "_own_uuid": "channel.uuid"
+                        },
+                        "dynamic_template": "{{_current_subject_}}#OSW{{#replace '-' ''}}{{_own_uuid}}{{/replace}}",
+                        "options": {
+                            "hidden": true,
+                            "dynamic_template": {
+                                "override": "always"
+                            }
+                        }
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "Name",
+                        "description": "Technical name / keyword",
+                        "description*": {
+                            "de": "Technischer Name / Schlüsselwort"
+                        }
+                    },
+                    "label": {
+                        "type": "array",
+                        "title": "Label(s)",
                         "title*": {
-                            "de": "Type"
+                            "de": "Bezeichnung(en)"
+                        },
+                        "format": "table",
+                        "eval_template": [
+                            {
+                                "type": "mustache-wikitext",
+                                "mode": "render",
+                                "$comment": "Displays value according to user language with eng as fallback option. Note: {{=<% %>=}} changes mustache expression from {{..}} to <% %> for mixing with wikitext templates",
+                                "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%#label%> | {{#ifeq: <%lang%>|en|#default|<%lang%>}} = <%text%> <%/label%> }}"
+                            }
+                        ],
+                        "items": {
+                            "$ref": "/wiki/JsonSchema:Label?action=raw"
+                        },
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    },
+                    "description": {
+                        "title": "Description",
+                        "title*": {
+                            "de": "Beschreibung"
+                        },
+                        "type": "array",
+                        "format": "table",
+                        "eval_template": {
+                            "type": "mustache-wikitext",
+                            "mode": "render",
+                            "value": "{{=<% %>=}} {{#switch:{{USERLANGUAGECODE}} <%={{ }}=%> {{#description}} |{{lang}}={{text}} {{/description}} {{=<% %>=}} }}"
+                        },
+                        "items": {
+                            "$ref": "/wiki/JsonSchema:Description?action=raw"
+                        },
+                        "options": {
+                            "grid_columns": 12
+                        }
+                    },
+                    "characteristic": {
+                        "title": "Characteristic",
+                        "title*": {
+                            "de": "Charakteristik"
+                        },
+                        "description": "The characteristic or class defining the data value object",
+                        "description*": {
+                            "de": "Die Charakteristik oder Klasse die den Datenwert spezifiziert"
+                        },
+                        "type": "string",
+                        "format": "autocomplete",
+                        "$comment": "range CharacteristicType, subclass_of range Characteristic for convenience.",
+                        "range": "Category:OSWffe74f291d354037b318c422591c5023",
+                        "subclassof_range": "Category:OSW93ccae36243542ceac6c951450a81d47"
+                    },
+                    "unit": {
+                        "title": "Unit",
+                        "title*": {
+                            "de": "Einheit"
+                        },
+                        "watch": {
+                            "characteristic_w": "channel.characteristic"
                         },
                         "type": "string",
                         "format": "autocomplete",
                         "options": {
                             "autocomplete": {
-                                "query": "[[HasType::Category:Category]] |?Display_title_of=label"
+                                "$comment": "Chain: Characteristic -(SubClassOf)*-> Ancestor -HasQuantity-> QK -HasUnit-> Unit. -SubClassOf follows the chain upward. 3 levels.",
+                                "query": "[[-HasUnit.-HasQuantity::{{$(characteristic_w)}}]][[HasSymbol::like:*{{_user_input}}*]]OR[[-HasUnit.-HasQuantity.-SubClassOf::{{$(characteristic_w)}}]][[HasSymbol::like:*{{_user_input}}*]]OR[[-HasUnit.-HasQuantity.-SubClassOf.-SubClassOf::{{$(characteristic_w)}}]][[HasSymbol::like:*{{_user_input}}*]]OR[[-HasUnit.-HasQuantity.-SubClassOf.-SubClassOf.-SubClassOf::{{$(characteristic_w)}}]][[HasSymbol::like:*{{_user_input}}*]]|?HasSymbol=label"
                             }
                         }
                     }
