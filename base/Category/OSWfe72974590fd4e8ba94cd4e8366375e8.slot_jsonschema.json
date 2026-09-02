@@ -14,16 +14,57 @@
             },
             "distributions": {
                 "@type": "@id",
-                "@id": "dcat:distribution"
+                "@id": "dcat:distribution",
+                "@context": {
+                    "file": {
+                        "@id": "dcat:accessURL",
+                        "@type": "@id"
+                    },
+                    "file*": {
+                        "@id": "Property:HasFileAttachment",
+                        "@type": "@id"
+                    },
+                    "download_url": "dcat:downloadURL",
+                    "access_url": "dcat:accessURL",
+                    "media_type": "dcat:mediaType",
+                    "byte_size": "dcat:byteSize",
+                    "package_format": "dcat:packageFormat",
+                    "compression_format": "dcat:compressionFormat",
+                    "conforms_to": {
+                        "@id": "dcterms:conformsTo",
+                        "@type": "@id"
+                    },
+                    "table_schema": {
+                        "@id": "csvw:tableSchema",
+                        "@type": "@id"
+                    }
+                }
             },
             "distributions*": {
                 "@type": "@id",
                 "@id": "Property:HasDistribution"
             },
-            "download_url": "dcat:downloadURL",
-            "download_url*": "Property:HasUrl",
             "data_format": "Property:HasDataFormat",
-            "dataset_schema": "Property:HasDatasetSchema"
+            "dataset_schema": "Property:HasDatasetSchema",
+            "dcterms": "http://purl.org/dc/terms/",
+            "prov": "http://www.w3.org/ns/prov#",
+            "csvw": "http://www.w3.org/ns/csvw#",
+            "parts": {
+                "@id": "dcterms:hasPart",
+                "@type": "@id"
+            },
+            "parts*": {
+                "@id": "Property:HasPart",
+                "@type": "@id"
+            },
+            "about": {
+                "@id": "schema:about",
+                "@type": "@id"
+            },
+            "generated_by": {
+                "@id": "prov:wasGeneratedBy",
+                "@type": "@id"
+            }
         }
     ],
     "allOf": [
@@ -37,8 +78,9 @@
         "type"
     ],
     "defaultProperties": [
-        "url",
-        "themes"
+        "distributions",
+        "themes",
+        "about"
     ],
     "properties": {
         "type": {
@@ -74,22 +116,135 @@
             }
         },
         "distributions": {
-            "title": "Distributions / Downloads",
-            "description": "Actual download options for this dataset",
+            "title": "Distributions",
+            "title*": {
+                "de": "Distributionen"
+            },
+            "description": "Serializations of this dataset. Each entry describes one file as a representation of this dataset, so the same file can serve several datasets with different schemas.",
+            "description*": {
+                "de": "Serialisierungen dieses Datensatzes. Jeder Eintrag beschreibt eine Datei als Repräsentation dieses Datensatzes, sodass dieselbe Datei mehrere Datensätze mit unterschiedlichen Schemata bedienen kann."
+            },
             "type": "array",
+            "format": "tabs",
             "items": {
-                "type": "object",
                 "title": "Distribution",
-                "required": [
-                    "download_url"
-                ],
+                "title*": {
+                    "de": "Distribution"
+                },
+                "type": "object",
                 "properties": {
+                    "file": {
+                        "title": "File",
+                        "title*": {
+                            "de": "Datei"
+                        },
+                        "description": "The file entity holding the bytes",
+                        "description*": {
+                            "de": "Die Dateientität, die die Bytes enthält"
+                        },
+                        "type": "string",
+                        "format": "autocomplete",
+                        "range": "Category:OSWff333fd349af4f65a69100405a9e60c7"
+                    },
+                    "media_type": {
+                        "title": "Media type",
+                        "title*": {
+                            "de": "Medientyp"
+                        },
+                        "description": "IANA media type of this representation, e. g. text/csv",
+                        "description*": {
+                            "de": "IANA-Medientyp dieser Repräsentation, z. B. text/csv"
+                        },
+                        "type": "string"
+                    },
+                    "byte_size": {
+                        "title": "Byte size",
+                        "title*": {
+                            "de": "Größe in Byte"
+                        },
+                        "type": "integer",
+                        "minimum": 0
+                    },
+                    "package_format": {
+                        "title": "Package format",
+                        "title*": {
+                            "de": "Paketformat"
+                        },
+                        "description": "Container the bytes are packaged in, e. g. zip",
+                        "description*": {
+                            "de": "Container, in dem die Bytes verpackt sind, z. B. zip"
+                        },
+                        "type": "string"
+                    },
+                    "compression_format": {
+                        "title": "Compression format",
+                        "title*": {
+                            "de": "Kompressionsformat"
+                        },
+                        "type": "string"
+                    },
+                    "conforms_to": {
+                        "title": "Conforms to",
+                        "title*": {
+                            "de": "Entspricht"
+                        },
+                        "description": "The dataset schema these bytes embody",
+                        "description*": {
+                            "de": "Das Datensatzschema, das diese Bytes verkörpern"
+                        },
+                        "type": "string",
+                        "format": "autocomplete",
+                        "options": {
+                            "autocomplete": {
+                                "$comment": "Any Category",
+                                "query": "[[:Category:%2B]]"
+                            }
+                        }
+                    },
+                    "table_schema": {
+                        "title": "Table schema",
+                        "title*": {
+                            "de": "Tabellenschema"
+                        },
+                        "description": "The row schema, where the serialization is tabular",
+                        "description*": {
+                            "de": "Das Zeilenschema, wenn die Serialisierung tabellarisch ist"
+                        },
+                        "type": "string",
+                        "format": "autocomplete",
+                        "options": {
+                            "autocomplete": {
+                                "$comment": "Any Category",
+                                "query": "[[:Category:%2B]]"
+                            }
+                        }
+                    },
                     "download_url": {
                         "title": "Download URL",
+                        "title*": {
+                            "de": "Download-URL"
+                        },
+                        "description": "Direct URL, where no file entity is used",
+                        "description*": {
+                            "de": "Direkte URL, wenn keine Dateientität verwendet wird"
+                        },
+                        "type": "string",
+                        "format": "url"
+                    },
+                    "access_url": {
+                        "title": "Access URL",
+                        "title*": {
+                            "de": "Zugriffs-URL"
+                        },
                         "type": "string",
                         "format": "url"
                     }
-                }
+                },
+                "defaultProperties": [
+                    "file",
+                    "media_type",
+                    "conforms_to"
+                ]
             }
         },
         "data_format": {
@@ -121,7 +276,78 @@
                 "format": "autocomplete",
                 "range": "Category:OSW0d6584b3e2b64e9595733c4c3963c486"
             },
-            "minItems": 1
+            "options": {
+                "hidden": true
+            },
+            "deprecated": true,
+            "description": "Deprecated: the type of the data field is its schema",
+            "description*": {
+                "de": "Veraltet: Der Typ des Feldes data ist sein Schema"
+            }
+        },
+        "data": {
+            "title": "Data",
+            "title*": {
+                "de": "Daten"
+            },
+            "description": "The payload of this dataset. Its type is its schema, so a subschema restricts it.",
+            "description*": {
+                "de": "Die Nutzdaten dieses Datensatzes. Ihr Typ ist ihr Schema, ein Unterschema schränkt sie also ein."
+            },
+            "type": "string",
+            "format": "json"
+        },
+        "parts": {
+            "title": "Parts",
+            "title*": {
+                "de": "Teile"
+            },
+            "description": "Sub-datasets of this dataset",
+            "description*": {
+                "de": "Teildatensätze dieses Datensatzes"
+            },
+            "type": "array",
+            "items": {
+                "title": "Part",
+                "title*": {
+                    "de": "Teil"
+                },
+                "type": "string",
+                "format": "autocomplete",
+                "range": "Category:OSWfe72974590fd4e8ba94cd4e8366375e8"
+            }
+        },
+        "about": {
+            "title": "About",
+            "title*": {
+                "de": "Handelt von"
+            },
+            "description": "What the data is about, e. g. the sample or device it was taken from",
+            "description*": {
+                "de": "Worum es in den Daten geht, z. B. die Probe oder das Gerät, von dem sie stammen"
+            },
+            "type": "string",
+            "format": "autocomplete",
+            "range": "Category:Entity",
+            "options": {
+                "autocomplete": {
+                    "$comment": "Any Item or Category",
+                    "query": "[[Item:%2B]]OR[[:Category:%2B]]"
+                }
+            }
+        },
+        "generated_by": {
+            "title": "Generated by",
+            "title*": {
+                "de": "Erzeugt durch"
+            },
+            "description": "The process that produced this dataset",
+            "description*": {
+                "de": "Der Prozess, der diesen Datensatz erzeugt hat"
+            },
+            "type": "string",
+            "format": "autocomplete",
+            "range": "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203"
         }
     },
     "uuid": "fe729745-90fd-4e8b-a94c-d4e8366375e8",
