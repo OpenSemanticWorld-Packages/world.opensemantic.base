@@ -51,7 +51,7 @@
     "required": [
         "type"
     ],
-    "defaultPropertis": [
+    "defaultProperties": [
         "type_no",
         "manufacturer",
         "data_sheet",

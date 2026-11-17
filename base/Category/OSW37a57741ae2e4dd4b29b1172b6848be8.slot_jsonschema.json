@@ -34,7 +34,6 @@
                 "@id": "Property:HasSafetyDataSheet",
                 "@type": "@id"
             },
-            "serial_number": "Property:HasSerialNumber",
             "type_no": "Property:HasTypeNumber"
         }
     ],
